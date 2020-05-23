@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>轮播图</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            border: none;
+        }
+
+        .main {
+            position: relative;
+            border: 1px solid greenyellow;
+            width: 1200px;
+            height: 576px;
+            margin: 20px auto;
+        }
+
+        .main img {
+            position: absolute;
+            display: none;
+        }
+
+        .main .last {
+            position: absolute;
+            width: 50px;
+            height: 60px;
+            background: url(./images/click.png) no-repeat 13px 0px;
+            z-index: 999;
+            top: 258px;
+            left: 10px;
+        }
+
+        .main .last:hover {
+            position: absolute;
+            width: 50px;
+            height: 60px;
+            background: url(./images/click.png) no-repeat 13px -62px;
+            z-index: 999;
+            top: 258px;
+            right: 10px;
+        }
+
+        .main .next {
+            position: absolute;
+            width: 50px;
+            height: 60px;
+            background: url(./images/click.png) no-repeat -45px 0px;
+            z-index: 999;
+            top: 258px;
+            right: 10px;
+        }
+
+        .main .next:hover {
+            position: absolute;
+            width: 50px;
+            height: 60px;
+            background: url(./images/click.png) no-repeat -45px -62px;
+            z-index: 999;
+            top: 258px;
+            right: 10px;
+        }
+
+        .main ul {
+            position: absolute;
+            left: 550px;
+            bottom: 25px;
+        }
+
+        .main ul li {
+            list-style: none;
+            width: 13px;
+            height: 13px;
+            background-color: #000;
+            border-radius: 50%;
+            float: left;
+            margin-right: 8px;
+            opacity: 0.5;
+        }
+
+        .main ul li:nth-child(1) {
+            opacity: 1;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var imgs = document.getElementsByTagName("img");
+            var lis = document.getElementsByTagName("li");
+            var last = document.getElementsByClassName("last")[0];
+            var next = document.getElementsByClassName("next")[0];
+            var v = 0;
+            function parent() {
+                for (var i = 0; i < 5; i++) {
+                    imgs[i].style.display = "none";
+                    lis[i].style.backgroundColor = "#000";
+                    lis[i].style.opacity = "0.5";
+                }
+                imgs[v].style.display = "block";
+                lis[v].style.backgroundColor = "red";
+                lis[v].style.opacity = "1";
+            }
+            function move() {
+                v++;
+                if (v == 5) {
+                    v = 0;
+                }
+                parent();
+            }
+            var stop = setInterval(move, 1500);
+            last.onclick = function () {
+                clearInterval(stop);
+                v = v - 1;
+                if (v == -1) {
+                    v = 4;
+                }
+                parent();
+                stop = setInterval(move, 1500);
+            }
+            next.onclick = function () {
+                clearInterval(stop);
+                move();
+                stop = setInterval(move, 1500);
+            }
+            for (var i = 0; i < 5; i++) {
+                lis[i].index = i;
+                lis[i].onmouseover = function () {
+                    v = this.index;
+                    clearInterval(stop);
+                    parent();
+                }
+                lis[i].onmouseout = function () {
+                    stop = setInterval(move, 1500);
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <img src="./images/1.jpg" style="display: block;">
+        <img src="./images/2.jpg">
+        <img src="./images/3.jpg">
+        <img src="./images/4.jpg">
+        <img src="./images/5.jpg">
+        <div class="last"></div>
+        <div class="next"></div>
+        <ul>
+            <li style="background-color: red;"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+
+</html>

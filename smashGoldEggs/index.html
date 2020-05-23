@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../common/js/base.js"></script>
+    <script>
+        var uid = config.callAppGetUserInfo().uid;
+        if(uid>1000000000) {
+            location.href = '404.html';
+        } else {
+
+        }
+    </script>
+    <link rel="stylesheet" href="../common/css/reset.css">
+    <link rel="stylesheet" href="index.css">
+    <title>幸运砸金蛋</title>
+</head>
+<body>
+    <!-- 直接开始请求图片 -->
+    <img src="https://tools.dianliaoapp.com/test/test-2018-08-24-6874.png" style="display: none;">
+    <img src="https://tools.dianliaoapp.com/test/test-2018-08-24-1864.png" style="display: none;">
+    <img src="https://tools.dianliaoapp.com/test/test-2018-08-24-6367.png" style="display: none;">
+    <img src="https://tools.dianliaoapp.com/test/test-2018-08-24-6169.png" style="display: none;">
+    <img src="https://tools.dianliaoapp.com/test/test-2018-08-24-3398.png" style="display: none;">
+    <img src="https://tools.dianliaoapp.com/test/test-2018-08-24-9276.png" style="display: none;">
+    <!-- 规则弹窗 -->
+    <div class="ruleActivity">
+        <div class="ruleActivityBg">
+            <div class="box tanchuscale">
+                <div class="close"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 锤子的购买 -->
+    <div class="buyActivity">
+        <div class="buyActivityBg">
+            <div class="box tanchuscale">
+                <div class="close"></div>
+                <ul>
+                    <li title="10" class="li ten active"></li>
+                    <li title="50" class="li fifty two"></li>
+                    <li title="100" class="li hundred"></li>
+                </ul>
+                <p class="num">剩余锤子数：-</p>
+                <div title="10" class="buyBtn"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 砸中的信息 -->
+    <div class="resultActivity">
+        <div class="resultActivityBg">
+            <div class="box tanchuscale">
+                <div class="head">恭喜获得</div>
+                <ul>
+                    <li><div class="top"><p class="gold">5</p><p>豆币</p></div><p class="num">x--</p></li>
+                    <li>
+                        <div class="top">
+                            <p class="gold">5</p>
+                            <p>豆币</p>
+                        </div>
+                        <p class="num">x50</p>
+                    </li>
+                    <li>
+                        <div class="top">
+                            <p class="gold">5</p>
+                            <p>豆币</p>
+                        </div>
+                        <p class="num">x50</p>
+                    </li>
+                    <li>
+                        <div class="top">
+                            <p class="gold">5</p>
+                            <p>豆币</p>
+                        </div>
+                        <p class="num">x50</p>
+                    </li>
+                </ul>
+                <div class="sureBtn">确定 (3s)</div>
+            </div>
+        </div>
+    </div>
+    <!-- 页面的内容 -->
+    <div class="main">
+        <div class="head">
+            <div class="box">
+                <img src="https://tools.dianliaoapp.com/test/test-2018-08-23-6288.png" />
+            </div>
+            <div class="rules"></div>
+        </div>
+        <div class="content">
+            <div class="play">
+                <div class="one"></div>
+                <div class="ten"></div>
+                <div class="hundred"></div>
+            </div>
+            <div class="handle">
+                <div class="get">
+                    <p>剩余锤子数：-</p>
+                    <div class="btn">获得</div>
+                </div>
+                <div class="recharge">
+                    <p>豆币：--</p>
+                    <div class="btn">充值</div>
+                </div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="record">
+            <div class="one_bg"></div>
+            <div class="two_bg"></div>
+            <ul class="box">
+                <div class="title"></div>
+                <div id="dingwrap">
+                    <ul>
+                        <!-- <li><span>-----</span><span>在砸金蛋中获得</span><span>----豆币</span></li>
+                        <li><span>-----</span><span>在砸金蛋中获得</span><span>----豆币</span></li>
+                        <li><span>-----</span><span>在砸金蛋中获得</span><span>----豆币</span></li>
+                        <li><span>-----</span><span>在砸金蛋中获得</span><span>----豆币</span></li>
+                        <li><span>-----</span><span>在砸金蛋中获得</span><span>----豆币</span></li> -->
+                    </ul>
+                </div>
+                <div id="lunbowrap">
+                    <ul>
+                        <li><span>-----</span><span>在砸金蛋中获得</span><span>----豆币</span></li>
+                        <li><span>-----</span><span>在砸金蛋中获得</span><span>----豆币</span></li>
+                        <li><span>-----</span><span>在砸金蛋中获得</span><span>----豆币</span></li>
+                        <li><span>-----</span><span>在砸金蛋中获得</span><span>----豆币</span></li>
+                        <li><span>-----</span><span>在砸金蛋中获得</span><span>----豆币</span></li>
+                        <li><span>-----</span><span>在砸金蛋中获得</span><span>----豆币</span></li>
+                        <li><span>-----</span><span>在砸金蛋中获得</span><span>----豆币</span></li>
+                        <li><span>-----</span><span>在砸金蛋中获得</span><span>----豆币</span></li>
+                        <li><span>-----</span><span>在砸金蛋中获得</span><span>----豆币</span></li>
+                        <li><span>-----</span><span>在砸金蛋中获得</span><span>----豆币</span></li>
+                        <li><span>-----</span><span>在砸金蛋中获得</span><span>----豆币</span></li>
+                        <li><span>-----</span><span>在砸金蛋中获得</span><span>----豆币</span></li>
+                        <li><span>-----</span><span>在砸金蛋中获得</span><span>----豆币</span></li>
+                        <li><span>-----</span><span>在砸金蛋中获得</span><span>----豆币</span></li>
+                        <li><span>-----</span><span>在砸金蛋中获得</span><span>----豆币</span></li>
+                        <li><span>-----</span><span>在砸金蛋中获得</span><span>----豆币</span></li>
+                        <li><span>-----</span><span>在砸金蛋中获得</span><span>----豆币</span></li>
+                        <li><span>-----</span><span>在砸金蛋中获得</span><span>----豆币</span></li>
+                        <li><span>-----</span><span>在砸金蛋中获得</span><span>----豆币</span></li>
+                        <li><span>-----</span><span>在砸金蛋中获得</span><span>----豆币</span></li>
+                        <li><span>-----</span><span>在砸金蛋中获得</span><span>----豆币</span></li>
+                        <li><span>-----</span><span>在砸金蛋中获得</span><span>----豆币</span></li>
+                        <li><span>-----</span><span>在砸金蛋中获得</span><span>----豆币</span></li>
+                        <li><span>-----</span><span>在砸金蛋中获得</span><span>----豆币</span></li>
+                        <li><span>-----</span><span>在砸金蛋中获得</span><span>----豆币</span></li>
+                        <li><span>-----</span><span>在砸金蛋中获得</span><span>----豆币</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../common/js/jquery-2.1.4.min.js"></script>
+    <script src="marquee.js"></script>
+    <script>
+        // 现在剩下砸中结果展示
+        // 记录进行组装轮播测试
+        var uid = config.callAppGetUserInfo().uid;
+        var phone = config.callAppGetUserInfo().phone;
+        var timer = null;
+        var isInCount = '0'; //0->可以砸，1->砸1次中，10->砸10次中，100->砸100次中
+        $(function() {
+            // 调用app返回的豆币进行实时刷新
+            config.getGoldTickets();
+            // 首页数据、记录数据的获取
+            getIndexData();
+            getGoldEggRecord();
+            // 点击砸1次、砸10次、砸100次
+            $('.content .play .one').click(function() {
+                hiting('1');
+            });
+            $('.content .play .ten').click(function() {
+                hiting('10');               
+            });
+            $('.content .play .hundred').click(function() {
+                hiting('100');               
+            });
+            // 记录设置轮播
+            $('#lunbowrap').marquee({
+                auto: true,
+                interval: 1000,
+                showNum: 14,
+                stepLen: 1,
+                type: 'vertical',
+                direction: 'backward',
+            });
+            // 规则弹窗点击关闭/点击规则显示规则弹窗
+            $('.main .head .rules').click(function() {
+                $('.ruleActivity').show();
+            });
+            $('.ruleActivity .box .close').click(function() {
+                $('.ruleActivity').hide();
+            });
+            // 锤子获得、锤子获得弹窗交互
+            $('.main .content .handle .get .btn').click(function() {
+                $('.buyActivity').show();
+            });
+            $('.buyActivity .box .close').click(function() {
+                $('.buyActivity').hide();
+            });
+            $('.buyActivity .box ul .li').click(function() {
+                $('.buyActivity .box ul .ten').attr('class', 'li ten');
+                $('.buyActivity .box ul .fifty').attr('class', 'li fifty');
+                $('.buyActivity .box ul .hundred').attr('class', 'li hundred');
+                $(this).addClass('active');
+                $('.buyActivity .box .buyBtn').attr('title', $(this).attr('title'));    
+            });
+            $('.buyActivity .box .buyBtn').click(function() {
+                buyGoldEgg($(this).attr('title'));
+            });
+            // 点击充值的去到H5的充值页面
+            $('.main .content .handle .recharge .btn').click(function() {
+                var urlLocation = location.href.substring(0, location.href.indexOf("h5_activity/smashGoldEggs/index.html"));
+                config.callAppOpenElseHtml(urlLocation+'explain/myWallet/recharge.html', '充值');
+            });
+            // 弹窗的禁止滚动设置
+            $(".ruleActivity .ruleActivityBg").on('touchmove', function(e) {
+                e.preventDefault();
+            });
+            $(".buyActivity .buyActivityBg").on('touchmove', function(e) {
+                e.preventDefault();
+            });
+            // 点击关闭按钮
+            $('.sureBtn').click(function() {
+                if(timer!=null) {
+                    // 3s之内不可以进行跳转
+                } else {
+                    $('.resultActivity').hide();
+                    $('.sureBtn').html('确定 ('+3+'s)');
+                    $('.head .box').attr('class', 'box');
+                    $('.head .box img').attr('src', 'https://tools.dianliaoapp.com/test/test-2018-08-23-6288.png');
+                }
+            });
+        });
+        // 进行砸中点击处理
+        function hiting(play_num) {
+            if(isInCount=='0') {
+                if($('.content .handle .get p').html().substring(6)<(play_num-0)) {
+                    config.layerMsg('锤子数不够啦，请先购买锤子数啦~', 2);
+                    $('.buyActivity').show();
+                } else {
+                    $('.head .box').attr('class', 'box active');
+                    $('.head .box img').attr('src', 'https://tools.dianliaoapp.com/test/test-2018-08-23-6335.gif?'+randomNum(0,10000)+'');
+                    isInCount = play_num;
+                    setTimeout(function() {
+                        playGoldEgg(play_num);
+                    }, 500);
+                }
+            }
+            else if(isInCount=='1') {
+                config.layerMsg('正在砸一次啦~', 1);
+            } 
+            else if(isInCount=='10') {
+                config.layerMsg('正在十连砸啦~', 1);
+            }
+            else if(isInCount=='100') {
+                config.layerMsg('正在百连砸啦~', 1);
+            }
+        }
+        // 砸金蛋首页接口
+        function getIndexData() {
+            var url = config.khserver+'/HActivity/getGoldEggIndex';
+            var params = {
+                this_uid: uid,
+            };
+            $.getJSON(url, params, function(res) {
+                // console.log(res);
+                if(res.code) {
+                    $('.main .content .handle .get p').html('剩余锤子数：'+res.num);
+                    $('.buyActivity .num').html('剩余锤子数：'+res.num);
+                    $('.main .content .handle .recharge p').html('豆币：'+res.chat_gold);
+                } else {
+                    config.layerMsg(res.msg, 2);
+                }
+            });
+        }
+        // 砸金蛋购买接口
+        function buyGoldEgg(buy_num) {
+            var url = config.khserver+'/HActivity/buyGoldEgg';
+            var params = {
+                this_uid: uid,
+                phone: phone,
+                buy_num: buy_num,
+            };
+            $.getJSON(url, params, function(res) {
+                // console.log(res);
+                if(res.code) {
+                    config.layerMsg('购买成功啦~', 2);
+                    getIndexData();
+                } else {
+                    config.layerMsg(res.msg, 2);
+                }
+            });
+        }
+        // 砸金蛋游戏接口
+        function playGoldEgg(play_num) {
+            var url = config.khserver+'/HActivity/playGoldEgg';
+            var params = {
+                this_uid: uid,
+                phone: phone,
+                play_num: play_num,
+            };
+            $.getJSON(url, params, function(res) {
+                if(res.code) {
+                    getIndexData(); //锤子数、豆币数进行刷新
+                    getGoldEggRecord(); //请求记录的新数据
+                    isInCount = 0; //对相对应的进行重置可以再次点击
+                    var html = '';
+                    var count = 0;
+                    for(var key in res.data) {
+                        if(res.data[key]!=0) {
+                            count = count+1;
+                            html += '<li><div class="top"><p class="gold">'+key+'</p><p>豆币</p></div><p class="num">x'+res.data[key]+'</p></li>';
+                        }
+                    }
+                    if(count<=3) {
+                        $('.resultActivity .box').css({'margin-top': '-2.5rem'});
+                    } else if(3<count<=6) {
+                        $('.resultActivity .box').css({'margin-top': '-3.6rem'});
+                    } else {
+                        $('.resultActivity .box').css({'margin-top': '-4.7rem'});
+                    }
+                    $('.resultActivity .box ul').html(html);
+                    $('.resultActivity').show();
+                    timer = setInterval(function() {
+                        var times = $('.sureBtn').html().substring(4, 5);
+                        times = times - 1;
+                        if(times==0) {
+                            clearInterval(timer);
+                            timer = null;
+                            $('.sureBtn').html('确定');
+                            // $('.resultActivity').hide();
+                        } else {
+                            $('.sureBtn').html('确定 ('+times+'s)');
+                        }
+                    }, 1000);
+                } else {
+                    config.layerMsg(res.msg, 2);
+                }
+            });
+        }
+        // 砸金蛋记录接口
+        function getGoldEggRecord() {
+            var url = config.khserver+'/HActivity/getGoldEggRecord';
+            var params = {};
+            $.getJSON(url, params, function(res) {
+                if(res.code) {
+                    // console.log(res);
+                    var htmlOne = '';
+                    var htmlTwo = '';
+                    for(var i=0; i<res.data.length; i++) {
+                        if(i<5) {
+                            htmlTwo += '<li><span>'+res.data[i].nickname+'</span><span>在砸金蛋中获得</span><span>'+res.data[i].reward+'豆币</span></li>';
+                        } else {
+                            htmlOne += '<li><span>'+res.data[i].nickname+'</span><span>在砸金蛋中获得</span><span>'+res.data[i].reward+'豆币</span></li>';
+                        }
+                    }
+                    $('#lunbowrap ul').html(htmlOne);
+                    $('#dingwrap ul').html(htmlTwo);
+                } else {
+                    config.layerMsg(res.msg, 2);
+                }
+            });
+        }
+        // 准备方法进行客户端调用
+        function getGoldTickets(obj) {
+            var getObj = JSON.parse(obj);
+            $('.content .handle .recharge p').html('豆币：'+getObj.appGold);
+        }
+        // 取出对应min到max之间的随机数
+        function randomNum(minNum, maxNum){
+            switch(arguments.length){
+                case 1:
+                    return parseInt(Math.random()*minNum+1,10);
+                break;
+                case 2:
+                    return parseInt(Math.random()*(maxNum-minNum+1)+minNum,10);
+                break;
+                    default:
+                        return 0;
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>

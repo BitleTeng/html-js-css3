@@ -1,0 +1,1093 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+:focus {
+	outline: 1;
+}
+
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted #000;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* 
+  layer mobile
+*/
+
+.layui-m-layer{position:relative; z-index: 19891014;}
+.layui-m-layer *{-webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box;}
+.layui-m-layershade,
+.layui-m-layermain{position:fixed; left:0; top:0; width:100%; height:100%;}
+.layui-m-layershade{background-color:rgba(0,0,0, .7); pointer-events:auto;}
+.layui-m-layermain{display:table; font-family: Helvetica, arial, sans-serif; pointer-events: none;}
+.layui-m-layermain .layui-m-layersection{display:table-cell; vertical-align:middle; text-align:center;}
+.layui-m-layerchild{position:relative; display:inline-block; text-align:left; background-color:#fff; font-size:14px; border-radius: 5px; box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);  pointer-events:auto;  -webkit-overflow-scrolling: touch;}
+.layui-m-layerchild{-webkit-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation-duration: .2s; animation-duration: .2s;}
+
+
+/* 弹出动画 */
+@-webkit-keyframes layui-m-anim-scale { /* 默认 */
+	0% {opacity: 0; -webkit-transform: scale(.5); transform: scale(.5)}
+	100% {opacity: 1; -webkit-transform: scale(1); transform: scale(1)}
+}
+@keyframes layui-m-anim-scale { /* 默认 */
+	0% {opacity: 0; -webkit-transform: scale(.5); transform: scale(.5)}
+	100% {opacity: 1; -webkit-transform: scale(1); transform: scale(1)}
+}
+.layui-m-anim-scale{animation-name:  layui-m-anim-scale; -webkit-animation-name:  layui-m-anim-scale;}
+
+@-webkit-keyframes layui-m-anim-up{
+  0%{opacity: 0; -webkit-transform: translateY(800px); transform: translateY(800px)}
+  100%{opacity: 1; -webkit-transform: translateY(0); transform: translateY(0)}
+}
+@keyframes layui-m-anim-up{
+  0%{opacity: 0; -webkit-transform: translateY(800px); transform: translateY(800px)}
+  100%{opacity: 1; -webkit-transform: translateY(0); transform: translateY(0)}
+}
+.layui-m-anim-up{-webkit-animation-name: layui-m-anim-up;animation-name: layui-m-anim-up}
+
+
+.layui-m-layer0 .layui-m-layerchild{width: 90%; max-width: 640px;}
+.layui-m-layer1 .layui-m-layerchild{border:none; border-radius:0;}
+.layui-m-layer2 .layui-m-layerchild{width:auto; max-width:260px; min-width:40px; border:none; background: none; box-shadow: none; color:#fff;}
+.layui-m-layerchild h3{padding: 0 10px; height: 60px; line-height: 60px; font-size:16px; font-weight: 400;  border-radius: 5px 5px 0 0; text-align: center;}
+.layui-m-layerchild h3,
+.layui-m-layerbtn span{ text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
+.layui-m-layercont{padding: 50px 30px; line-height: 22px; text-align:center;}
+.layui-m-layer1 .layui-m-layercont{padding:0; text-align:left;}
+.layui-m-layer2 .layui-m-layercont{text-align:center; padding: 0; line-height: 0;}
+.layui-m-layer2 .layui-m-layercont i{width:25px; height:25px; margin-left:8px; display:inline-block; background-color:#fff; border-radius:100%;}
+.layui-m-layer2 .layui-m-layercont p{margin-top: 20px;}
+
+/* loading */
+@-webkit-keyframes layui-m-anim-loading{
+    0%,80%,100%{transform:scale(0); -webkit-transform:scale(0)}
+    40%{transform:scale(1); -webkit-transform:scale(1)}
+}
+@keyframes layui-m-anim-loading{
+    0%,80%,100%{transform:scale(0); -webkit-transform:scale(0)}
+    40%{transform:scale(1); -webkit-transform:scale(1)}
+}
+.layui-m-layer2 .layui-m-layercont i{-webkit-animation: layui-m-anim-loading 1.4s infinite ease-in-out; animation: layui-m-anim-loading 1.4s infinite ease-in-out; -webkit-animation-fill-mode: both; animation-fill-mode: both;}
+
+.layui-m-layer2 .layui-m-layercont i:first-child{margin-left:0; -webkit-animation-delay: -.32s; animation-delay: -.32s;}
+.layui-m-layer2 .layui-m-layercont i.layui-m-layerload{-webkit-animation-delay: -.16s; animation-delay: -.16s;}
+.layui-m-layer2 .layui-m-layercont>div{line-height:22px; padding-top:7px; margin-bottom:20px; font-size: 14px;}
+.layui-m-layerbtn{display: box; display: -moz-box; display: -webkit-box; width: 100%; position:relative; height: 50px; line-height: 50px; font-size: 0; text-align:center;  border-top:1px solid #D0D0D0; background-color: #F2F2F2; border-radius: 0 0 5px 5px;}
+.layui-m-layerbtn span{position:relative; display: block; -moz-box-flex: 1; box-flex: 1; -webkit-box-flex: 1;  text-align:center; font-size:14px; border-radius: 0 0 5px 5px; cursor:pointer;}
+.layui-m-layerbtn span[yes]{color: #40AFFE;}
+.layui-m-layerbtn span[no]{border-right: 1px solid #D0D0D0; border-radius: 0 0 0 5px;}
+.layui-m-layerbtn span:active{background-color: #F6F6F6;}
+.layui-m-layerend{position:absolute; right:7px; top:10px; width:30px; height:30px; border: 0; font-weight:400; background: transparent; cursor: pointer; -webkit-appearance: none; font-size:30px;}
+.layui-m-layerend::before, .layui-m-layerend::after{position:absolute; left:5px; top:15px; content:''; width:18px; height:1px; background-color:#999; transform:rotate(45deg); -webkit-transform:rotate(45deg); border-radius: 3px;}
+.layui-m-layerend::after{transform:rotate(-45deg);  -webkit-transform:rotate(-45deg);}
+
+/* 底部对话框风格 */
+body .layui-m-layer .layui-m-layer-footer{position: fixed; width: 95%; max-width: 100%; margin: 0 auto; left:0; right: 0; bottom: 10px; background: none;}
+.layui-m-layer-footer .layui-m-layercont{padding: 20px; border-radius: 5px 5px 0 0; background-color: rgba(255,255,255,.8);}
+.layui-m-layer-footer .layui-m-layerbtn{display: block; height: auto; background: none; border-top: none;}
+.layui-m-layer-footer .layui-m-layerbtn span{background-color: rgba(255,255,255,.8);}
+.layui-m-layer-footer .layui-m-layerbtn span[no]{color: #FD482C; border-top: 1px solid #c2c2c2; border-radius: 0 0 5px 5px;}
+.layui-m-layer-footer .layui-m-layerbtn span[yes]{margin-top: 10px; border-radius: 5px;}
+
+/* 通用提示 */
+body .layui-m-layer .layui-m-layer-msg{width: auto; max-width: 90%; margin: 0 auto; bottom: -150px; background-color: rgba(0,0,0,.7); color: #fff;}
+.layui-m-layer-msg .layui-m-layercont{padding: 10px 20px;}
+
+
+
+
+/* @charset "UTF-8"; */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "微软雅黑";
+}
+
+/*禁止选择文字*/
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /*取消点击阴影*/
+  -webkit-touch-callout: none;
+  -webkit-text-size-adjust: none;
+  -webkit-user-select: none;
+  -webkit-highlight: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+/*样式*/
+body {
+  background-color: #da3127;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  /* background-image: url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-28-2310.png");
+  background-size: 100%;
+  background-repeat: no-repeat; */
+}
+.popup .popup-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4.68rem;
+  background-image: url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-28-6048.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.popup .popup-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4.68rem;
+  background-image: url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-28-5300.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/*奖励&规则*/
+.rule-container {
+  /*总榜特款奖励*/
+  /*现金及聊币奖励*/
+  /*活动规则*/
+  position: relative;
+}
+.rule-container .header {
+  width: 100%;
+  height: 4.91rem;
+  margin: 0 auto;
+  background-image: url("https://tools.dianliaoapp.com/test/test-2019-01-24-6311.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.rule-container .appoint_gift .appoint_gift{
+  
+}
+.appoint_gift_box{
+  position: absolute;
+  top: 2.6rem;
+  left: 0;
+  width: 100%;
+}
+.rule-container .appoint_gift .appoint_title{
+  width: 100%;
+  height: 1rem;
+  /* margin: 0.7rem 0 0.5rem 0; */
+  margin-top: -0.4rem;
+  text-align: center;
+  background-image: url('https://tools.dianliaoapp.com/test/test-2019-01-24-4042.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.rule-container .appoint_gift .appoint_gift .flag{
+  float: left;
+  width: 1.65rem;
+  margin-left: 1.5rem;
+  text-align: center;
+  font-size: 0;
+}
+.rule-container .appoint_gift .appoint_gift .flag img{
+  width: 1.65rem;
+  height: 1.65rem;
+}
+.rule-container .appoint_gift .appoint_gift .flag span{
+  font-size: 0.36rem;
+  font-weight: 500;
+  color: #FFECB1;
+  
+}
+.rule-container .appoint_gift .appoint_gift .horn{
+  float: right;
+  width: 1.65rem;
+  margin-right: 1.5rem;
+  text-align: center;
+  font-size: 0;
+}
+.rule-container .appoint_gift .appoint_gift .horn img{
+  width: 1.65rem;
+  height: 1.65rem;
+}
+.rule-container .appoint_gift .appoint_gift .horn span{
+  font-size: 0.36rem;
+  font-weight: 500;
+  color: #FFECB1;
+}
+.rule-container .rank_rule .rank_title {
+  width: 100%;
+  height: 1rem;
+  margin-top: 0.85rem;
+  background-image: url("https://tools.dianliaoapp.com/test/test-2019-01-24-5094.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.rule-container .rank_rule .rank_rule_list .rank_award_rule {
+  font-size: 0;
+}
+.rule-container .rank_rule .rank_rule_list .rank_award_rule .rank_headline {
+  font-size: 0.3rem;
+  font-weight: bold;
+  text-align: center;
+  color: #F4E592;
+}
+.rule-container .rank_rule .rank_rule_list .rank_award_rule .rank_headline .up_line {
+  display: inline-block;
+  width: 2.76rem;
+  height: 0.36rem;
+  margin: 0 auto;
+  margin-top: 0.2rem;
+  background-image: url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-28-6098.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.rule-container .rank_rule .rank_rule_list .rank_award_rule span {
+  display: inline-block;
+  width: 2rem;
+  height: 3rem;
+  margin-top: 0.2rem;
+  margin-left: 0.35rem;
+  text-align: center;
+  background-image: url("https://tools.dianliaoapp.com/test/test-2019-01-24-9259.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+.rule-container .rank_rule .rank_rule_list .rank_award_rule span img {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-top: 0.24rem;
+}
+.rule-container .rank_rule .rank_rule_list .rank_award_rule span i {
+  display: inline-block;
+  /* margin-top: 0.3rem; */
+  font-size: 0.24rem;
+  color: #B00A04;
+}
+.rule-container .rank_rule .rank_rule_list .rank_award_rule .left {
+  margin-left: 0.4rem;
+}
+.rule-container .rank_rule .rank_rule_list .rank_diamond {
+  margin-top: 0.5rem;
+}
+.rule-container .money_rule .money_title {
+  width: 100%;
+  height: 1rem;
+  margin-top: 0.75rem;
+  background-image: url("https://tools.dianliaoapp.com/test/test-2019-01-24-9779.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.rule-container .money_rule .money_rule_list li table {
+  width: 6.99rem;
+  margin: 0 auto;
+  font-size: 0.26rem;
+  color: #efbd6f;
+  border: 1px solid #efbd6f;
+  text-align: center;
+}
+.rule-container .money_rule .money_rule_list li table th, .rule-container .money_rule .money_rule_list li table td {
+  border: 1px solid #efbd6f;
+  width: 2.33rem;
+  height: 0.7rem;
+  line-height: 0.7rem;
+}
+.rule-container .money_rule .money_rule_list li table th {
+  background-color: #efbd6f;
+  color: #000;
+}
+.rule-container .money_rule .money_rule_list li table td {
+  background-color: #262116;
+}
+.rule-container .money_rule .money_rule_list li:nth-child(1) {
+  margin-top: 0.1rem;
+}
+.rule-container .money_rule p {
+  margin-top: 0.3rem;
+  text-align: center;
+  font-size: 0.26rem;
+  color: #efbd6f;
+}
+.rule-container .activity_rule {
+  margin-bottom: 1.36rem;
+}
+.rule-container .activity_rule .activity_title {
+  width: 100%;
+  height: 1rem;
+  margin-top: 0.75rem;
+  background-image: url("https://tools.dianliaoapp.com/test/test-2019-01-24-5798.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.rule-container .activity_rule ul {
+  font-size: 0.24rem;
+  color: #efbd6f;
+}
+.rule-container .activity_rule ul li {
+  margin-top: 0.2rem;
+}
+.rule-container .activity_rule ul li span {
+  float: left;
+  display: inline-block;
+  width: 0.32rem;
+  height: 0.32rem;
+  line-height: 0.32rem;
+  margin-left: 0.25rem;
+  color: #020101;
+  text-align: center;
+  background-image: url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-28-1517.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.rule-container .activity_rule ul li p {
+  margin-left: 0.75rem;
+  margin-right: 0.25rem;
+  vertical-align: middle;
+}
+.rule-container .activity_rule ul li p i {
+  color: #a2e9b1;
+}
+.rule-container .activity_rule ul li:nth-child(1) {
+  margin-top: 0.1rem;
+}
+
+.activity-container {
+  /*精彩活动*/
+  /*荣耀家族 钻石大亨 家族宝贝公用*/
+  /*荣耀家族*/
+  /*钻石大亨*/
+  /*家族宝贝*/
+  position: relative;
+}
+.activity-container .header {
+  position: relative;
+}
+.activity-container .header .container {
+  /* width: 6.24rem; */
+  width: 100%;
+  height: 6.79rem;
+  margin: 0 auto;
+  /* background-image: url("https://tools.dianliaoapp.com/test/test-2019-01-24-5718.png");
+  
+  background-size: 100%;
+  background-repeat: no-repeat; */
+  overflow: hidden;
+}
+.activity-container .header .container .rule {
+  position: absolute;
+  left: 0;
+  top: 3.4rem;
+  width: 100%;
+  text-align: center;
+  z-index: 999;
+  font-size: 0.26rem;
+  color: #ffffff;
+}
+.activity-container .header .container .activityDate {
+  position: absolute;
+  left: 2.49rem;
+  top: 2.6rem;
+  width: 2.5rem;
+  height: 0.7rem;
+  z-index: 999;
+  background-image: url("https://tools.dianliaoapp.com/test/test-2019-01-23-2759.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.activity-container .bar {
+  margin-top: 0.4rem;
+  /* border: 1px solid blue; */
+  position: absolute;
+  top: 5.45rem;
+  left: 0;
+}
+.activity-container .bar ul li {
+  float: left;
+  width: 1.6rem;
+  /* height: 0.7rem; */
+  height: 0.9rem;
+  margin-left: 0.7rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  /* border: 1px solid red; */
+}
+.activity-container .bar ul .active {
+  height: 0.92rem;
+  /* margin-top: -0.22rem; */
+}
+.activity-container .bar ul .honerFamily {
+  background-image: url("https://tools.dianliaoapp.com/test/test-2019-01-24-6502.png");
+}
+.activity-container .bar ul .honerFamily.active {
+  background-image: url("https://tools.dianliaoapp.com/test/test-2019-01-24-7494.png");
+}
+.activity-container .bar ul .diamond {
+  background-image: url("https://tools.dianliaoapp.com/test/test-2019-01-24-2109.png");
+}
+.activity-container .bar ul .diamond.active {
+  background-image: url("https://tools.dianliaoapp.com/test/test-2019-01-24-7995.png");
+}
+.activity-container .bar ul .familybaby {
+  background-image: url("https://tools.dianliaoapp.com/test/test-2019-01-24-7671.png");
+}
+.activity-container .bar ul .familybaby.active {
+  background-image: url("https://tools.dianliaoapp.com/test/test-2019-01-24-4496.png");
+}
+.activity-container .activity_list {
+  margin: 0.3rem 0 1rem 0;
+  text-align: center;
+}
+.activity-container .activity_list li {
+  width: 7.12rem;
+  height: 4.12rem;
+  margin: 0 auto;
+  margin-top: 0.2rem;
+  background-image: url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-28-1359.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.activity-container .activity_list li .activity_family_top {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  font-size: 0.36rem;
+  font-weight: bold;
+  text-align: left;
+  color: #efbd6f;
+}
+.activity-container .activity_list li .activity_family_top .activity_family_avator {
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin: 0.26rem 0 0 0.36rem;
+  background-image: url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-28-7237.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.activity-container .activity_list li .activity_family_top .activity_family_avator i {
+  display: inline-block;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin: 0.15rem 0 0 0.25rem;
+  border-radius: 50%;
+  background-color: red;
+}
+.activity-container .activity_list li .activity_family_top .activity_family_info {
+  display: inline-block;
+  margin-left: 0.2rem;
+}
+.activity-container .activity_list li .activity_family_top .activity_family_info i {
+  font-size: 0.3rem;
+}
+.activity-container .activity_list li .activity_family_top .activity_family_rank {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.82rem;
+  display: inline-block;
+  text-align: center;
+  font-size: 0.3rem;
+}
+.activity-container .activity_list li .activity_family_top .activity_family_rank i {
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.5rem;
+  background-image: url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-28-7431.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.activity-container .activity_list li .activity_family_bottom {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  text-align: left;
+  font-size: 0.3rem;
+  color: #efbd6f;
+  overflow: hidden;
+}
+.activity-container .activity_list li .activity_family_bottom p:nth-child(1) {
+  margin-top: 0.6rem;
+}
+.activity-container .activity_list li .activity_family_bottom p {
+  margin-left: 0.36rem;
+}
+.activity-container .activity_list li .activity_family_bottom .activity_family_detail {
+  position: absolute;
+  right: 0.26rem;
+  bottom: 0.76rem;
+  display: inline-block;
+  width: 2rem;
+  height: 0.6rem;
+  background-image: url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-28-2561.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.activity-container .activity_list li .line {
+  width: 6.2rem;
+  height: 1px;
+  margin: 0 auto;
+  background-image: url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-28-3652.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.activity-container .honour-family, .activity-container .diamond-bigwig, .activity-container .familybaby-ranking {
+  /*总榜*/
+}
+.activity-container .honour-family .honour_bar, .activity-container .diamond-bigwig .honour_bar, .activity-container .familybaby-ranking .honour_bar {
+  width: 4.86rem;
+  height: 0.8rem;
+  margin: 0 auto;
+  background-image: url("https://tools.dianliaoapp.com/test/test-2019-01-23-4733.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.activity-container .honour-family .day_ranking, .activity-container .honour-family .totle_ranking, .activity-container .diamond-bigwig .day_ranking, .activity-container .diamond-bigwig .totle_ranking, .activity-container .familybaby-ranking .day_ranking, .activity-container .familybaby-ranking .totle_ranking {
+  width: 7rem;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  padding-top: 0.4rem;
+  text-align: center;
+  border: 3px solid #F4E592;
+  border-radius: 0.1rem;
+}
+.activity-container .honour-family .day_ranking h1, .activity-container .honour-family .totle_ranking h1, .activity-container .diamond-bigwig .day_ranking h1, .activity-container .diamond-bigwig .totle_ranking h1, .activity-container .familybaby-ranking .day_ranking h1, .activity-container .familybaby-ranking .totle_ranking h1 {
+  font-size: 0.36rem;
+  font-weight: bold;
+  color: #F4E592;
+}
+.day_ranking{
+  position: relative;
+}
+.byh{
+  width: 1.58rem;
+  height: 2.11rem;
+  position: absolute;
+  top: 0rem;
+  left: -1rem;
+  /* background: #da241f; */
+}
+.activity-container .honour-family .day_ranking .day_select_btn, .activity-container .honour-family .totle_ranking .day_select_btn, .activity-container .diamond-bigwig .day_ranking .day_select_btn, .activity-container .diamond-bigwig .totle_ranking .day_select_btn, .activity-container .familybaby-ranking .day_ranking .day_select_btn, .activity-container .familybaby-ranking .totle_ranking .day_select_btn {
+  margin-top: 0.24rem;
+  font-size: 0.3rem;
+  color: #F4E592;
+}
+.activity-container .honour-family .day_ranking .day_select_btn i, .activity-container .honour-family .totle_ranking .day_select_btn i, .activity-container .diamond-bigwig .day_ranking .day_select_btn i, .activity-container .diamond-bigwig .totle_ranking .day_select_btn i, .activity-container .familybaby-ranking .day_ranking .day_select_btn i, .activity-container .familybaby-ranking .totle_ranking .day_select_btn i {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.activity-container .honour-family .day_ranking .day_select_btn .left_icon, .activity-container .honour-family .totle_ranking .day_select_btn .left_icon, .activity-container .diamond-bigwig .day_ranking .day_select_btn .left_icon, .activity-container .diamond-bigwig .totle_ranking .day_select_btn .left_icon, .activity-container .familybaby-ranking .day_ranking .day_select_btn .left_icon, .activity-container .familybaby-ranking .totle_ranking .day_select_btn .left_icon {
+  background-image: url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-1091.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.activity-container .honour-family .day_ranking .day_select_btn .right_icon, .activity-container .honour-family .totle_ranking .day_select_btn .right_icon, .activity-container .diamond-bigwig .day_ranking .day_select_btn .right_icon, .activity-container .diamond-bigwig .totle_ranking .day_select_btn .right_icon, .activity-container .familybaby-ranking .day_ranking .day_select_btn .right_icon, .activity-container .familybaby-ranking .totle_ranking .day_select_btn .right_icon {
+  background-image: url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-4522.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.activity-container .honour-family .day_ranking .day_select_btn span, .activity-container .honour-family .totle_ranking .day_select_btn span, .activity-container .diamond-bigwig .day_ranking .day_select_btn span, .activity-container .diamond-bigwig .totle_ranking .day_select_btn span, .activity-container .familybaby-ranking .day_ranking .day_select_btn span, .activity-container .familybaby-ranking .totle_ranking .day_select_btn span {
+  display: inline-block;
+  height: 0.5rem;
+  vertical-align: 50%;
+  line-height: 0.3rem;
+}
+.activity-container .honour-family .day_ranking .rank_container .title, .activity-container .honour-family .totle_ranking .rank_container .title, .activity-container .diamond-bigwig .day_ranking .rank_container .title, .activity-container .diamond-bigwig .totle_ranking .rank_container .title, .activity-container .familybaby-ranking .day_ranking .rank_container .title, .activity-container .familybaby-ranking .totle_ranking .rank_container .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0.3rem;
+  color: #F4E592;
+}
+.activity-container .honour-family .day_ranking .rank_container .title .title_rank, .activity-container .honour-family .totle_ranking .rank_container .title .title_rank, .activity-container .diamond-bigwig .day_ranking .rank_container .title .title_rank, .activity-container .diamond-bigwig .totle_ranking .rank_container .title .title_rank, .activity-container .familybaby-ranking .day_ranking .rank_container .title .title_rank, .activity-container .familybaby-ranking .totle_ranking .rank_container .title .title_rank {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+.activity-container .honour-family .day_ranking .rank_container .title .title_name, .activity-container .honour-family .totle_ranking .rank_container .title .title_name, .activity-container .diamond-bigwig .day_ranking .rank_container .title .title_name, .activity-container .diamond-bigwig .totle_ranking .rank_container .title .title_name, .activity-container .familybaby-ranking .day_ranking .rank_container .title .title_name, .activity-container .familybaby-ranking .totle_ranking .rank_container .title .title_name {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+.activity-container .honour-family .day_ranking .rank_container .title .title_honour, .activity-container .honour-family .totle_ranking .rank_container .title .title_honour, .activity-container .diamond-bigwig .day_ranking .rank_container .title .title_honour, .activity-container .diamond-bigwig .totle_ranking .rank_container .title .title_honour, .activity-container .familybaby-ranking .day_ranking .rank_container .title .title_honour, .activity-container .familybaby-ranking .totle_ranking .rank_container .title .title_honour {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+.activity-container .honour-family .day_ranking .rank_container .title .title_award, .activity-container .honour-family .totle_ranking .rank_container .title .title_award, .activity-container .diamond-bigwig .day_ranking .rank_container .title .title_award, .activity-container .diamond-bigwig .totle_ranking .rank_container .title .title_award, .activity-container .familybaby-ranking .day_ranking .rank_container .title .title_award, .activity-container .familybaby-ranking .totle_ranking .rank_container .title .title_award {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+.activity-container .honour-family .day_ranking .rank_container ul, .activity-container .honour-family .totle_ranking .rank_container ul, .activity-container .diamond-bigwig .day_ranking .rank_container ul, .activity-container .diamond-bigwig .totle_ranking .rank_container ul, .activity-container .familybaby-ranking .day_ranking .rank_container ul, .activity-container .familybaby-ranking .totle_ranking .rank_container ul {
+  height: 11rem;
+  overflow: hidden;
+}
+.activity-container .honour-family .day_ranking .rank_container ul .data_list, .activity-container .honour-family .totle_ranking .rank_container ul .data_list, .activity-container .diamond-bigwig .day_ranking .rank_container ul .data_list, .activity-container .diamond-bigwig .totle_ranking .rank_container ul .data_list, .activity-container .familybaby-ranking .day_ranking .rank_container ul .data_list, .activity-container .familybaby-ranking .totle_ranking .rank_container ul .data_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 2.2rem;
+  position: relative;
+}
+.activity-container .honour-family .day_ranking .rank_container ul .data_list .line, .activity-container .honour-family .totle_ranking .rank_container ul .data_list .line, .activity-container .diamond-bigwig .day_ranking .rank_container ul .data_list .line, .activity-container .diamond-bigwig .totle_ranking .rank_container ul .data_list .line, .activity-container .familybaby-ranking .day_ranking .rank_container ul .data_list .line, .activity-container .familybaby-ranking .totle_ranking .rank_container ul .data_list .line {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 6.2rem;
+  height: 1px;
+  margin: 0 auto;
+  background-image: url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-28-3652.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.activity-container .honour-family .day_ranking .rank_container ul .data_list .rank_num, .activity-container .honour-family .totle_ranking .rank_container ul .data_list .rank_num, .activity-container .diamond-bigwig .day_ranking .rank_container ul .data_list .rank_num, .activity-container .diamond-bigwig .totle_ranking .rank_container ul .data_list .rank_num, .activity-container .familybaby-ranking .day_ranking .rank_container ul .data_list .rank_num, .activity-container .familybaby-ranking .totle_ranking .rank_container ul .data_list .rank_num {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+.activity-container .honour-family .day_ranking .rank_container ul .data_list .rank_num i, .activity-container .honour-family .totle_ranking .rank_container ul .data_list .rank_num i, .activity-container .diamond-bigwig .day_ranking .rank_container ul .data_list .rank_num i, .activity-container .diamond-bigwig .totle_ranking .rank_container ul .data_list .rank_num i, .activity-container .familybaby-ranking .day_ranking .rank_container ul .data_list .rank_num i, .activity-container .familybaby-ranking .totle_ranking .rank_container ul .data_list .rank_num i {
+  display: inline-block;
+  width: 0.4rem;
+  height: 0.4rem;
+  font-size: 0.3rem;
+  border-radius: 50%;
+  background-color: #F4E592;
+  color: #020101;
+}
+.activity-container .honour-family .day_ranking .rank_container ul .data_list .rank_userinfo, .activity-container .honour-family .totle_ranking .rank_container ul .data_list .rank_userinfo, .activity-container .diamond-bigwig .day_ranking .rank_container ul .data_list .rank_userinfo, .activity-container .diamond-bigwig .totle_ranking .rank_container ul .data_list .rank_userinfo, .activity-container .familybaby-ranking .day_ranking .rank_container ul .data_list .rank_userinfo, .activity-container .familybaby-ranking .totle_ranking .rank_container ul .data_list .rank_userinfo {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  font-size: 0.24rem;
+  font-weight: bold;
+  color: #efbd6f;
+}
+.activity-container .honour-family .day_ranking .rank_container ul .data_list .rank_userinfo .avator, .activity-container .honour-family .totle_ranking .rank_container ul .data_list .rank_userinfo .avator, .activity-container .diamond-bigwig .day_ranking .rank_container ul .data_list .rank_userinfo .avator, .activity-container .diamond-bigwig .totle_ranking .rank_container ul .data_list .rank_userinfo .avator, .activity-container .familybaby-ranking .day_ranking .rank_container ul .data_list .rank_userinfo .avator, .activity-container .familybaby-ranking .totle_ranking .rank_container ul .data_list .rank_userinfo .avator {
+  display: inline-block;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-top: 0.3rem;
+  border: 3px solid #efbd6f;
+  border-radius: 50%;
+}
+.activity-container .honour-family .day_ranking .rank_container ul .data_list .honour_num, .activity-container .honour-family .totle_ranking .rank_container ul .data_list .honour_num, .activity-container .diamond-bigwig .day_ranking .rank_container ul .data_list .honour_num, .activity-container .diamond-bigwig .totle_ranking .rank_container ul .data_list .honour_num, .activity-container .familybaby-ranking .day_ranking .rank_container ul .data_list .honour_num, .activity-container .familybaby-ranking .totle_ranking .rank_container ul .data_list .honour_num {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  font-size: 0.24rem;
+  font-weight: bold;
+  color: #efbd6f;
+}
+.activity-container .honour-family .day_ranking .rank_container ul .data_list .honour_num .honour_num_icon, .activity-container .honour-family .totle_ranking .rank_container ul .data_list .honour_num .honour_num_icon, .activity-container .diamond-bigwig .day_ranking .rank_container ul .data_list .honour_num .honour_num_icon, .activity-container .diamond-bigwig .totle_ranking .rank_container ul .data_list .honour_num .honour_num_icon, .activity-container .familybaby-ranking .day_ranking .rank_container ul .data_list .honour_num .honour_num_icon, .activity-container .familybaby-ranking .totle_ranking .rank_container ul .data_list .honour_num .honour_num_icon {
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.5rem;
+  margin-top: 0.6rem;
+  background-image: url("https://tools.dianliaoapp.com/test/test-2018-09-07-9090.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.activity-container .honour-family .day_ranking .rank_container ul .data_list .award_num, .activity-container .honour-family .totle_ranking .rank_container ul .data_list .award_num, .activity-container .diamond-bigwig .day_ranking .rank_container ul .data_list .award_num, .activity-container .diamond-bigwig .totle_ranking .rank_container ul .data_list .award_num, .activity-container .familybaby-ranking .day_ranking .rank_container ul .data_list .award_num, .activity-container .familybaby-ranking .totle_ranking .rank_container ul .data_list .award_num {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  font-size: 0.24rem;
+  color: #efbd6f;
+}
+.activity-container .honour-family .day_ranking .rank_container ul .data_list .award_num .award_num_icon, .activity-container .honour-family .totle_ranking .rank_container ul .data_list .award_num .award_num_icon, .activity-container .diamond-bigwig .day_ranking .rank_container ul .data_list .award_num .award_num_icon, .activity-container .diamond-bigwig .totle_ranking .rank_container ul .data_list .award_num .award_num_icon, .activity-container .familybaby-ranking .day_ranking .rank_container ul .data_list .award_num .award_num_icon, .activity-container .familybaby-ranking .totle_ranking .rank_container ul .data_list .award_num .award_num_icon {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-top: 0.6rem;
+  background: url("https://tools.dianliaoapp.com/test/test-2018-09-07-7207.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.activity-container .honour-family .day_ranking .rank_container ul .first .rank_num i, .activity-container .honour-family .totle_ranking .rank_container ul .first .rank_num i, .activity-container .diamond-bigwig .day_ranking .rank_container ul .first .rank_num i, .activity-container .diamond-bigwig .totle_ranking .rank_container ul .first .rank_num i, .activity-container .familybaby-ranking .day_ranking .rank_container ul .first .rank_num i, .activity-container .familybaby-ranking .totle_ranking .rank_container ul .first .rank_num i {
+  width: 0.6rem;
+  height: 0.5rem;
+  background-image: url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-9964.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 0;
+  color: transparent;
+  background-color: transparent;
+}
+.activity-container .honour-family .day_ranking .rank_container ul .first .rank_userinfo .avator, .activity-container .honour-family .totle_ranking .rank_container ul .first .rank_userinfo .avator, .activity-container .diamond-bigwig .day_ranking .rank_container ul .first .rank_userinfo .avator, .activity-container .diamond-bigwig .totle_ranking .rank_container ul .first .rank_userinfo .avator, .activity-container .familybaby-ranking .day_ranking .rank_container ul .first .rank_userinfo .avator, .activity-container .familybaby-ranking .totle_ranking .rank_container ul .first .rank_userinfo .avator {
+  position: relative;
+  border: none;
+  margin-top: 0.4rem;
+}
+.activity-container .honour-family .day_ranking .rank_container ul .first .rank_userinfo .avator::before, .activity-container .honour-family .totle_ranking .rank_container ul .first .rank_userinfo .avator::before, .activity-container .diamond-bigwig .day_ranking .rank_container ul .first .rank_userinfo .avator::before, .activity-container .diamond-bigwig .totle_ranking .rank_container ul .first .rank_userinfo .avator::before, .activity-container .familybaby-ranking .day_ranking .rank_container ul .first .rank_userinfo .avator::before, .activity-container .familybaby-ranking .totle_ranking .rank_container ul .first .rank_userinfo .avator::before {
+  position: absolute;
+  top: -0.3rem;
+  left: -0.24rem;
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.44rem;
+  content: "";
+  background-image: url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-3380.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.activity-container .honour-family .day_ranking .rank_container ul .second .rank_num i, .activity-container .honour-family .totle_ranking .rank_container ul .second .rank_num i, .activity-container .diamond-bigwig .day_ranking .rank_container ul .second .rank_num i, .activity-container .diamond-bigwig .totle_ranking .rank_container ul .second .rank_num i, .activity-container .familybaby-ranking .day_ranking .rank_container ul .second .rank_num i, .activity-container .familybaby-ranking .totle_ranking .rank_container ul .second .rank_num i {
+  width: 0.6rem;
+  height: 0.5rem;
+  background-image: url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-7426.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 0;
+  color: transparent;
+  background-color: transparent;
+}
+.activity-container .honour-family .day_ranking .rank_container ul .second .rank_userinfo .avator, .activity-container .honour-family .totle_ranking .rank_container ul .second .rank_userinfo .avator, .activity-container .diamond-bigwig .day_ranking .rank_container ul .second .rank_userinfo .avator, .activity-container .diamond-bigwig .totle_ranking .rank_container ul .second .rank_userinfo .avator, .activity-container .familybaby-ranking .day_ranking .rank_container ul .second .rank_userinfo .avator, .activity-container .familybaby-ranking .totle_ranking .rank_container ul .second .rank_userinfo .avator {
+  position: relative;
+  margin-top: 0.4rem;
+  border: none;
+}
+.activity-container .honour-family .day_ranking .rank_container ul .second .rank_userinfo .avator::before, .activity-container .honour-family .totle_ranking .rank_container ul .second .rank_userinfo .avator::before, .activity-container .diamond-bigwig .day_ranking .rank_container ul .second .rank_userinfo .avator::before, .activity-container .diamond-bigwig .totle_ranking .rank_container ul .second .rank_userinfo .avator::before, .activity-container .familybaby-ranking .day_ranking .rank_container ul .second .rank_userinfo .avator::before, .activity-container .familybaby-ranking .totle_ranking .rank_container ul .second .rank_userinfo .avator::before {
+  position: absolute;
+  top: -0.3rem;
+  left: -0.24rem;
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.44rem;
+  content: "";
+  background-image: url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-7166.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.activity-container .honour-family .day_ranking .rank_container ul .third .rank_num i, .activity-container .honour-family .totle_ranking .rank_container ul .third .rank_num i, .activity-container .diamond-bigwig .day_ranking .rank_container ul .third .rank_num i, .activity-container .diamond-bigwig .totle_ranking .rank_container ul .third .rank_num i, .activity-container .familybaby-ranking .day_ranking .rank_container ul .third .rank_num i, .activity-container .familybaby-ranking .totle_ranking .rank_container ul .third .rank_num i {
+  width: 0.6rem;
+  height: 0.5rem;
+  background-image: url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-1600.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 0;
+  color: transparent;
+  background-color: transparent;
+}
+.activity-container .honour-family .day_ranking .rank_container ul .third .rank_userinfo .avator, .activity-container .honour-family .totle_ranking .rank_container ul .third .rank_userinfo .avator, .activity-container .diamond-bigwig .day_ranking .rank_container ul .third .rank_userinfo .avator, .activity-container .diamond-bigwig .totle_ranking .rank_container ul .third .rank_userinfo .avator, .activity-container .familybaby-ranking .day_ranking .rank_container ul .third .rank_userinfo .avator, .activity-container .familybaby-ranking .totle_ranking .rank_container ul .third .rank_userinfo .avator {
+  position: relative;
+  margin-top: 0.4rem;
+  border: none;
+}
+.activity-container .honour-family .day_ranking .rank_container ul .third .rank_userinfo .avator::before, .activity-container .honour-family .totle_ranking .rank_container ul .third .rank_userinfo .avator::before, .activity-container .diamond-bigwig .day_ranking .rank_container ul .third .rank_userinfo .avator::before, .activity-container .diamond-bigwig .totle_ranking .rank_container ul .third .rank_userinfo .avator::before, .activity-container .familybaby-ranking .day_ranking .rank_container ul .third .rank_userinfo .avator::before, .activity-container .familybaby-ranking .totle_ranking .rank_container ul .third .rank_userinfo .avator::before {
+  position: absolute;
+  top: -0.3rem;
+  left: -0.24rem;
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.44rem;
+  content: "";
+  background-image: url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-1027.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.activity-container .honour-family .day_ranking .rank_container ul li:nth-child(5) .line, .activity-container .honour-family .totle_ranking .rank_container ul li:nth-child(5) .line, .activity-container .diamond-bigwig .day_ranking .rank_container ul li:nth-child(5) .line, .activity-container .diamond-bigwig .totle_ranking .rank_container ul li:nth-child(5) .line, .activity-container .familybaby-ranking .day_ranking .rank_container ul li:nth-child(5) .line, .activity-container .familybaby-ranking .totle_ranking .rank_container ul li:nth-child(5) .line {
+  background-image: none;
+}
+.activity-container .honour-family .day_ranking .rank_container .up_icon, .activity-container .honour-family .totle_ranking .rank_container .up_icon, .activity-container .diamond-bigwig .day_ranking .rank_container .up_icon, .activity-container .diamond-bigwig .totle_ranking .rank_container .up_icon, .activity-container .familybaby-ranking .day_ranking .rank_container .up_icon, .activity-container .familybaby-ranking .totle_ranking .rank_container .up_icon {
+  width: 0.6rem;
+  height: 0.6rem;
+  margin: 0 auto;
+  margin-bottom: 0.3rem;
+  /* background-image: url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-6199.png"); */
+  background-image: url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-30-8864.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.activity-container .honour-family .totle_ranking, .activity-container .diamond-bigwig .totle_ranking, .activity-container .familybaby-ranking .totle_ranking {
+  margin-bottom: 0.75rem;
+}
+.activity-container .honour-family .totle_ranking .day_select_btn span, .activity-container .diamond-bigwig .totle_ranking .day_select_btn span, .activity-container .familybaby-ranking .totle_ranking .day_select_btn span {
+  font-size: 0.24rem;
+}
+.activity-container .honour-family .totle_ranking .rank_container ul .data_list .award_num .award_num_icon, .activity-container .diamond-bigwig .totle_ranking .rank_container ul .data_list .award_num .award_num_icon, .activity-container .familybaby-ranking .totle_ranking .rank_container ul .data_list .award_num .award_num_icon {
+  background-image: url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-6365.png");
+}
+.activity-container .diamond-bigwig {
+  display: none;
+  /*钻石大亨总榜聊币icon转换*/
+}
+.activity-container .diamond-bigwig .honour_bar {
+  background-image: url("https://tools.dianliaoapp.com/test/test-2019-01-24-2941.png");
+}
+.activity-container .diamond-bigwig .day_ranking .rank_container .rank_list .data_list .honour_num .honour_num_icon, .activity-container .diamond-bigwig .totle_ranking .rank_container .rank_list .data_list .honour_num .honour_num_icon {
+  background-image: url("https://tools.dianliaoapp.com/test/test-2018-09-07-8743.png");
+}
+.activity-container .diamond-bigwig .day_ranking .rank_container .rank_list .first .rank_userinfo .avator::before, .activity-container .diamond-bigwig .day_ranking .rank_container .rank_list .second .rank_userinfo .avator::before, .activity-container .diamond-bigwig .day_ranking .rank_container .rank_list .third .rank_userinfo .avator::before, .activity-container .diamond-bigwig .totle_ranking .rank_container .rank_list .first .rank_userinfo .avator::before, .activity-container .diamond-bigwig .totle_ranking .rank_container .rank_list .second .rank_userinfo .avator::before, .activity-container .diamond-bigwig .totle_ranking .rank_container .rank_list .third .rank_userinfo .avator::before {
+  left: -0.04rem;
+  width: 1.18rem;
+  height: 1.46rem;
+  background-image: url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-7597.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.activity-container .diamond-bigwig .day_ranking .rank_container .rank_list .second .rank_userinfo .avator::before, .activity-container .diamond-bigwig .totle_ranking .rank_container .rank_list .second .rank_userinfo .avator::before {
+  background-image: url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-6373.png");
+}
+.activity-container .diamond-bigwig .day_ranking .rank_container .rank_list .third .rank_userinfo .avator::before, .activity-container .diamond-bigwig .totle_ranking .rank_container .rank_list .third .rank_userinfo .avator::before {
+  background-image: url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-2523.png");
+}
+.activity-container .diamond-bigwig .totle_ranking .rank_container ul .data_list .award_num .award_num_icon {
+  background-image: url("https://tools.dianliaoapp.com/test/test-2018-09-07-7207.png");
+}
+.activity-container .familybaby-ranking {
+  display: none;
+  /*钻石大亨总榜聊币icon转换*/
+}
+.activity-container .familybaby-ranking .honour_bar {
+  background-image: url("https://tools.dianliaoapp.com/test/test-2019-01-24-2215.png");
+}
+.activity-container .familybaby-ranking .day_ranking .rank_container .rank_list, .activity-container .familybaby-ranking .totle_ranking .rank_container .rank_list {
+  height: 12.5rem;
+}
+.activity-container .familybaby-ranking .day_ranking .rank_container .rank_list .data_list, .activity-container .familybaby-ranking .totle_ranking .rank_container .rank_list .data_list {
+  height: 2.5rem;
+}
+.activity-container .familybaby-ranking .day_ranking .rank_container .rank_list .data_list .honour_num .honour_num_icon, .activity-container .familybaby-ranking .totle_ranking .rank_container .rank_list .data_list .honour_num .honour_num_icon {
+  background-image: url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-1482.png");
+}
+.activity-container .familybaby-ranking .day_ranking .rank_container .rank_list .first .rank_userinfo .avator::before, .activity-container .familybaby-ranking .day_ranking .rank_container .rank_list .second .rank_userinfo .avator::before, .activity-container .familybaby-ranking .day_ranking .rank_container .rank_list .third .rank_userinfo .avator::before, .activity-container .familybaby-ranking .totle_ranking .rank_container .rank_list .first .rank_userinfo .avator::before, .activity-container .familybaby-ranking .totle_ranking .rank_container .rank_list .second .rank_userinfo .avator::before, .activity-container .familybaby-ranking .totle_ranking .rank_container .rank_list .third .rank_userinfo .avator::before {
+  left: -0.04rem;
+  width: 1.18rem;
+  height: 1.46rem;
+  background-image: url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-1794.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.activity-container .familybaby-ranking .day_ranking .rank_container .rank_list .second .rank_userinfo .avator::before, .activity-container .familybaby-ranking .totle_ranking .rank_container .rank_list .second .rank_userinfo .avator::before {
+  background-image: url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-4547.png");
+}
+.activity-container .familybaby-ranking .day_ranking .rank_container .rank_list .third .rank_userinfo .avator::before, .activity-container .familybaby-ranking .totle_ranking .rank_container .rank_list .third .rank_userinfo .avator::before {
+  background-image: url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-4510.png");
+}
+.activity-container .familybaby-ranking .day_ranking .rank_container ul .data_list .award_num .award_num_icon{
+  background-image: url("https://tools.dianliaoapp.com/test/test-2018-09-07-9732.png");
+}
+.activity-container .familybaby-ranking .totle_ranking .rank_container ul .data_list .award_num .award_num_icon {
+  background-image: url("https://tools.dianliaoapp.com/test/test-2018-09-07-9732.png");
+}
+.tabs ul li{
+  position: relative;
+}
+.bgtop{
+  width: 2rem;
+  height: 1rem;
+  background: url('https://tools.dianliaoapp.com/test/test-2019-01-24-7421.png') center no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -0.5rem;
+  right: -0.17rem;
+  display: none;
+}
+.bgtop:nth-child(2){
+  right: -0.2rem;
+}
+.rank_headline1{
+  width: 100%;
+  background: url('https://tools.dianliaoapp.com/test/test-2019-01-24-4523.png') center no-repeat;
+  background-size: contain;
+  height: 1rem;
+}
+.rank_headline2{
+  width: 100%;
+  background: url('https://tools.dianliaoapp.com/test/test-2019-01-24-5070.png') center no-repeat;
+  background-size: contain;
+  height: 1rem;
+}
+.rank_headline3{
+  width: 100%;
+  background: url('https://tools.dianliaoapp.com/test/test-2019-01-24-5326.png') center no-repeat;
+  background-size: contain;
+  height: 1rem;
+}
+.money-box{
+  width: 7rem;
+  height: 8rem;
+  background: url('https://tools.dianliaoapp.com/test/test-2019-01-24-1850.png') center no-repeat;
+  background-size: contain;
+  margin: 0.1rem auto;
+  padding: 0.4rem 0;
+}
+.flex{
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+}
+.money-list li{
+  flex: 1;
+  font-size: 0.3rem;
+  color: #B00A04;
+  text-align: center;
+  margin-bottom: 0.2rem;
+  height: 0.5rem;
+}
+.money-list-num li{
+  flex: 1;
+  font-size: 0.26rem;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 0.2rem;
+  height: 0.5rem;
+}
+.money-list-num li:nth-child(2){
+  font-size: 0.20rem;
+}
+.money-list-numother li{
+  flex: 1;
+  font-size: 0.26rem;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 0.2rem;
+  height: 0.5rem;
+}
+.bottom-bg{
+  width: 100%;
+  height: 4.67rem;
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  z-index: -1;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>translate</title>
+	<style>
+	*{
+		margin:0;
+		padding:0;
+	}
+		.content{
+			position:absolute;
+			top:10px;
+			left:0;
+			bottom:0;
+			right:0;
+			margin:0 auto ;
+			border:1px solid red;
+			height:80%;
+			width:80%;
+			overflow:hidden;
+		}
+		.top{
+			border:1px solid blue;
+			background-color:#00ff00;
+			border-radius:5px;
+			width:300px;
+			height:300px;
+			position:absolute;
+			top:100px;
+			left:0;
+			bottom:0;
+			right:0;
+			margin:0 auto;
+			transition:3s;
+		}
+		.fadeIn{
+			opacity:0.3;
+			transform:translate(0,140%);
+		}
+		.bottom{
+			border:1px solid blue;
+			background-color:#0000ff;
+			border-radius:5px;
+			width:300px;
+			height:300px;
+			position:absolute;
+			top:100px;
+			left:0;
+			bottom:0;
+			right:0;
+			margin:0 auto;
+			transition:3s;
+		}
+		.fadeOut{
+			opacity:0.3;
+			transform:translate(0,-140%);
+		}
+	</style>
+</head>
+<body>
+<script>
+window.onload=function(){
+	var bottom = document.getElementById('bottom');
+	var top = document.getElementById('top');
+	setInterval(function(){
+		bottom.setAttribute('class','bottom fadeOut');
+		top.setAttribute('class','top fadeIn');
+	},2000);
+	setInterval(function(){
+		bottom.setAttribute('class','bottom fadeIn');
+		top.setAttribute('class','top fadeOut');
+	},4000);	
+}
+</script>
+	<div class="content" id="content">
+		<div class="top" id="top"></div>
+		<div class="bottom" id="bottom"></div>
+	</div>
+</body>
+</html>

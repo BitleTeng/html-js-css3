@@ -1,0 +1,443 @@
+/*总布局*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+  }
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+    overflow: hidden;
+    position: fixed;
+  }
+  .content {
+    position: relative;
+    height: 100%;
+    width: 7.5rem;
+  }
+  /*音乐播放器*/
+  .content .music_circle {
+    position: fixed;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 0.08rem solid #ef1639;
+    background-color: #fff;
+    top: 0.3rem;
+    right: 0.3rem;
+    z-index: 999;
+  }
+  /*音乐暂停样式*/
+  .content .music_circle .music_record_pause {
+    position: absolute;
+    left: 0;
+    top: 0.105rem;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    background-image: url(https://cdn.jsdelivr.net/gh/BitleTeng/html-js-css3@1.0/happy_year/img/music_disc.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 1.3rem;
+    width: 1.3rem;
+  }
+  /*音乐开始样式*/
+  .content .music_circle .music_record_play {
+    background-image: url(https://cdn.jsdelivr.net/gh/BitleTeng/html-js-css3@1.0/happy_year/img/music_disc.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 1.3rem;
+    width: 1.3rem;
+    position: absolute;
+    left: 0;
+    top: 0.105rem;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    -webkit-animation: round_record 2s linear infinite;
+    animation: round_record 2s linear infinite;
+  }
+  @-webkit-keyframes round_record {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes round_record {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  /*音乐指针*/
+  .content .music_circle .music_pointer {
+    position: absolute;
+    top: 0.3rem;
+    right: 0;
+    left: 0.85rem;
+    bottom: 0;
+    background: url(https://cdn.jsdelivr.net/gh/BitleTeng/html-js-css3@1.0/happy_year/img/music_pointer.png) no-repeat;
+    background-size: 100%;
+    height: 2.2rem;
+    width: 0.65rem;
+  }
+  /*page1*/
+  .content .page1 {
+    width: 7.5rem;
+    height: 100%;
+    display: block;
+    position: absolute;
+  }
+  /*page1 背景*/
+  .content .page1 .page1_bg {
+    background: url(https://cdn.jsdelivr.net/gh/BitleTeng/html-js-css3@1.0/happy_year/img/p1_bg.jpg) no-repeat;
+    background-size: 100% 100%;
+    width: 7.5rem;
+    height: 100%;
+  }
+  /*page1 灯笼*/
+  .content .page1 .page1_bg .page1_lattern {
+    position: absolute;
+    top: -0.5rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    background: url(https://cdn.jsdelivr.net/gh/BitleTeng/html-js-css3@1.0/happy_year/img/p1_lantern.png) no-repeat;
+    background-size: 100%;
+    width: 4rem;
+    height: 10rem;
+  }
+  /*page1 灯光*/
+  .content .page1 .page1_bg .page1_lattern .page1_light {
+    position: absolute;
+    top: 4.8rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    background-color: #f81047;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    opacity: 0.1;
+    -webkit-box-shadow: 0 0 1.5rem 1.5rem #f81047;
+    box-shadow: 0 0 1.5rem 1.5rem #f81047;
+    -webkit-animation: flash 0.5s infinite alternate;
+    animation: flash 0.5s infinite alternate;
+  }
+  @-webkit-keyframes flash {
+    0% {
+      opacity: 0.5;
+      -webkit-transform: scale(0.8, 0.8);
+      transform: scale(0.8, 0.8);
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes flash {
+    0% {
+      opacity: 0.5;
+      -webkit-transform: scale(0.8, 0.8);
+      transform: scale(0.8, 0.8);
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  /*page1 祝福语*/
+  .content .page1 .page1_bg .page1_lattern .page1_blessing {
+    position: absolute;
+    top: 3.15rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    font-family: "微软雅黑";
+    font-size: 0.5rem;
+    color: #fff;
+    font-weight: bold;
+    height: 2.6rem;
+    padding-top: 1.3rem;
+    text-align: center;
+  }
+  /*page1 bottom部分*/
+  .content .page1 .page1_bg .page1_bottom {
+    position: absolute;
+    top: 10rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 2rem;
+    height: 2.3rem;
+    background: url(https://cdn.jsdelivr.net/gh/BitleTeng/html-js-css3@1.0/happy_year/img/p1_imooc.png) no-repeat;
+    background-size: 100%;
+    text-align: center;
+  }
+  .content .page1 .page1_bg .page1_bottom .page1_bottom_blessing {
+    position: absolute;
+    top: 2.3rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    font-family: "微软雅黑";
+    color: #8b4c39;
+    font-weight: bolder;
+    font-size: 0.3rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+  }
+  /*page2*/
+  .content #page2 {
+    position: absolute;
+    display: none;
+    width: 7.5rem;
+    height: 100%;
+    overflow: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  /*page2 滑出*/
+  .content .fadeOut {
+    opacity: 0.3;
+    -webkit-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+  }
+  /*page2 背景*/
+  .content .page2 .page2_bg {
+    position: absolute;
+    background: url(https://cdn.jsdelivr.net/gh/BitleTeng/html-js-css3@1.0/happy_year/img/p2_bg.jpg) no-repeat;
+    background-size: 100%;
+    width: 7.5rem;
+    height: 100%;
+  }
+  /*page2 祝福语*/
+  .content .page2 .page2_bg .p2_blessing {
+    position: absolute;
+    background: url(https://cdn.jsdelivr.net/gh/BitleTeng/html-js-css3@1.0/happy_year/img/p2_blessing.png) no-repeat;
+    background-size: 100%;
+    top: 1.8rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    height: 5rem;
+  }
+  /*page2 外圈*/
+  .content .page2 .page2_bg .page2_outer_circle {
+    background: url(https://cdn.jsdelivr.net/gh/BitleTeng/html-js-css3@1.0/happy_year/img/p2_circle_outer.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 4.2rem;
+    right: 0;
+    bottom: 0;
+    left: 0rem;
+    margin: 0 auto;
+    width: 5rem;
+    height: 4.9rem;
+    -webkit-animation: round_outer 0.4s linear 1.125s infinite;
+    animation: round_outer 0.4s linear 1.125s infinite;
+  }
+  @-webkit-keyframes round_outer {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes round_outer {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  /*page2 中圈*/
+  .content .page2 .page2_bg .page2_middle_circle {
+    background-image: url(https://cdn.jsdelivr.net/gh/BitleTeng/html-js-css3@1.0/happy_year/img/p2_circle_middle.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    bottom: 0;
+    left: 0rem;
+    margin: 0 auto;
+    width: 3.5rem;
+    height: 3.5rem;
+    -webkit-animation: round_middle 0.45s linear 0.75s infinite;
+    animation: round_middle 0.45s linear 0.75s infinite;
+  }
+  @-webkit-keyframes round_middle {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes round_middle {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  /*page2 内圈*/
+  .content .page2 .page2_bg .page2_inner_circle {
+    background-image: url(https://cdn.jsdelivr.net/gh/BitleTeng/html-js-css3@1.0/happy_year/img/p2_circle_inner.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5.6rem;
+    right: 0;
+    bottom: 0;
+    left: 0rem;
+    margin: 0 auto;
+    width: 2.3rem;
+    height: 2.3rem;
+    -webkit-animation: round_inner 0.5s linear infinite;
+    animation: round_inner 0.5s linear infinite;
+  }
+  @-webkit-keyframes round_inner {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes round_inner {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  /*page2 2018*/
+  .content .page2 .page2_bg .page2_blessing_circle {
+    background: url(https://cdn.jsdelivr.net/gh/BitleTeng/html-js-css3@1.0/happy_year/img/p2_2016.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 6.5rem;
+    right: 0;
+    bottom: 0;
+    left: 0rem;
+    margin: 0 auto;
+    width: 1.5rem;
+    height: 0.6rem;
+  }
+  /*page3*/
+  .content #page3 {
+    position: absolute;
+    overflow: hidden;
+    width: 7.5rem;
+    height: 100%;
+    top: 100%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  /*page3 滑进*/
+  .content .fadeIn {
+    -webkit-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+  }
+  /*page3 背景*/
+  .content .page3 .page3_bg {
+    position: absolute;
+    background: url(https://cdn.jsdelivr.net/gh/BitleTeng/html-js-css3@1.0/happy_year/img/p3_bg.jpg) no-repeat;
+    background-size: 100%;
+    width: 7.5rem;
+    height: 100%;
+  }
+  /*page3 logo*/
+  .content .page3 .page3_bg .page3_logo {
+    background: url(https://cdn.jsdelivr.net/gh/BitleTeng/html-js-css3@1.0/happy_year/img/p3_logo.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 0.3rem;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 5.5rem;
+    height: 1.6rem;
+  }
+  /*page3 对联左边*/
+  .content .page3 .page3_bg .page3_couplet_second {
+    background: url(https://cdn.jsdelivr.net/gh/BitleTeng/html-js-css3@1.0/happy_year/img/p3_couplet_second.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 3.5rem;
+    width: 1.8rem;
+    height: 5.8rem;
+  }
+  /*page3 对联右边*/
+  .content .page3 .page3_bg .page3_couplet_first {
+    background-image: url(https://cdn.jsdelivr.net/gh/BitleTeng/html-js-css3@1.0/happy_year/img/p3_couplet_first.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 3.5rem;
+    right: 0rem;
+    width: 1.8rem;
+    height: 5.8rem;
+  }
+  /*page3 对联横联*/
+  .content .page3 .page3_bg .page3_title {
+    background-image: url(https://cdn.jsdelivr.net/gh/BitleTeng/html-js-css3@1.0/happy_year/img/p3_title.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 3.5rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 3.5rem;
+    height: 5.8rem;
+  }
+  /*page3 祝福语*/
+  .content .page3 .page3_bg .page3_blessing {
+    background: url(https://cdn.jsdelivr.net/gh/BitleTeng/html-js-css3@1.0/happy_year/img/p3_blessing.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 78%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 2rem;
+    height: 2rem;
+    -webkit-animation: p3_blessing_rotate 2.5s linear infinite;
+    animation: p3_blessing_rotate 2.5s linear infinite;
+  }
+  @-webkit-keyframes p3_blessing_rotate {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes p3_blessing_rotate {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

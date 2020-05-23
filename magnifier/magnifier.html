@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>放大镜</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .main {
+            position: relative;
+            height: 99%;
+            width: 99%;
+            cursor: move;
+        }
+
+        .main .photo {
+            position: absolute;
+            width: 800px;
+            height: 500px;
+            background-image: url(./1.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            top: 0px;
+            left: 0px;
+            border: 1px solid red;
+        }
+
+        .main .photo .rect {
+            position: absolute;
+            display: none;
+            width: 400px;
+            height: 250px;
+            background-color: chartreuse;
+            opacity: 0.8;
+            filter: opacity(80);
+            cursor: move;
+        }
+
+        .main .photo .cover {
+            width: 800px;
+            height: 500px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            opacity: 0;
+            filter: alpha(opacity=0);
+        }
+
+        .main .add {
+            position: relative;
+            width: 800px;
+            height: 500px;
+            border: 2px solid green;
+            top: 10%;
+            left: 50%;
+            overflow: hidden;
+            display: none;
+        }
+
+        .main .add .add_photo {
+            position: absolute;
+            width: 1600px;
+            height: 1000px;
+            border: 1px solid #ccc;
+            top: 0;
+            left: 0;
+            background-image: url(./2.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            display: none;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var photo = document.getElementsByClassName("photo")[0];
+            var cover = document.getElementsByClassName("cover")[0];
+            var rect = document.getElementsByClassName("rect")[0];
+            var add = document.getElementsByClassName("add")[0];
+            var add_photo = document.getElementsByClassName("add_photo")[0];
+            //获取可视高宽
+            var w = getComputedStyle(photo, null).width;
+            var h = getComputedStyle(photo, null).height;
+            var w2 = getComputedStyle(rect, null).width;
+            var h2 = getComputedStyle(rect, null).height;
+            var left = parseInt(w) - parseInt(w2);
+            var top = parseInt(h) - parseInt(h2);
+            cover.onmousemove = function (e) {
+                var ev = window.event || e;
+                //获取鼠标坐标
+                var x1 = ev.offsetX || ev.layerX;
+                var y1 = ev.offsetY || ev.layerY;
+                if (x1 > parseInt(w) - parseInt(w2) / 2) {
+                    x1 = parseInt(w) - parseInt(w2) / 2;
+                } else if (x1 < parseInt(w2) / 2) {
+                    x1 = parseInt(w2) / 2;
+                }
+                if (y1 > parseInt(h) - parseInt(h2) / 2) {
+                    y1 = parseInt(h) - parseInt(h2) / 2;
+                } else if (y1 < parseInt(h2) / 2) {
+                    y1 = parseInt(h2) / 2;
+                }
+                var x = x1 - parseInt(w2) / 2;
+                var y = y1 - parseInt(h2) / 2;
+                //改变rect的top和left
+                rect.style.top = y + "px";
+                rect.style.left = x + "px";
+                add_photo.style.top = -2 * y + "px";
+                add_photo.style.left = -2 * x + "px";
+                rect.style.display = "block";
+                add.style.display = "block";
+                add_photo.style.display = "block";
+                cover.onmouseleave = function () {
+                    rect.style.display = "none";
+                    add.style.display = "none";
+                    add_photo.style.display = "none";
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="photo">
+            <div class="rect"></div>
+            <div class="cover"></div>
+        </div>
+        <div class="add">
+            <div class="add_photo"></div>
+        </div>
+    </div>
+</body>
+
+</html>

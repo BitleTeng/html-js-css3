@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jQuery.development.3.3.1.js"></script>
+    <script src="js/index.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>中通快递</title>
+</head>
+
+<body>
+    <div class="msg_ad" style="display:none;">广告隐藏成功!</div>
+    <div class="notice">
+        <div>
+            <p>因国家邮政局的要求，寄件时请出示有效证件，谢谢配合！
+                <a href="#">点此快速实名登记~</a>
+            </p>
+        </div>
+        <span class="close">
+            <span></span>
+        </span>
+    </div>
+    <div class="page1">
+        <ul id="header">
+            <li class="ce1">国内港澳台</li>
+            <li class="">国际件</li>
+        </ul>
+        <div class="content1">
+            <div class="delivery">
+                <div class="delivery_one">
+                    <h3>
+                        <p>寄</p>
+                    </h3>
+                    <p class="write">填写寄件人信息
+                        <span></span>
+                    </p>
+                    <span>
+                        <span></span>
+                    </span>
+                </div>
+            </div>
+            <div class="collect">
+                <div class="collect_one">
+                    <h3>
+                        <p>收</p>
+                    </h3>
+                    <p>填写寄件人信息
+                        <span></span>
+                    </p>
+                    <span>
+                        <span></span>
+                    </span>
+                </div>
+                <div class="add">
+                    <span></span> 添加联系人</div>
+                <div class="msg">
+                    <p>对小哥说</p>
+                    <a href="jsvascript:void(0);" class="msg_show">我有悄悄话要说</a>
+                    <span></span>
+                </div>
+            </div>
+            <div class="goods">
+                <div class="goods_section_one">
+                    <div class="type">
+                        <p>物品类型</p>
+                        <a href="jsvascript:void(0);">请选择</a>
+                        <span></span>
+                    </div>
+                    <div class="weight">
+                        <p>预估重量(
+                            <span>KG</span>)</p>
+                        <div>
+                            <div class="reduce_weight">
+                                <p></p>
+                            </div>
+                            <a href="jsvascript:void(0);" class="weight_num">0</a>
+                            <div class="add_weight">
+                                <p></p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods_section_two">
+                    <div class="money">
+                        <p>代收金额(
+                            <span class="cell">元</span>)</p>
+                        <a href="jsvascript:void(0);">
+                            <span>0<span class="cell">元</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="num">
+                        <p>包裹件数(
+                            <span>件</span>)</p>
+                        <div>
+                            <div class="reduce_num">
+                                <p></p>
+                            </div>
+                            <a href="jsvascript:void(0);" class="num_num">0</a>
+                            <div class="add_num">
+                                <p></p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="rule">
+                    <span class="agree"></span>
+                    <p>我已同意并接受
+                        <a href="jsvascript:void(0);">《寄件承诺》</a>
+                    </p>
+                    <p>预约时间：8:00—17:00，逾时次日服务</p>
+                </div>
+                <div class="sub">
+                    <a href="javascript:void(0);" class="confirm">提交</a>
+                </div>
+            </div>
+        </div>
+        <div class="content2">
+            <div class="logo_bin">
+                <span></span>
+            </div>
+            <div class="country">
+                <p>为了满足您的不同需求，我们陆续开通了
+                    <br>
+                    <em>欧洲、俄罗斯、印度、美洲、澳洲、加拿大</em>
+                    <br>等国际快递专线业务</p>
+                <a href="javasript:void(0);">去发国际件</a>
+            </div>
+        </div>
+    </div>
+    <div class="page2">
+        <div class="back_head">
+            <a id="aaa"><span class="back"></span></a>
+            <p>编辑寄件人信息</p>
+        </div>
+        <div class="name_num">
+            <input type="text" maxlength="6" value="" name="" placeholder="姓名">
+            <input type="text" maxlength="11" value="" name="" placeholder="手机或0开头的固话">
+        </div>
+        <div class="identifying_code">
+            <input type="text" maxlength="6" placeholder="请输入手机验证码">
+            <p class="reduce_get">获取验证码</p>
+        </div>
+        <div class="place">
+            <div>
+                <input type="text" placeholder="请选择省-市-区">
+                <span></span>
+            </div>
+            <span></span>
+        </div>
+        <div class="address">
+            <input type="text" placeholder="详细地址">
+        </div>
+        <div class="smart_address">
+            <div>
+                <span></span>
+                <div>
+                    <p>智能地址填写</p>
+                    <p>复制一条地址信息到下方，系统自动识别</p>
+                </div>
+                <span class="receive" style="transform: rotate(180deg);"></span>
+            </div>
+            <div class="receive_page">
+                <textarea placeholder="例：张三，15312345688，湖北省武汉市汉江区新区123号"></textarea>
+                <span>清空内容</span>
+            </div>
+            <div class="receive_page">
+                <a>图片识别</a>
+                <a>智能解析</a>
+            </div>
+            <div>
+                <span class="save"></span>
+                <p>保存到常用地址</p>
+            </div>
+        </div>
+        <a class="confirm">确认</a>
+    </div>
+    <script>
+        //以下代码为删除嵌入广告
+        var del_times = 0, deTimer = null;
+        function adGo() {
+            var iframe = document.getElementsByTagName('iframe')[0];
+            if (iframe) {
+                console.log(iframe)
+                //循环 iframe 父类，直到找到body和body的下一级，然后整个嵌入的代码删除。
+                var bodyNode = { tagName: '' }, iframeParent, targetNode = iframe.parentNode;
+                while (bodyNode.tagName != 'BODY') {
+                    bodyNode = targetNode;
+                    if (bodyNode.tagName != 'BODY') {
+                        iframeParent = targetNode;
+                        targetNode = targetNode.parentNode;
+                    }
+                }
+                if (iframeParent) {
+                    //如果iframe有父类
+                    bodyNode.removeChild(iframeParent);
+                    msg_ad.style.display = "none";
+                }
+                else {
+                    bodyNode.removeChild(iframe);
+                    msg_ad.style.display = "none";
+                }
+            }
+            del_times++;
+            if (del_times > 10) window.clearInterval(deTimer)
+        }
+        deTimer = self.setInterval(adGo, 1000); //把这个1000, 调低一点，比如200
+        var stop = setInterval(function () {
+            var adgou = document.getElementById('trans-tooltip');
+            var scriptNext = document.getElementsByTagName("script")[2];
+            var adgou2 = scriptNext.nextElementSibling;
+            var adgou3 = document.getElementById('_embed_v3_frmc');
+            var msg_ad = document.getElementsByClassName("msg_ad")[0];
+            if (adgou3) {
+                adgou3.style.display = "none";
+                adgou3.style.zIndex = "0";
+                adgou.parentElement.style.display = "none";
+                adgou.parentElement.style.zIndex = "0";
+                msg_ad.style.display = "block";
+                var stop = setInterval(function () {
+                    msg_ad.style.display = "none";
+                    clearInterval(stop);
+                }, 3000);
+            }
+            if (adgou) {
+                adgou.parentElement.style.display = "none";
+                adgou.parentElement.style.zIndex = "0";
+                adgou.parentNode.removeChild(adgou);
+                msg_ad.style.display = "block";
+                var stop = setInterval(function () {
+                    msg_ad.style.display = "none";
+                    clearInterval(stop);
+                }, 3000);
+            }
+            if (adgou2) {
+                adgou2.parentNode.removeChild(adgou2);
+                msg_ad.style.display = "block";
+                var stop = setInterval(function () {
+                    msg_ad.style.display = "none";
+                    clearInterval(stop);
+                }, 3000);
+            }
+            clearInterval(stop);
+        }, 100);
+    </script>
+</body>
+
+</html>

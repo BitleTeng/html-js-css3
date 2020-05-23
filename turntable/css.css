@@ -1,0 +1,549 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+nav ul {
+    list-style:none;
+}
+a {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+input, select {
+    vertical-align:middle;
+}
+html{
+    height:100%;
+}
+body{
+    -webkit-overflow-scrolling: touch;
+    height:100%;
+    background: #2c1252;
+    position: relative;
+    width: 100%;
+}
+.flex{
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: nowrap
+}
+.turntable-logo{
+    width:100%;
+    height:4.18rem;
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-28-5243.png") center no-repeat;
+    background-size: contain;
+}
+.turntable-marquee{
+    position: absolute;
+    top:3.6rem;
+    left: 0;
+    width: 2.6rem;
+    height:0.7rem;
+    background: #df29f7;
+    -webkit-border-bottom-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    -webkit-border-top-right-radius: 0.4rem;
+    border-bottom-top-right-radius: 0.4rem;
+    overflow: hidden;
+    padding: 0.05rem 0;
+}
+.turntable-marquee-xz{
+    width:100%;
+    height:0.7rem;
+    overflow: hidden;
+}
+.turntable-marquee-content{
+    width:2.6rem;
+    height: 100%;
+    -webkit-border-bottom-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    -webkit-border-top-right-radius: 0.4rem;
+    border-bottom-top-right-radius: 0.4rem;
+    font-size: 0.24rem;
+    text-align: center;
+    float: left;
+    /*margin:0.04rem auto;*/
+}
+.turntable-marquee-outer{
+    width:100%;
+    position: relative;
+    left:0;
+}
+.turntable-marquee-people{
+    color: #ffffff;
+}
+.turntable-marquee-people span{
+    color: #00faff;
+}
+.turntable-marquee-prize{
+    width: 95%;
+    color: #fff000;
+}
+.turntable-my-prizes{
+    position: absolute;
+    top:2.7rem;
+    right:0;
+    width:0.8rem;
+    height:0.8rem;
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-28-3314.png") center no-repeat;
+    background-size: contain;
+}
+.turntable-rules{
+    position: absolute;
+    top:3.7rem;
+    right:0;
+    width:0.8rem;
+    height:0.8rem;
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-28-1338.png") center no-repeat;
+    background-size: contain;
+}
+.turntable-content{
+    margin:1rem auto;
+    width:5.86rem;
+    height:4.34rem;
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-28-4246.png") center no-repeat;
+    background-size: contain;
+    padding: 1.48rem 0.52rem 0.52rem;
+}
+.turntable-game{
+    width:100%;
+    height: 100%;
+    flex-flow:wrap;
+    -webkit-flex-flow: wrap;
+}
+.turntable-game-modlue{
+    width:1.9rem;
+    height:1.4rem;
+    margin-right: 0.08rem;
+    margin-bottom: 0.06rem;
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-28-9210.png") center no-repeat;
+    background-size: contain;
+    color: #8f4000;
+}
+.turntable-game-modlue:nth-child(3n){
+    margin-right: 0;
+}
+.turntable-game-modlue:nth-child(7){
+    margin-bottom: 0;
+}
+.turntable-game-modlue:nth-child(8){
+    margin-bottom: 0;
+}
+.turntable-game-modlue:nth-child(9){
+    margin-bottom: 0;
+}
+.turntable-game-prize{
+    width:0.8rem;
+    height:0.8rem;
+    margin: 0.15rem auto 0;
+}
+.turntable-game-moblie{
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-28-3780.png") center no-repeat;
+    background-size: contain;
+}
+.turntable-game-gold8888{
+     background: url("https://tools.dianliaoapp.com/test/test-2018-11-28-8511.png") center no-repeat;
+     background-size: contain;
+ }
+.turntable-game-gold8{
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-28-5485.png") center no-repeat;
+    background-size: contain;
+}
+.turntable-game-txk{
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-28-6485.png") center no-repeat;
+    background-size: contain;
+}
+.turntable-game-prize-name{
+    font-size: 0.2rem;
+    text-align: center;
+}
+.turntable-game-begain{
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-28-4127.png") center no-repeat;
+    background-size: contain;
+}
+.turntable-game-gold88{
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-28-5418.png") center no-repeat;
+    background-size: contain;
+}
+.turntable-game-noprize{
+    text-align: center;
+    line-height: 1.4rem;
+    font-size: 0.3rem;
+    color: #8f4000;
+}
+.active{
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-28-3862.png") center no-repeat;
+    background-size: contain;
+    color: #ffffff;
+}
+.turntable-win-bg{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.7);
+    display: none;
+}
+.turntable-win-part{
+    width:6rem;
+    height:6.72rem;
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-28-8865.png") center no-repeat;
+    background-size: contain;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+.turntable-win-prize-box{
+    width:1.82rem;
+    height:1.98rem;
+    margin:2rem auto 0.5rem;
+    position: relative;
+}
+.turntable-win-prize{
+    width:0;
+    height:0;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/*8888*/
+.win-prize0{
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-28-4089.png") center no-repeat;
+    background-size: contain;
+}
+/*8*/
+.win-prize1{
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-28-8133.png") center no-repeat;
+    background-size: contain;
+}
+/*168*/
+.win-prize2{
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-28-8853.png") center no-repeat;
+    background-size: contain;
+}
+/*168*/
+/*.win-prize3{*/
+    /*background: url("https://tools.dianliaoapp.com/test/test-2018-11-28-8853.png") center no-repeat;*/
+    /*background-size: contain;*/
+/*}*/
+/*88*/
+.win-prize4{
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-28-4089.png") center no-repeat;
+    background-size: contain;
+}
+/*图像*/
+.win-prize5{
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-28-8853.png") center no-repeat;
+    background-size: contain;
+}
+/*8*/
+.win-prize6{
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-29-9365.png") center no-repeat;
+    background-size: contain;
+}
+/*手机*/
+.win-prize7{
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-28-2148.png") center no-repeat;
+    background-size: contain;
+}
+.turntable-win-prize-name{
+    text-align: center;
+    font-size: 0.3rem;
+    color: #ffffff;
+}
+.turntable-win-prize-btn{
+    width: 2.4rem;
+    height:1rem;
+    margin:0.4rem auto 0;
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-28-2294.png") center no-repeat;
+    background-size: contain;
+}
+
+.turntable-fail-part{
+    width:6rem;
+    height:5.36rem;
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-28-5782.png") center no-repeat;
+    background-size: contain;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+.turntable-fail-btn{
+    width: 2.4rem;
+    height:1rem;
+    margin:3.8rem auto 0;
+}
+.turntable-my-prize-mask{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.7);
+    display: none;
+}
+.turntable-my-prize{
+    width:6rem;
+    height:8.54rem;
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-28-3673.png") center no-repeat;
+    background-size: contain;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+.turntable-my-prize-content{
+    width:5.2rem;
+    height:6.4rem;
+    overflow-y: auto;
+    margin: 1.54rem auto 0;
+}
+.turntable-my-prize-mian{
+    height: auto;
+}
+.turntable-my-prize-list{
+    height:1.1rem;
+    background: #540065;
+    border:0.01rem solid #f278ff;
+    border-radius: 0.2rem;
+    padding: 0.15rem 0 0.15rem 0.4rem;
+    position: relative;
+    margin-bottom: 0.2rem;
+}
+.turntable-my-prize-img{
+    width:1.1rem;
+    height:1.1rem;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+.turntable-my-prize-tp1{
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-28-5589.png") center no-repeat;
+    background-size: contain;
+}
+.turntable-my-prize-tp2{
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-28-4804.png") center no-repeat;
+    background-size: contain;
+}
+.turntable-my-prize-tp3{
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-28-9185.png") center no-repeat;
+    background-size: contain;
+}
+.turntable-my-prize-tp4{
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-28-9298.png") center no-repeat;
+    background-size: contain;
+}
+.turntable-my-prize-list span{
+    width:1.4rem;
+    display: block;
+    text-align: center;
+    position: absolute;
+    font-size: 0.2rem;
+    bottom: 0.15rem;
+    left:0.32rem;
+    color: #ffffff;
+}
+.turntable-my-prize-img img{
+    width:100%;
+    height:100%;
+}
+.turntable-my-prize-ifo{
+    margin-left: 1rem;
+}
+.turntable-my-prize-time{
+    font-size: 0.24rem;
+    color: #ffffff;
+}
+.turntable-my-prize-btn{
+    width:2rem;
+    height:0.5rem;
+    margin:0.2rem auto 0;
+}
+.my-prize-btn1{
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-29-3470.png") center no-repeat;
+    background-size: contain;
+}
+.my-prize-btn2{
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-29-2619.png") center no-repeat;
+    background-size: contain;
+}
+.my-prize-btn3{
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-29-4607.png") center no-repeat;
+    background-size: contain;
+}
+.my-prize-btn4{
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-30-7267.png") center no-repeat;
+    background-size: contain;
+}
+.my-prize-btn5{
+    background: url("https://tools.dianliaoapp.com/test/test-2018-12-04-6734.png") center no-repeat;
+    background-size: contain;
+}
+.close-my-prize-mask{
+    position: absolute;
+    top:0.75rem;
+    right:0.2rem;
+    width:0.5rem;
+    height:0.5rem;
+}
+.turntable-rule-bg{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.7);
+    display: none;
+}
+.turntable-rule-content{
+    width:6rem;
+    height:7.22rem;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    -webkit-transform:translate(-50%, -50%);
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-29-9177.png") center no-repeat;
+    background-size: contain;
+}
+.turntable-rule-close{
+    width:0.5rem;
+    height:0.5rem;
+    position: absolute;
+    top:0.75rem;
+    right:0.2rem;
+}
+
+
+
+.turntable-get-change{
+    width:6.9rem;
+    height: auto;
+    border:0.04rem solid #f278ff;
+    border-radius: 0.2rem;
+    position: relative;
+    margin:0 auto;
+}
+.turntable-changes{
+    width:4.4rem;
+    height: 0.8rem;
+    background: #9c14b8;
+    border-radius: 0.4rem;
+    text-align: center;
+    line-height: 0.8rem;
+    font-size: 0.3rem;
+    color: #ffffff;
+    position: absolute;
+    top:-0.4rem;
+    left: 1.25rem;
+}
+.turntable-changes span{
+    color: #fff000;
+}
+.turntable-changes-title{
+    width:5rem;
+    height: 0.64rem;
+    margin:0.9rem auto 0.5rem;
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-28-7814.png") center no-repeat;
+    background-size: contain;
+}
+.turntable-get-changes-list{
+    width:5.8rem;
+    height: 1rem;
+    background: #540065;
+    border:0.01rem solid #f278ff;
+    border-radius: 0.2rem;
+    margin: 0.2rem auto 0;
+    padding: 0.5rem 0.4rem;
+    position: relative;
+}
+.turntable-get-changes-ifo{
+    height:1rem;
+    width:2.8rem;
+    position: relative;
+    font-size: 0.3rem;
+    color: #ffffff;
+    line-height: 1rem;
+}
+.turntable-get-changes-icon{
+    width:1.72rem;
+    height:0.44rem;
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-28-8851.png") center no-repeat;
+    background-size: contain;
+    position: absolute;
+    right:0;
+    top:-0.2rem;
+}
+.turntable-do-things{
+    position: absolute;
+    top:0.5rem;
+    right:0.4rem;
+    width:2.4rem;
+    height: 1rem;
+}
+.turntable-you-Invitation{
+    font-size: 0.2rem;
+    color:#fff000;
+}
+.turntable-get-changes-ifo span{
+    width:100%;
+    display: block;
+    text-align: center;
+}
+.turntable-invitation{
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-28-7715.png") center no-repeat;
+    background-size: contain;
+}
+.turntable-zd{
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-28-5810.png") center no-repeat;
+    background-size: contain;
+}
+.turntable-give-gift{
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-28-2744.png") center no-repeat;
+    background-size: contain;
+}
+.turntable-logined{
+    background: url("https://tools.dianliaoapp.com/test/test-2018-11-28-3831.png") center no-repeat;
+    background-size: contain;
+}
+.turntable-login{
+    background: url("https://tools.dianliaoapp.com/test/test-2018-12-05-2428.png") center no-repeat;
+    background-size: contain;
+}

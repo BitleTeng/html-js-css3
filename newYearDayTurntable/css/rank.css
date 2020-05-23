@@ -1,0 +1,197 @@
+/* 设置统一的样式字体，点击不能出现阴影的效果 */
+html, body, .main{
+    width: 100%; height: 100%;
+    -webkit-touch-callout: none; 
+	-webkit-text-size-adjust: none; 
+	-webkit-highlight: none; 
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    font-size: 16px; font-family: '微软雅黑';
+    background-color: #ff4a75;
+}
+ul, li{
+    list-style: none; padding: 0; margin: 0;
+}
+.main .head{
+    width: 7.5rem; 
+    height: 4.6rem;
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-12-26-4519.png);
+    background-size: 7.5rem 4.6rem;
+    position: relative;
+}
+.main .head .tab{
+    width: 6.9rem;
+    height: 1.1rem;
+    position: absolute;
+    left: 0.3rem;
+    bottom: 0;
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-12-26-7310.png);
+    background-size: 6.9rem 1.1rem;
+}
+.main .head .tab.active{
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-12-26-6850.png);
+}
+.main .head .tab span{
+    width: 3.45rem;
+    height: 1.1rem;
+    float: left;
+}
+.main .wrapperEgg{
+    display: none;
+}
+.main .wrapperNewYear{
+    display: block;
+}
+.main .wrapper{
+    width: 6.9rem;
+    border: 0.03rem solid #fff000;
+    border-bottom-left-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+    border-top: none;
+    margin-left: 0.3rem;
+    height: auto;
+    box-sizing: border-box;
+}
+.main .wrapper .list{
+    width: 6.9rem;
+    padding-bottom: 0.3rem;
+}
+.main .wrapper .list .one{
+    width: 6.84rem;
+    height: 3.24rem;
+    position: relative;
+}
+.main .wrapper .list .one>img:nth-of-type(1){
+    width: 1.12rem;
+    height: 0.64rem;
+    position: absolute;
+    left: 2.86rem;
+    top: 0;
+    z-index: 12;
+}
+.main .wrapper .list .one>img:nth-of-type(2){
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 2.62rem;
+    top: 0.5rem;
+    z-index: 10;
+}
+.main .wrapper .list .one p{
+    width: 6.84rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    text-align: center;
+    font-family: '微软雅黑';
+    font-size: 0.3rem;
+    color: #fff000;
+    position: absolute;
+    left: 0;
+    top: 2.2rem;
+}
+.main .wrapper .list .one div{
+    width: 6.84rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    text-align: center;
+    font-family: '微软雅黑';
+    font-size: 0.3rem;
+    color: #fff000;
+    position: absolute;
+    left: 0;
+    top: 2.7rem;
+}
+/* 第一个和第二个的礼物不一样的 */
+.main .wrapperEgg .list .one div>img{
+    width: 0.5rem;
+    height: 0.44rem;
+    position: absolute;
+    left: 2.6rem;
+    top: 0;
+}
+.main .wrapperNewYear .list .one div>img{
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    left: 2.6rem;
+    top: 0;
+}
+.main .wrapper .list .one div span{
+    height: 0.5rem;
+    line-height: 0.5rem;
+    position: absolute;
+    left: 3.2rem;
+    top: 0;
+}
+.main .wrapper .list li{
+    width: 6.84rem;
+    height: 1rem;
+    margin-top: 0.3rem;
+    position: relative;
+    font-family: '微软雅黑';
+    font-size: 0.26rem;
+    color: #fff;
+}
+.main .wrapper .list li span:nth-of-type(1){
+    width: 0.8rem;
+    height: 1rem;
+    text-align: center;
+    line-height: 1rem;
+    float: left;
+}
+.main .wrapper .list li img:nth-of-type(1){
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    float: left;
+}
+.main .wrapper .list li p{
+    width: 3rem;
+    height: 1rem;
+    text-align: left;
+    line-height: 1rem;
+    padding-left: 0.2rem;
+    font-family: '微软雅黑';
+    font-size: 0.26rem;
+    color: #fff;
+    float: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/* 第一个和第二个的礼物不一样的 */
+.main .wrapperEgg .list li img:nth-of-type(2){
+    width: 0.5rem;
+    height: 0.44rem;
+    position: absolute;
+    right: 1rem;
+    top: 0.28rem;
+}
+.main .wrapperNewYear .list li img:nth-of-type(2){
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    right: 1rem;
+    top: 0.25rem;
+}
+.main .wrapper .list li span:nth-of-type(2){
+    width: 0.9rem;
+    height: 1rem;
+    text-align: left;
+    line-height: 1rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.main .wrapper .getMore{
+    width: 0.6rem;
+    height: 0.6rem;
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-12-26-7457.png);
+    background-size: 0.6rem 0.6rem;
+    margin-left: 3.12rem;
+}
+
+
+
+
+

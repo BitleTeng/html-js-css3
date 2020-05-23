@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../common/js/base.js"></script>
+    <script>
+        var uid = config.callAppGetUserInfo().uid;
+        if(uid>1000000000) {
+            location.href = '404.html';
+        } else {
+
+        }
+    </script>
+    <link rel="stylesheet" href="../common/css/reset.css">
+    <link rel="stylesheet" href="index.css">
+    <title>砸蛋大作战</title>
+</head>
+<body>
+    <!-- 直接开始请求图片 -->
+    <img src="https://tools.dianliaoapp.com/test/test-2018-08-24-6874.png" style="display: none;">
+    <img src="https://tools.dianliaoapp.com/test/test-2018-08-24-1864.png" style="display: none;">
+    <img src="https://tools.dianliaoapp.com/test/test-2018-08-24-6367.png" style="display: none;">
+    <img src="https://tools.dianliaoapp.com/test/test-2018-08-24-6169.png" style="display: none;">
+    <img src="https://tools.dianliaoapp.com/test/test-2018-08-24-3398.png" style="display: none;">
+    <img src="https://tools.dianliaoapp.com/test/test-2018-08-24-9276.png" style="display: none;">
+    <img src='https://tools.dianliaoapp.com/test/test-2018-12-11-2067.gif' style="display: none;">
+    <img src='https://tools.dianliaoapp.com/test/test-2018-12-12-2660.gif' style="display: none;">
+
+    <img src="https://tools.dianliaoapp.com/test/test-2018-12-05-1465.png" class="bgimg">
+    <div class="main">
+        <!---中奖记录-->
+        <div class="record">
+            <div class="record-title"></div>
+            <div id="dingwrap">
+                <ul id="list1">
+                    <!-- <li><span>在砸金蛋中获得</span><span>获得</span><span>----豆币</span></li>
+                    <li><span>在砸金蛋中获得</span><span>获得</span><span>----豆币</span></li>
+                    <li><span>在砸金蛋中获得</span><span>获得</span><span>----豆币</span></li>
+                    <li><span>在砸金蛋中获得</span><span>获得</span><span>----豆币</span></li> -->
+                </ul>
+            </div>
+            <div id="lunbowrap">
+                <ul id="list2">
+                    <!-- <li><span>在砸金蛋中获得</span><span>获得</span><span>----豆币</span></li>
+                    <li><span>在砸金蛋中获得</span><span>获得</span><span>----豆币</span></li>
+                    <li><span>在砸金蛋中获得</span><span>获得</span><span>----豆币</span></li>
+                    <li><span>在砸金蛋中获得</span><span>获得</span><span>----豆币</span></li>
+                    <li><span>在砸金蛋中获得</span><span>获得</span><span>----豆币</span></li>
+                    <li><span>在砸金蛋中获得</span><span>获得</span><span>----豆币</span></li>
+                    <li><span>在砸金蛋中获得</span><span>获得</span><span>----豆币</span></li>
+                    <li><span>在砸金蛋中获得</span><span>获得</span><span>----豆币</span></li>
+                    <li><span>在砸金蛋中获得</span><span>获得</span><span>----豆币</span></li>
+                    <li><span>在砸金蛋中获得</span><span>获得</span><span>----豆币</span></li>
+                    <li><span>在砸金蛋中获得</span><span>获得</span><span>----豆币</span></li>
+                    <li><span>在砸金蛋中获得</span><span>获得</span><span>----豆币</span></li> -->
+                </ul>
+            </div>
+        </div>
+        <!---中奖记录-->
+        <!---砸蛋-->
+        <div class="gold-smash-part">
+            <div class="gold-smash-title"></div>
+            <div class="gold-smash-pop flex">
+                <div class="gold-smash-pop-list1">
+                    <div class="gold-smash-pop-image"><div class="hunt-image"><img src=""></div><i class="gold-numb-one"></i></div>
+                    <div class="gold-smash-name"></div>
+                    <div class="gold-smash-nums-part"><i></i><span></span></div>
+                </div>
+                <div class="gold-smash-pop-list2">
+                    <div class="gold-smash-pop-image"><div class="hunt-image"><img src=""></div><i class="gold-numb-one"></i></div>
+                    <div class="gold-smash-name"></div>
+                    <div class="gold-smash-nums-part"><i></i><span></span></div>
+                </div>
+                <div class="gold-smash-pop-list3">
+                    <div class="gold-smash-pop-image"><div class="hunt-image"><img src=""></div><i class="gold-numb-one"></i></div>
+                    <div class="gold-smash-name"></div>
+                    <div class="gold-smash-nums-part"><i></i><span></span></div>
+                </div>
+            </div>
+            <!--金蛋-->
+            <div class="goldeggcontent">
+                <div class="goldegg-content">
+                    <div class="goldegg" id="goldEgg">
+                        <img src="https://tools.dianliaoapp.com/test/test-2018-12-11-3968.png" class="goldimg">
+                        <div class="goldegg-mounts"></div>
+                    </div>
+                    <div class="mounts1 goldpat eggMounts"></div>
+                    <!--值-->
+                    <div class="numerica1 goldpat">-100</div>
+                    <div class="numerica2 goldpat">-50</div>
+                    <div class="numerica3 goldpat">-10</div>
+                    <!--值-->
+                    <!--我的排名-->
+                    <div class="my-ranking">
+                        <div class="ranking-tl">我的排名: <span>99+</span></div>
+                        <div class="ranking-my-mounts"><i></i><span>0</span></div>
+                    </div>
+                    <!--我的排名-->
+                    <!--规则-->
+                    <div class="rule">活动<br />规则</div>
+                    <!--规则-->
+                </div>
+                <!--金蛋-->
+                <div class="lifevalue">
+                    <span id="totalvalue1"></span>
+                </div>
+                <div class="lifevalue-message">伤害排名前3，每次砸蛋有机会获得额外奖励</div>
+                <div class="lifevalue-message">金蛋生命值消耗空时，将召唤超级蛋</div>
+            </div>
+            <!--超级蛋-->
+            <div class="goldereggcontent" style="display:none">
+                <div class="goldegg-content">
+                    <div class="goldegger" id="superEgg">
+                        <img src="https://tools.dianliaoapp.com/test/test-2018-12-11-1776.png" class="move">
+                        <div class="goldergg-mounts">
+                            <div style="position:relative;height: 100%;">
+                                <div id="super-times" class="seep"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mounts uspergoldpat mountMove"></div>
+
+                    <div class="numerica1 uspergoldpat">-100</div>
+                    <div class="numerica2 uspergoldpat">-50</div>
+                    <div class="numerica3 uspergoldpat">-10</div>
+
+
+                    <div class="my-ranking">
+                        <div class="ranking-tl">我的排名: <span>99+</span></div>
+                        <div class="ranking-my-mounts"><i></i><span>9999</span></div>
+                    </div>
+
+                    <div class="rule">活动<br />规则</div>
+
+                </div>
+
+                <div class="lifevalue">
+                    <span id="totalvalue2"></span>
+                </div>
+                <div class="lifevalue-message">打败超级蛋-根据伤害排名瓜分<span>100000豆币</span></div>
+                <div class="lifevalue-message">未打败超级蛋-根据生命值瓜分部分豆币</div>
+            </div>
+            <!--超级蛋-->
+        </div>
+        <!---砸蛋-->
+    </div>
+    <div class="bottom">
+        <div class="play">
+            <div class="one"></div>
+            <div class="ten"></div>
+            <div class="hundred"></div>
+        </div>
+        <div class="all-stronger flex">
+            <div class="strongers mymounts flex">
+                <i></i><span>0</span>
+                <div class="get-mounts-btn getHarm" id="getHarm">获得</div>
+            </div>
+            <div class="strongers mymoney flex">
+                <i></i><span>0</span>
+                <div class="get-mounts-btn goBuyMoney">充值</div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-super" style="display:none">
+        <div class="bottom-super-bg"></div>
+        <div class="all-stronger-super flex">
+            <div class="strongers mymounts flex">
+                <i></i><span>0</span>
+                <div class="get-mounts-btn getHarm">获得</div>
+            </div>
+            <div class="strongers mymoney flex">
+                <i></i><span>0</span>
+                <div class="get-mounts-btn goBuyMoney">充值</div>
+            </div>
+            <div class="super-gold-play"></div>
+            <div class="super-gold-play-times"></div>
+        </div>
+    </div>
+    <!--奖励弹窗-->
+    <div class="prize-mask" style="display:none">
+        <div class="prize-mask-content tanchuscale">
+            <div class="prize-mask-img"></div>
+            <div class="prize-mask-main">
+                <ul class="prize-list" id="nomalList">
+                    <!-- <li>
+                        <div class="myprize-bg">
+                            <div class="myprize-money">10</div>
+                            豆币
+                        </div>
+                        <div class="myprize-num">X66</div>
+                    </li> -->
+                </ul>
+                <div id="othersContent" style="display:none">
+                    <div class="myprize-other-part flex">
+                        <div class="dividing-line"></div>
+                        额外奖励
+                        <div class="dividing-line"></div>
+                    </div>
+                    <ul class="flex prize-list" id="otherPrizeList">
+                        <!-- <li>
+                            <div class="myprize-bg">
+                                <div class="myprize-money">10</div>
+                                豆币
+                            </div>
+                            <div class="myprize-num">X66</div>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="order-myprize">确定 (3s)</div>
+            </div>
+        </div>
+    </div>
+    <!-- 锤子的购买 -->
+    <div class="buyActivity">
+        <div class="buyActivityBg">
+            <div class="box tanchuscale">
+                <div class="close"></div>
+                <ul>
+                    <li title="10" class="li ten active"></li>
+                    <li title="50" class="li fifty two"></li>
+                    <li title="100" class="li hundred"></li>
+                </ul>
+                <p class="num">剩余锤子数：<span>-</span></p>
+                <div title="10" class="buyBtn"></div>
+            </div>
+        </div>
+    </div>
+    <!--超级蛋奖励弹窗-->
+    <div class="super-prize-mask">
+        <div class="super-mask-part">
+            <div class="super-prize-mask-bg tanchuscale">
+                <div class="super-prize-mask-flag"></div>
+                <div class="super-prize-content">获得<div class="super-prize-num">0</div></div>
+                <div class="super-prize-msg">下场超级蛋王马上到来，请提前做出准备！</div>
+                <div class="super-prize-mask-btn">确定 (3s)</div>
+            </div>
+        </div>
+    </div>
+    <!-- 规则弹窗 -->
+    <div class="ruleActivity">
+        <div class="ruleActivityBg">
+            <div class="box tanchuscale">
+                <!-- <div class="close"></div> -->
+            </div>
+        </div>
+    </div>
+    <script src="../common/js/jquery-2.1.4.min.js"></script>
+    <script src="marquee.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css.css">
+    <title>零元抽奖</title>
+</head>
+<body>
+    <div class="turntable-logo"></div>
+    <!--左侧跑马灯-->
+    <div class="turntable-marquee">
+        <div class="turntable-marquee-xz">
+            <div class="turntable-marquee-outer">
+                <!--<div class="turntable-marquee-content">-->
+                    <!--<div class="turntable-marquee-people"><span>我是小姐姐</span>抽中了</div>-->
+                    <!--<div class="turntable-marquee-prize">8888金币</div>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+    <!--左侧跑马灯-->
+    <!--右侧的我的奖品和活动规则-->
+    <div class="turntable-my-prizes"></div>
+    <div class="turntable-rules"></div>
+    <!--右侧的我的奖品和活动规则-->
+    <!--转盘-->
+    <div class="turntable-content">
+        <div class="turntable-game flex" id="lottery">
+            <div class="turntable-game-modlue lottery-unit-7">
+                <div class="turntable-game-prize turntable-game-moblie"></div>
+                <div class="turntable-game-prize-name">iPhone XS</div>
+            </div>
+            <div class="turntable-game-modlue lottery-unit-0 active">
+                <div class="turntable-game-prize turntable-game-gold8888"></div>
+                <div class="turntable-game-prize-name">8888豆币</div>
+            </div>
+            <div class="turntable-game-modlue lottery-unit-1">
+                <div class="turntable-game-prize turntable-game-gold8"></div>
+                <div class="turntable-game-prize-name">8豆币</div>
+            </div>
+            <div class="turntable-game-modlue lottery-unit-6">
+                <div class="turntable-game-prize turntable-game-txk"></div>
+                <div class="turntable-game-prize-name">头像框</div>
+            </div>
+            <!--点击开始-->
+            <div class="turntable-game-modlue turntable-game-begain"></div>
+            <!--点击开始-->
+            <div class="turntable-game-modlue lottery-unit-2">
+                <div class="turntable-game-prize turntable-game-gold88"></div>
+                <div class="turntable-game-prize-name">88豆币</div>
+            </div>
+            <div class="turntable-game-modlue lottery-unit-5">
+                <div class="turntable-game-prize turntable-game-gold88"></div>
+                <div class="turntable-game-prize-name">168豆币</div>
+            </div>
+            <div class="turntable-game-modlue lottery-unit-4">
+                <div class="turntable-game-prize turntable-game-gold8888"></div>
+                <div class="turntable-game-prize-name">888豆币</div>
+            </div>
+            <div class="turntable-game-modlue turntable-game-noprize lottery-unit-3">再接再厉</div>
+        </div>
+    </div>
+    <!--转盘-->
+    <!--获取抽奖方法-->
+    <div class="turntable-get-change">
+        <div class="turntable-changes">您目前还有<span>0次</span>抽奖机会</div>
+        <div class="turntable-changes-title"></div>
+        <div class="turntable-get-changes-list">
+            <div class="turntable-get-changes-ifo">每日登陆</div>
+            <div class="turntable-do-things turntable-islogin turntable-logined"></div>
+        </div>
+        <div class="turntable-get-changes-list">
+            <div class="turntable-get-changes-ifo">每邀请一位好友注册
+                <div class="turntable-get-changes-icon"></div>
+            </div>
+            <div class="turntable-you-Invitation">已邀请0个好友</div>
+            <div class="turntable-do-things turntable-invitation"></div>
+        </div>
+        <!-- <div class="turntable-get-changes-list">
+            <div class="turntable-get-changes-ifo">单日砸金蛋次数≥2次
+                <div class="turntable-get-changes-icon"></div>
+            </div>
+            <div class="turntable-do-things turntable-zd"></div>
+        </div> -->
+        <div class="turntable-get-changes-list" style="margin-bottom: 0.8rem">
+            <div class="turntable-get-changes-ifo" style="line-height: 0.4rem;padding-top: 0.3rem">单日累计赠送礼物≥<br /><span>200豆币</span>
+                <div class="turntable-get-changes-icon"></div>
+            </div>
+            <div class="turntable-do-things turntable-give-gift"></div>
+        </div>
+    
+    </div>
+    <!--获取抽奖方法-->
+    <!--中奖-->
+    <div class="turntable-win-bg">
+        <div class="turntable-win-part">
+            <div class="turntable-win-prize-box">
+                <div class="turntable-win-prize win-prize5 win-proops"></div>
+            </div>
+            <div class="turntable-win-prize-name">8888豆币</div>
+            <div class="turntable-win-prize-btn mask-btns"></div>
+        </div>
+        <div class="turntable-fail-part" style="display: none;">
+            <div class="turntable-fail-btn mask-btns"></div>
+        </div>
+    </div>
+    <!--中奖-->
+    <div class="turntable-my-prize-mask">
+        <div class="turntable-my-prize">
+            <div class="close-my-prize-mask"></div>
+            <div class="turntable-my-prize-content">
+                <div class="turntable-my-prize-mian">
+                    <!--<div class="turntable-my-prize-list flex">-->
+                        <!--<div class="turntable-my-prize-img turntable-my-prize-tp1"></div>-->
+                        <!--<span>8888金币</span>-->
+                        <!--<div class="turntable-my-prize-ifo">-->
+                            <!--<div class="turntable-my-prize-time">12月1日-12月7日</div>-->
+                            <!--<div class="turntable-my-prize-btn my-prize-btn1 user-prop prop-check"></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--活动规则-->
+    <div class="turntable-rule-bg">
+        <div class="turntable-rule-content">
+            <div class="turntable-rule-close"></div>
+        </div>
+    </div>
+    <!--活动规则-->
+<script src="../common/js/base.js"></script>
+<script src="../common/js/openAppContent.js"></script>
+<script src="../common/js/common.js" type="text/javascript" charset="utf-8"></script>
+<script src="../common/js/jquery-2.1.4.min.js"></script>
+<script src="index.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

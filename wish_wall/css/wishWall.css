@@ -1,0 +1,78 @@
+html,body{width: 100%;background: url(../img/bg_main.jpg);font-size:100%;overflow: hidden;}
+*{margin:0;padding:0;}
+img{border:none;}
+a{text-decoration: none;}
+/*头部背景,许愿按钮*/
+#top{background: url(../img/top.jpg) no-repeat;height:81px;width:450px;display: block;padding-top:53px;padding-left:555px;position: absolute;top:0;left:}
+.send{background: url(../img/send.png) no-repeat;width:120px;height:65px;display: block;cursor:pointer;}
+/*张贴许愿墙总布局*/
+.main{position:absolute;width:100%;height:100%;top:135px;}
+/*a1便笺图片导入*/
+.a1 dt{background: url(../img/a1_1.gif);}
+.a1 .content{background: url(../img/a1_2.gif) repeat-y -2.5px;}
+.a1 .bottom{background: url(../img/a1_3.gif);}
+/*a2便笺图片导入*/
+.a2 dt{background: url(../img/a2_1.gif);}
+.a2 .content{background: url(../img/a2_2.gif) repeat-y -2.5px;}
+.a2 .bottom{background: url(../img/a2_3.gif);}
+/*a3便笺图片导入*/
+.a3 dt{background: url(../img/a3_1.gif);}
+.a3 .content{background: url(../img/a3_2.gif) repeat-y -2.5px;}
+.a3 .bottom{background: url(../img/a3_3.gif);}
+/*a4便笺图片导入*/
+.a4 dt{background: url(../img/a4_1.gif);}
+.a4 .content{background: url(../img/a4_2.gif) repeat-y -2.5px;}
+.a4 .bottom{background: url(../img/a4_3.gif);}
+/*a5便笺图片导入*/
+.a5 dt{background: url(../img/a5_1.gif);}
+.a5 .content{background: url(../img/a5_2.gif) repeat-y -2.5px;}
+.a5 .bottom{background: url(../img/a5_3.gif);}
+/*便笺总样式*/
+.germination{position:absolute;top:0;left:0;opacity:1;}
+.germination dt{cursor:move;width:220px;height: 18px;padding-top:50px;padding-left:15px;}
+.germination dt .username{font-size:13px;float:left;color:#3875D7;padding-left:5px;}
+.germination dt .num{font-size:12px;float:right;color:#81C01A;padding-right:10px;}
+.germination .content{width:205px;height:auto;font-size: 12px;line-height:18px;overflow:hidden;padding:5px 5px 5px 25px;word-break:break-all;word-wrap:normal;color:#666;position: relative;top: 0px;}
+.germination .bottom{width:205px;height:40px;padding:32px 5px 0 25px;}
+.germination .bottom .time{font-size: 12px;float:left;color:#999999;display:block;}
+.germination .bottom .close{background: url(../img/close.png) no-repeat;display: block;width:29px;height:24px;float:right;cursor:pointer;}
+/*许愿部分*/
+#wish{position: absolute;width:361px; height:400px;top:-70%;left:38%;z-index:999;box-shadow:1px 1px 5px 1px #000;overflow:hidden;border-radius:3px;background-color:#fff;opacity:0.8;
+	-webkit-user-select:none;
+	-webkit-animation: none;
+			animation: none;
+}
+@keyframes fadeIn{
+	0%{opacity:0.2;transform:translateY(0%);}
+	89%{opacity:1;}
+	90%{transform:translateY(155%);}
+	95%{transform:translateY(140%);}
+	97%{transform:translateY(150%);}
+	98%{transform:translateY(140%);}
+	100%{transform:translateY(150%);}
+}
+@-webkit-keyframes fadeIn{
+	0%{opacity:0.2;transform:translateY(0%);}
+	89%{opacity:1;}
+	90%{transform:translateY(155%);}
+	95%{transform:translateY(140%);}
+	97%{transform:translateY(150%);}
+	98%{transform:translateY(140%);}
+	100%{transform:translateY(150%);}
+}
+@keyframes fadeOut{
+	0%{opacity:0.5;transform:translateY(150%);}
+	100%{opacity:0.1;transform:translateY(-150%);}
+}
+@-webkit-keyframes fadeOut{
+	0%{opacity:0.8;transform:translateY(0%);}
+	100%{opacity:0.1;transform:translateY(-70%);}
+}
+#wish .wish_top{position: absolute;background-image:url(../img/send-title.png);background-repeat:no-repeat;background-size:100%;width:100%;height:21%;top:-52px;left:0;border-radius:3px;}
+#wish .wish_content{padding-left:4.5%;position: absolute;width:100%;height:70%;top:13%;font-family:"微软雅黑";font-size:18px;color:#aaa;font-weight: bolder;}
+#wish .wish_content .name .nickname{border:1px solid #aaa;border-radius:3px;height:35px;}
+#wish .wish_content .seed .wish_seed{resize:none;border-radius:3px;}
+#wish .wish_content .seed #num_style{color: green;}
+#wish .wish_content .gif{width:296px;margin-top:10px;}
+#wish .wish_content .gif img:nth-child(n){cursor:pointer;margin-left:10px;width: 25px;height: 25px;}
+#wish #wish_bottom{position: absolute;background-image:url(../img/send-btn.png);background-size:100%;background-repeat:no-repeat;width:32%;height:19%;right:30px;top:103%;cursor:pointer;border-radius:3px;}

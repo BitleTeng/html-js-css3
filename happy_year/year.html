@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Year</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="format-detection" content="telephone=no">
+	<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/BitleTeng/html-js-css3@1.0/happy_year/css/year.css">
+	<script src="https://cdn.jsdelivr.net/gh/BitleTeng/html-js-css3@1.0/happy_year/js/Happy.js" type="text/javascript" charset="UTF-8" async defer></script>
+</head>
+
+<body>
+	<div class="content">
+		<audio autoplay=autoplay>
+			<source src="https://cdn.jsdelivr.net/gh/BitleTeng/html-js-css3@1.0/happy_year/sound/happynewyear.mp3" type="audio/mpeg">
+		</audio>
+		<div class="music_circle" id="music_circle">
+			<div class="music_record_play"></div>
+			<div class="music_pointer"></div>
+		</div>
+		<div class="page1" id="page1">
+			<div class="page1_bg">
+				<div class="page1_lattern">
+					<div class="page1_light"></div>
+					<div class="page1_blessing" id="page1_blessing">点击开启<br />2018好运</div>
+				</div>
+				<div class="page1_bottom">
+					<span class="page1_bottom_blessing">贺春不将就</span>
+				</div>
+			</div>
+		</div>
+		<div class="page2" id="page2">
+			<div class="page2_bg">
+				<div class="p2_blessing"></div>
+				<div class="page2_outer_circle"></div>
+				<div class="page2_middle_circle"></div>
+				<div class="page2_inner_circle"></div>
+				<div class="page2_blessing_circle"></div>
+			</div>
+		</div>
+		<div class="page3" id="page3">
+			<div class="page3_bg">
+				<div class="page3_logo"></div>
+				<div class="page3_couplet_first"></div>
+				<div class="page3_couplet_second"></div>
+				<div class="page3_title"></div>
+				<div class="page3_blessing"></div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		//进行rem布局的自适应过程,默认设置的设计图纸为750
+		var calculatSeize = function () {
+			var BASE_FONT_SIZE = 100;
+			var roat = 1;
+			// var wraps = document.getElementById("mian");
+			var docEl = document.documentElement,
+				clientWidth = docEl.clientWidth;
+			clientHeight = docEl.clientHeight;
+			if (!clientWidth) return;
+			var html_font_size = BASE_FONT_SIZE * ((clientWidth * roat) / 750);
+			docEl.style.fontSize = html_font_size + "px";
+			// 如果只是在相应的-0.01~0.01之间的小数值，直接进行return掉
+			if (
+				html_font_size - parseFloat(getComputedStyle(docEl).fontSize) < 0.01 &&
+				html_font_size - parseFloat(getComputedStyle(docEl).fontSize) > -0.01
+			) {
+				// 计算准确直接跳出
+				return;
+			}
+			// 在曲面屏手机存在着rem计算不准的问题
+			else {
+				var again_html_font_size =
+					html_font_size /
+					(parseInt(getComputedStyle(docEl).fontSize) / html_font_size);
+				docEl.style.fontSize = again_html_font_size + "px";
+			}
+		};
+		if (document.addEventListener) {
+			var resizeEvt =
+				"orientationchange" in window ? "orientationchange" : "resize";
+			window.addEventListener(resizeEvt, calculatSeize, false);
+			document.addEventListener("DOMContentLoaded", calculatSeize, false);
+			calculatSeize();
+		}
+	</script>
+</body>
+
+</html>

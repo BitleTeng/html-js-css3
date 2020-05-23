@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新春争霸赛</title>
+    <link rel="stylesheet" href="css/familyHemony.css">
+    <style>
+        body{
+            background-color: #da1d1b;
+            background-image: url("https://tools.dianliaoapp.com/test/test-2019-01-24-4377.png");
+            background-repeat: no-repeat;
+            background-position:top;
+            background-size:100%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="popup">
+        <div class="popup-header"></div>
+        <div class="popup-bottom"></div>
+    </div> -->
+
+    <div class="activity-container">
+        <div class="header clearfix">
+            <div class="container">
+                <p class="activityDate"></p>
+                <div class="rule">比赛规则</div>
+            </div>
+        </div>
+        <div class="bar tabs">
+            <ul class="clearfix">
+                <li class="honerFamily active">
+                    <div class="bgtop" style="display:block"></div>
+                </li>
+                <li class="diamond">
+                    <div class="bgtop" style="right:-0.145rem"></div>
+                </li>
+                <li class="familybaby">
+                    <div class="bgtop" style="right:-0.145rem"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="honour-family">
+            <div class="honour_bar"></div>
+            <div class="day_ranking">
+                <!-- <img src="https://tools.dianliaoapp.com/test/test-2019-01-24-6165.png" class="byh"> -->
+                <h1>日榜</h1>
+                <div class="day_select_btn">
+                    <i class="left_icon"></i>
+                    <span>号日榜</span>
+                    <i class="right_icon"></i>
+                </div>
+                <div class="rank_container">
+                    <div class="title">
+                        <span class="title_rank">排名</span>
+                        <span class="title_name">昵称</span>
+                        <span class="title_honour">热力值</span>
+                        <span class="title_award">奖励</span>
+                    </div>
+                    <ul class="rank_list"></ul>
+                    <div class="up_icon"></div>
+                </div>
+            </div>
+            <div class="totle_ranking">
+                <h1>总榜</h1>
+                <div class="day_select_btn">
+                    <span>第一名还可以获得家族专属礼物、定制头像框、定制房间ID</span>
+                </div>
+                <div class="rank_container">
+                    <div class="title">
+                        <span class="title_rank">排名</span>
+                        <span class="title_name">昵称</span>
+                        <span class="title_honour">热力值</span>
+                        <span class="title_award">奖励</span>
+                    </div>
+                    <ul class="rank_list">
+                    </ul>
+                    <div class="up_icon"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 钻石大亨 -->
+        <div class="diamond-bigwig">
+            <div class="honour_bar"></div>
+            <div class="day_ranking">
+                <h1>日榜</h1>
+                <div class="day_select_btn">
+                    <i class="left_icon"></i>
+                    <span>号日榜</span>
+                    <i class="right_icon"></i>
+                </div>
+                <div class="rank_container">
+                    <div class="title">
+                        <span class="title_rank">排名</span>
+                        <span class="title_name">昵称</span>
+                        <span class="title_honour">豪气值</span>
+                        <span class="title_award">奖励</span>
+                    </div>
+                    <ul class="rank_list"></ul>
+                    <div class="up_icon"></div>
+                </div>
+            </div>
+            <div class="totle_ranking">
+                <h1>总榜</h1>
+                <div class="day_select_btn">
+                    <span>第一名还可以获得个人靓号ID、专属头像框、神鹿座驾</span>
+                </div>
+                <div class="rank_container">
+                    <div class="title">
+                        <span class="title_rank">排名</span>
+                        <span class="title_name">昵称</span>
+                        <span class="title_honour">豪气值</span>
+                        <span class="title_award">奖励</span>
+                    </div>
+                    <ul class="rank_list"></ul>
+                    <div class="up_icon"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 家族宝贝（魅力女神）-->
+        <div class="familybaby-ranking">
+            <div class="honour_bar"></div>
+            <div class="day_ranking">
+                <h1>日榜</h1>
+                <div class="day_select_btn">
+                    <i class="left_icon"></i>
+                    <span>号日榜</span>
+                    <i class="right_icon"></i>
+                </div>
+                <div class="rank_container">
+                    <div class="title">
+                        <span class="title_rank">排名</span>
+                        <span class="title_name">昵称</span>
+                        <span class="title_honour">魅力值</span>
+                        <span class="title_award">奖励</span>
+                    </div>
+                    <ul class="rank_list"></ul>
+                    <div class="up_icon"></div>
+                </div>
+            </div>
+            <div class="totle_ranking">
+                <h1>总榜</h1>
+                <div class="day_select_btn">
+                    <span>第一名还可以获得个人靓号ID、专属头像框、神鹿座驾</span>
+                </div>
+                <div class="rank_container">
+                    <div class="title">
+                        <span class="title_rank">排名</span>
+                        <span class="title_name">昵称</span>
+                        <span class="title_honour">魅力值</span>
+                        <span class="title_award">奖励</span>
+                    </div>
+                    <ul class="rank_list"></ul>
+                    <div class="up_icon"></div>
+                </div>
+            </div>
+        </div>
+        <img src="https://tools.dianliaoapp.com/test/test-2019-01-24-2318.png" class="bottom-bg">
+    </div>
+
+    <script src="../common/js/jquery-2.1.4.min.js"></script>
+    <script src="../common/js/base.js"></script>
+    <script>
+        // 荣耀家族
+        var dayhtmlBefore = "";
+        var dayhtmlAfter = "";
+        var totalhtmlBefore = "";
+        var totalhtmlAfter = "";
+
+        var time = new Date();
+        var year = time.getFullYear();
+        var month = time.getMonth() + 1;
+        var date = time.getDate();
+        var timeParam = year + "-" + month + "-" + date;
+        var nowDate = new Date().getDate();
+        var timerClose = null;
+        var rightColor = true;
+        var leftColor = false;
+        var upArrow = '';
+        var minDate = 5; // 测试用
+        $(function () {
+            if(nowDate >= 7){
+                minDate = 7;
+            }
+            getData(1);
+
+
+            $('.rule').click(function () {
+                ruleurl = config.server + "/client/dev/h5_activity" +  "/FamilyWealthCharm/familyHemonyRule.html";
+                config.callAppOpenElseHtml(ruleurl, '赛制规则');
+            })
+
+            // 标签栏切换
+            $(".bar li").click(function () {
+                $(this).parent().children().removeClass("active");
+                $(this).addClass("active");
+                judgeContainer();
+                // 每次 tab切换 相应日期参数以及颜色参数都要重置
+                date = nowDate;
+                month = time.getMonth() + 1;
+                timeParam = year + "-" + month + "-" + date;
+                rightColor = true;
+                if ($(this).hasClass("honerFamily")) {
+                    getData(1);
+                } else if ($(this).hasClass("diamond")) {
+                    getData(3);
+                } else {
+                    getData(5);
+                }
+                
+                $('.bgtop').hide();
+                $(this).find('.bgtop').show();
+            })
+
+            // 荣耀家族日期切换
+            $(".honour-family .day_select_btn .left_icon").click(function () {
+                getData(1, dateSub("sub"));
+
+                $(".honour-family .day_ranking .day_select_btn span").html(date + "号日榜");
+            })
+            $(".honour-family .day_select_btn .right_icon").click(function () {
+                getData(1, dateSub("add"));
+                $(".honour-family .day_ranking .day_select_btn span").html(date + "号日榜");
+            })
+
+            // 荣耀家族日榜
+            $(".honour-family .day_ranking .up_icon").click(function () {
+                if ($(".honour-family .day_ranking .up_icon").css("background-image") ==
+                    'url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-6199.png")' ||
+                    $(".honour-family .day_ranking .up_icon").css("background-image") ==
+                    'url(http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-6199.png)'
+                ) {
+                    $(".honour-family .day_ranking .up_icon").css("background-image",
+                        'url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-30-8864.png")'
+                    );
+                    $(".honour-family .day_ranking .rank_list").html(dayhtmlBefore);
+                } else {
+                    $(".honour-family .day_ranking .up_icon").css("background-image",
+                        'url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-6199.png")'
+                    );
+                    $(".honour-family .day_ranking .rank_list").html(dayhtmlAfter);
+                }
+            })
+            // 荣耀家族总榜
+            $(".honour-family .totle_ranking .up_icon").click(function () {
+                if ($(".honour-family .totle_ranking .up_icon").css("background-image") ==
+                    'url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-6199.png")' ||
+                    $(".honour-family .totle_ranking .up_icon").css("background-image") ==
+                    'url(http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-6199.png)'
+                ) {
+                    $(".honour-family .totle_ranking .up_icon").css("background-image",
+                        'url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-30-8864.png")'
+                    );
+                    $(".honour-family .totle_ranking .rank_list").html(totalhtmlBefore);
+                } else {
+                    $(".honour-family .totle_ranking .up_icon").css("background-image",
+                        'url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-6199.png")'
+                    );
+                    $(".honour-family .totle_ranking .rank_list").html(totalhtmlAfter);
+                }
+            })
+            // 钻石大亨日期切换
+            $(".diamond-bigwig .day_select_btn .left_icon").click(function () {
+                getData(3, dateSub("sub"));
+                $(".diamond-bigwig .day_ranking .day_select_btn span").html(date + "号日榜");
+            })
+            $(".diamond-bigwig .day_select_btn .right_icon").click(function () {
+                getData(3, dateSub("add"));
+                $(".diamond-bigwig .day_ranking .day_select_btn span").html(date + "号日榜");
+            })
+            // 钻石大亨日榜
+            $(".diamond-bigwig .day_ranking .up_icon").click(function () {
+                if ($(".diamond-bigwig .day_ranking .up_icon").css("background-image") ==
+                    'url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-6199.png")' ||
+                    $(".diamond-bigwig .day_ranking .up_icon").css("background-image") ==
+                    'url(http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-6199.png)'
+                ) {
+                    $(".diamond-bigwig .day_ranking .up_icon").css("background-image",
+                        'url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-30-8864.png")'
+                    );
+                    $(".diamond-bigwig .day_ranking .rank_list").html(dayhtmlBefore);
+                } else {
+                    $(".diamond-bigwig .day_ranking .up_icon").css("background-image",
+                        'url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-6199.png")'
+                    );
+                    $(".diamond-bigwig .day_ranking .rank_list").html(dayhtmlAfter);
+                }
+            })
+            // 钻石大亨总榜
+            $(".diamond-bigwig .totle_ranking .up_icon").click(function () {
+                if ($(".diamond-bigwig .totle_ranking .up_icon").css("background-image") ==
+                    'url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-6199.png")' ||
+                    $(".diamond-bigwig .totle_ranking .up_icon").css("background-image") ==
+                    'url(http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-6199.png)'
+                ) {
+                    $(".diamond-bigwig .totle_ranking .up_icon").css("background-image",
+                        'url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-30-8864.png")'
+                    );
+                    $(".diamond-bigwig .totle_ranking .rank_list").html(totalhtmlBefore);
+                } else {
+                    $(".diamond-bigwig .totle_ranking .up_icon").css("background-image",
+                        'url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-6199.png")'
+                    );
+                    $(".diamond-bigwig .totle_ranking .rank_list").html(totalhtmlAfter);
+                }
+            })
+            // 家族宝贝日期切换
+            $(".familybaby-ranking .day_select_btn .left_icon").click(function () {
+                getData(5, dateSub("sub"));
+                $(".familybaby-ranking .day_ranking .day_select_btn span").html(date + "号日榜");
+            })
+            $(".familybaby-ranking .day_select_btn .right_icon").click(function () {
+                getData(5, dateSub("add"));
+                $(".familybaby-ranking .day_ranking .day_select_btn span").html(date + "号日榜");
+            })
+            // 家族宝贝日榜
+            $(".familybaby-ranking .day_ranking .up_icon").click(function () {
+                if ($(".familybaby-ranking .day_ranking .up_icon").css("background-image") ==
+                    'url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-6199.png")' ||
+                    $(".familybaby-ranking .day_ranking .up_icon").css("background-image") ==
+                    'url(http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-6199.png)'
+                ) {
+                    $(".familybaby-ranking .day_ranking .up_icon").css("background-image",
+                        'url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-30-8864.png")'
+                    );
+                    $(".familybaby-ranking .day_ranking .rank_list").html(dayhtmlBefore);
+                } else {
+                    $(".familybaby-ranking .day_ranking .up_icon").css("background-image",
+                        'url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-6199.png")'
+                    );
+                    $(".familybaby-ranking .day_ranking .rank_list").html(dayhtmlAfter);
+                }
+            })
+            // 家族宝贝总榜
+            $(".familybaby-ranking .totle_ranking .up_icon").click(function () {
+                if ($(".familybaby-ranking .totle_ranking .up_icon").css("background-image") ==
+                    'url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-6199.png")' ||
+                    $(".familybaby-ranking .totle_ranking .up_icon").css("background-image") ==
+                    'url(http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-6199.png)'
+                ) {
+                    $(".familybaby-ranking .totle_ranking .up_icon").css("background-image",
+                        'url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-30-8864.png")'
+                    );
+                    $(".familybaby-ranking .totle_ranking .rank_list").html(totalhtmlBefore);
+                } else {
+                    $(".familybaby-ranking .totle_ranking .up_icon").css("background-image",
+                        'url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-6199.png")'
+                    );
+                    $(".familybaby-ranking .totle_ranking .rank_list").html(totalhtmlAfter);
+                }
+            })
+        })
+
+        // 获取数据
+        function getData(type, time) {
+            //loading层
+            clearTimeout(timerClose);
+            timerClose = null;
+            var indexLoading = layer.open({
+                type: 2, //设置为iframe层
+                shadeClose: false, //设置不可以点击遮罩层进行消失
+            });
+            preventDefaultEvents(true); //阻止默认事件
+
+           
+
+            var url = config.server + "/server/index.php" + "/Activity/getFamilyHonourOneActivityList";
+            var data = {
+                type: type,
+                date: time
+            }
+
+            if (data.date == undefined) {
+                data.date = timeParam;
+            }
+            // 赋值前先清空
+            dayhtmlBefore = "";
+            dayhtmlAfter = "";
+            totalhtmlBefore = "";
+            totalhtmlAfter = "";
+
+            switch (type) {
+                // 荣耀家族
+                case 1:
+                    $.getJSON(url, data, function (res) {
+
+                        // 关闭掉这个加载窗口
+                        timerClose = setTimeout(function () {
+                            layer.close(indexLoading);
+                            preventDefaultEvents(false); //取消阻止默认事件
+                        }, 20);
+                        if (res.code) {
+                            judgeColor();
+                            $(".honour-family .day_ranking .day_select_btn span").html(date + "号日榜");
+                            var ranknum = ['first', 'second', 'third'];
+                            var liaobi = ['<p style="font-size: 0.2rem;margin-top:0.6rem;">精品房间<br>推荐3天</p>',
+                                '<p style="font-size: 0.2rem;margin-top:0.6rem;">精品房间<br>推荐2天</p>',
+                                '<p style="font-size: 0.2rem;margin-top:0.6rem;">精品房间<br>推荐1天</p>'
+                            ]
+
+                            for (var i = 0; i < res.data.length; i++) {
+                                if (res.data.length > ranknum.length) {
+                                    ranknum.push("normal");
+                                    liaobi.push("");
+                                }
+                                // 排除数据为null的情况
+                                if (res.data[i].family_name) {
+                                    if (res.data[i].family_name.length > 7) {
+                                        res.data[i].family_name = res.data[i].family_name.slice(
+                                            0, 7) + '..';
+                                    }
+                                }
+
+                                if (i < 5) {
+                                    dayhtmlBefore += '<li class="data_list ' + ranknum[i] + '">' +
+                                        '<span class="rank_num">' +
+                                        '<i>' + (parseInt(i) + 1) + '</i>' +
+                                        '</span>' +
+                                        '<span class="rank_userinfo">' +
+                                        '<i class="avator" style="background-image:url(' + res.data[i]
+                                        .family_icon + ');background-size: 100%;" onclick="goAppFamilyUid(' +
+                                        res.data[i].family_yunxin_id + '' + ')"></i>' +
+                                        '<br><i class="nickname">' + res.data[i].family_name +
+                                        '</i></span>' +
+                                        '<span class="honour_num">' +
+                                        '<i class="honour_num_icon"></i><br>' +
+                                        '<i class="honour_num_bottom">' + res.data[i].honour +
+                                        '</i>' +
+                                        '</span>' +
+                                        '<span class="award_num">' + liaobi[i] +
+                                        '</span>' +
+                                        '<div class="line"></div>' +
+                                        '</li>'
+                                } else {
+                                    dayhtmlAfter += '<li class="data_list ' + ranknum[i] + '">' +
+                                        '<span class="rank_num">' +
+                                        '<i>' + (parseInt(i) + 1) + '</i>' +
+                                        '</span>' +
+                                        '<span class="rank_userinfo">' +
+                                        '<i class="avator" style="background-image:url(' + res.data[i]
+                                        .family_icon + ');background-size: 100%;" onclick="goAppFamilyUid(' +
+                                        res.data[i].family_yunxin_id + '' + ')"></i>' +
+                                        '<br><i class="nickname">' + res.data[i].family_name +
+                                        '</i></span>' +
+                                        '<span class="honour_num">' +
+                                        '<i class="honour_num_icon"></i><br>' +
+                                        '<i class="honour_num_bottom">' + res.data[i].honour +
+                                        '</i>' +
+                                        '</span>' +
+                                        '<span class="award_num">' + liaobi[i] +
+                                        '</span>' +
+                                        '<div class="line"></div>' +
+                                        '</li>'
+                                }
+
+                            }
+                            $(".honour-family .day_ranking .rank_list").html(dayhtmlBefore);
+
+
+                        }
+                    });
+                    $.getJSON(url, {
+                        type: type + 1,
+                        date: timeParam,
+                    }, function (res) {
+                        if (res.code) {
+                            var ranknum = ['first', 'second', 'third'];
+                            var liaobimoney = [
+                                '<i class="award_num_icon" style="background-image:url(https://tools.dianliaoapp.com/test/test-2018-09-07-6343.png);width: 0.8rem;height:0.8rem;"></i><br> 现金奖励',
+                                '<i class="award_num_icon" style="background-image:url(https://tools.dianliaoapp.com/test/test-2018-09-07-2345.png);width: 0.8rem;height:0.8rem;"></i><br> 现金奖励',
+                                '<i class="award_num_icon" style="background-image:url(https://tools.dianliaoapp.com/test/test-2018-09-07-9371.png);width: 0.8rem;height:0.8rem;"></i><br> 现金奖励'
+                            ];
+                            for (var i = 0; i < res.data.length; i++) {
+
+                                if (res.data.length > liaobimoney.length) {
+                                    liaobimoney.push("");
+                                }
+                                // 防止数据为空
+                                if(res.data[i].family_name){
+                                    if (res.data[i].family_name.length > 7) {
+                                        res.data[i].family_name = res.data[i].family_name.slice(0, 7) + '..';
+                                    }
+                                    res.data[i].family_yunxin_id = res.data[i].family_yunxin_id.toString();
+                                }
+                                if (i < 5) {
+                                    totalhtmlBefore += '<li class="data_list ' + ranknum[i] + '">' +
+                                        '<span class="rank_num">' +
+                                        '<i>' + (parseInt(i) + 1) + '</i>' +
+                                        '</span>' +
+                                        '<span class="rank_userinfo">' +
+                                        '<i class="avator" style="background-image:url(' + res.data[
+                                            i].family_icon +
+                                        ');background-size:100%;" onclick="goAppFamilyUid(' + res.data[
+                                            i].family_yunxin_id + ')"></i>' +
+                                        '<br>' +
+                                        '<i class="nickname">' + res.data[i].family_name + '</i>' +
+                                        '</span>' +
+                                        '<span class="honour_num">' +
+                                        '<i class="honour_num_icon"></i>' +
+                                        '<br>' +
+                                        '<i class="honour_num_bottom">' + res.data[i].honour +
+                                        '</i>' +
+                                        '</span>' +
+                                        '<span class="award_num">' + liaobimoney[i] +
+                                        '</span>' +
+                                        '<div class="line"></div>' +
+                                        '</li>'
+                                } else {
+                                    totalhtmlAfter += '<li class="data_list ' + ranknum[i] + '">' +
+                                        '<span class="rank_num">' +
+                                        '<i>' + (parseInt(i) + 1) + '</i>' +
+                                        '</span>' +
+                                        '<span class="rank_userinfo">' +
+                                        '<i class="avator" style="background-image:url(' + res.data[
+                                            i].family_icon +
+                                        ');background-size:100%;" onclick="goAppFamilyUid(' + res.data[
+                                            i].family_yunxin_id + ')"></i>' +
+                                        '<br>' +
+                                        '<i class="nickname">' + res.data[i].family_name + '</i>' +
+                                        '</span>' +
+                                        '<span class="honour_num">' +
+                                        '<i class="honour_num_icon"></i>' +
+                                        '<br>' +
+                                        '<i class="honour_num_bottom">' + res.data[i].honour +
+                                        '</i>' +
+                                        '</span>' +
+                                        '<span class="award_num">' + liaobimoney[i] +
+                                        '</span>' +
+                                        '<div class="line"></div>' +
+                                        '</li>'
+                                }
+                                $(".honour-family .totle_ranking .rank_list").html(totalhtmlBefore);
+                            }
+
+                        }
+                    })
+                    break;
+                    // 钻石大亨
+                case 3:
+                    $.getJSON(url, data, function (res) {
+                        // 关闭掉这个加载窗口
+                        timerClose = setTimeout(function () {
+                            layer.close(indexLoading);
+                            preventDefaultEvents(false); //取消阻止默认事件
+                        }, 100);
+                        if (res.code) {
+                            judgeColor();
+                            $(".diamond-bigwig .day_ranking .day_select_btn span").html(date + "号日榜");
+                            var ranknum = ['first', 'second', 'third'];
+                            var liaobi = ['<i class="award_num_icon"></i><br> 2880豆票',
+                                '<i class="award_num_icon"></i><br> 1880豆票',
+                                '<i class="award_num_icon"></i><br> 880豆票'
+                            ]
+
+                            for (var i = 0; i < res.data.length; i++) {
+                                if (res.data.length > ranknum.length) {
+                                    ranknum.push("normal");
+                                    liaobi.push("");
+                                }
+                                if (res.data[i].nickname.length > 7) {
+                                    res.data[i].nickname = res.data[i].nickname.slice(0, 7) +
+                                        '..';
+                                }
+                                if (i < 5) {
+                                    dayhtmlBefore += '<li class="data_list ' + ranknum[i] + '">' +
+                                        '<span class="rank_num">' +
+                                        '<i>' + (parseInt(i) + 1) + '</i>' +
+                                        '</span>' +
+                                        '<span class="rank_userinfo">' +
+                                        '<i class="avator" style="background-image:url(' + res.data[i]
+                                        .icon + ');background-size:100%;" onclick="goAppUid(' + res.data[
+                                            i].uid + ')"></i>' +
+                                        '<br>' +
+                                        '<i class="nickname">' + res.data[i].nickname + '</i>' +
+                                        '</span>' +
+                                        '<span class="honour_num">' +
+                                        '<i class="honour_num_icon"></i>' +
+                                        '<br>' +
+                                        '<i class="honour_num_bottom">' + res.data[i].rich + '</i>' +
+                                        '</span>' +
+                                        '<span class="award_num">' + liaobi[i] +
+                                        '</span>' +
+                                        '<div class="line"></div>' +
+                                        '</li>'
+                                } else {
+                                    dayhtmlAfter += '<li class="data_list ' + ranknum[i] + '">' +
+                                        '<span class="rank_num">' +
+                                        '<i>' + (parseInt(i) + 1) + '</i>' +
+                                        '</span>' +
+                                        '<span class="rank_userinfo">' +
+                                        '<i class="avator" style="background-image:url(' + res.data[i]
+                                        .icon + ');background-size:100%;" onclick="goAppUid(' + res.data[
+                                            i].uid + ')"></i>' +
+                                        '<br>' +
+                                        '<i class="nickname">' + res.data[i].nickname + '</i>' +
+                                        '</span>' +
+                                        '<span class="honour_num">' +
+                                        '<i class="honour_num_icon"></i>' +
+                                        '<br>' +
+                                        '<i class="honour_num_bottom">' + res.data[i].rich + '</i>' +
+                                        '</span>' +
+                                        '<span class="award_num">' + liaobi[i] +
+                                        '</span>' +
+                                        '<div class="line"></div>' +
+                                        '</li>'
+                                }
+
+                            }
+                            $(".diamond-bigwig .day_ranking .rank_list").html(dayhtmlBefore);
+
+
+                        }
+                    });
+                    $.getJSON(url, {
+                        type: type + 1,
+                        date: timeParam,
+                    }, function (res) {
+                        if (res.code) {
+                            var ranknum = ['first', 'second', 'third'];
+                            var liaobimoney = ['<i class="award_num_icon"></i><br> 15000豆票',
+                                '<i class="award_num_icon"></i><br> 11000豆票',
+                                '<i class="award_num_icon"></i><br> 7000豆票'
+                            ];
+                            for (var i = 0; i < res.data.length; i++) {
+                                if (res.data.length > liaobimoney.length) {
+                                    liaobimoney.push("");
+                                }
+                                if (res.data[i].nickname.length > 7) {
+                                    res.data[i].nickname = res.data[i].nickname.slice(0,
+                                        7) + '..';
+                                }
+                                if (i < 5) {
+                                    totalhtmlBefore += '<li class="data_list ' + ranknum[i] + '">' +
+                                        '<span class="rank_num">' +
+                                        '<i>' + (parseInt(i) + 1) + '</i>' +
+                                        '</span>' +
+                                        '<span class="rank_userinfo">' +
+                                        '   <i class="avator" style="background-image:url(' + res.data[
+                                            i].icon + ');background-size:100%;" onclick="goAppUid(' + res.data[
+                                            i].uid + ')"></i>' +
+                                        '  <br>' +
+                                        '<i class="nickname">' + res.data[i].nickname + '</i>' +
+                                        '</span>' +
+                                        '<span class="honour_num">' +
+                                        '<i class="honour_num_icon"></i>' +
+                                        '<br>' +
+                                        '<i class="honour_num_bottom">' + res.data[i].rich + '</i>' +
+                                        '</span>' +
+                                        '<span class="award_num">' + liaobimoney[i] +
+                                        '</span>' +
+                                        '<div class="line"></div>' +
+                                        '</li>'
+                                } else {
+                                    totalhtmlAfter += '<li class="data_list ' + ranknum[i] + '">' +
+                                        '<span class="rank_num">' +
+                                        '<i>' + (parseInt(i) + 1) + '</i>' +
+                                        '</span>' +
+                                        '<span class="rank_userinfo">' +
+                                        '   <i class="avator" style="background-image:url(' + res.data[
+                                            i].icon + ');background-size:100%;" onclick="goAppUid(' + res.data[
+                                            i].uid + ')"></i>' +
+                                        '  <br>' +
+                                        '<i class="nickname">' + res.data[i].nickname + '</i>' +
+                                        '</span>' +
+                                        '<span class="honour_num">' +
+                                        '<i class="honour_num_icon"></i>' +
+                                        '<br>' +
+                                        '<i class="honour_num_bottom">' + res.data[i].rich + '</i>' +
+                                        '</span>' +
+                                        '<span class="award_num">' + liaobimoney[i] +
+                                        '</span>' +
+                                        '<div class="line"></div>' +
+                                        '</li>'
+                                }
+
+                            }
+                            $(".diamond-bigwig .totle_ranking .rank_list").html(totalhtmlBefore);
+                        }
+                    })
+                    break;
+                    // 魅力女神
+                case 5:
+                    $.getJSON(url, data, function (res) {
+                        // 关闭掉这个加载窗口
+                        timerClose = setTimeout(function () {
+                            layer.close(indexLoading);
+                            preventDefaultEvents(false); //取消阻止默认事件
+                        }, 100);
+                        if (res.code) {
+                            judgeColor();
+                            $(".familybaby-ranking .day_ranking .day_select_btn span").html(date + "号日榜");
+                            var ranknum = ['first', 'second', 'third'];
+                            var liaobi = ['<i class="award_num_icon"></i><br> 3880豆币',
+                                '<i class="award_num_icon"></i><br> 2880豆币',
+                                '<i class="award_num_icon"></i><br> 1880豆币'
+                            ]
+
+                            for (var i = 0; i < res.data.length; i++) {
+                                if (res.data.length > ranknum.length) {
+                                    ranknum.push("normal");
+                                    liaobi.push("");
+                                }
+                                if (res.data[i].nickname.length > 7) {
+                                    res.data[i].nickname = res.data[i].nickname.slice(0, 7) +
+                                        '..';
+                                }
+                                if (i < 5) {
+                                    dayhtmlBefore += '<li class="data_list ' + ranknum[i] + '">' +
+                                        '<span class="rank_num"><i>' + (parseInt(i) + 1) + '</i></span>' +
+                                        '<span class="rank_userinfo">' +
+                                        '<i class="avator" style="background-image:url(' + res.data[i]
+                                        .icon + ');background-size:100%;" onclick="goAppUid(' + res.data[
+                                            i].uid + ')"></i><br>' +
+                                        '<i class="user_nickname">' + res.data[i].nickname +
+                                        '</i><br>' +
+                                        '<i class="nickname"></i>' +
+                                        '</span>' +
+                                        '<span class="honour_num">' +
+                                        '<i class="honour_num_icon"></i><br>' +
+                                        '<i class="honour_num_bottom">' + res.data[i].charm + '</i>' +
+                                        '</span>' +
+                                        '<span class="award_num">' + liaobi[i] +
+
+                                        '</span>' +
+                                        '<div class="line"></div>' +
+                                        '</li>'
+                                } else {
+                                    dayhtmlAfter += '<li class="data_list ' + ranknum[i] + '">' +
+                                        '<span class="rank_num"><i>' + (parseInt(i) + 1) + '</i></span>' +
+                                        '<span class="rank_userinfo">' +
+                                        '<i class="avator" style="background-image:url(' + res.data[i]
+                                        .icon + ');background-size:100%;" onclick="goAppUid(' + res.data[
+                                            i].uid + ')"></i><br>' +
+                                        '<i class="user_nickname">' + res.data[i].nickname +
+                                        '</i><br>' +
+                                        '<i class="nickname"></i>' +
+                                        '</span>' +
+                                        '<span class="honour_num">' +
+                                        '<i class="honour_num_icon"></i><br>' +
+                                        '<i class="honour_num_bottom">' + res.data[i].charm + '</i>' +
+                                        '</span>' +
+                                        '<span class="award_num">' + liaobi[i] +
+                                        '</span>' +
+                                        '<div class="line"></div>' +
+                                        '</li>'
+                                }
+
+                            }
+                            $(".familybaby-ranking .day_ranking .rank_list").html(dayhtmlBefore);
+
+
+                        }
+                    });
+                    $.getJSON(url, {
+                        type: type + 1,
+                        date: timeParam,
+                    }, function (res) {
+                        if (res.code) {
+                            var ranknum = ['first', 'second', 'third'];
+                            var liaobimoney = ['<i class="award_num_icon"></i><br> 11000豆币',
+                                '<i class="award_num_icon"></i><br> 7000豆币',
+                                '<i class="award_num_icon"></i><br> 4000豆币'
+                            ];
+                            for (var i = 0; i < res.data.length; i++) {
+                                if (res.data.length > liaobimoney.length) {
+                                    liaobimoney.push("");
+                                }
+                                if (res.data[i].nickname.length > 7) {
+                                    res.data[i].nickname = res.data[i].nickname.slice(0,
+                                        7) + '..';
+                                }
+                                if (i < 5) {
+                                    totalhtmlBefore += '<li class="data_list ' + ranknum[i] + '">' +
+                                        '<span class="rank_num"><i>' + (parseInt(i) + 1) + '</i></span>' +
+                                        '<span class="rank_userinfo">' +
+                                        '<i class="avator" style="background-image:url(' + res.data[
+                                            i].icon + ');background-size:100%;" onclick="goAppUid(' + res.data[
+                                            i].uid + ')"></i><br>' +
+                                        '<i class="user_nickname">' + res.data[i].nickname +
+                                        '</i><br>' +
+                                        '</span>' +
+                                        '<span class="honour_num">' +
+                                        '<i class="honour_num_icon"></i><br>' +
+                                        '<i class="honour_num_bottom">' + res.data[i].charm +
+                                        '</i>' +
+                                        '</span>' +
+                                        '<span class="award_num">' + liaobimoney[i] +
+
+                                        '</span>' +
+                                        '<div class="line"></div>' +
+                                        '</li>'
+                                } else {
+                                    totalhtmlAfter += '<li class="data_list ' + ranknum[i] + '">' +
+                                        '<span class="rank_num"><i>' + (parseInt(i) + 1) + '</i></span>' +
+                                        '<span class="rank_userinfo">' +
+                                        '<i class="avator" style="background-image:url(' + res.data[
+                                            i].icon + ');background-size:100%;" onclick="goAppUid(' + res.data[
+                                            i].uid + ')"></i><br>' +
+                                        '<i class="user_nickname">' + res.data[i].nickname +
+                                        '</i><br>' +
+                                        '<i class="nickname"></i>' +
+                                        '</span>' +
+                                        '<span class="honour_num">' +
+                                        '<i class="honour_num_icon"></i><br>' +
+                                        '<i class="honour_num_bottom">' + res.data[i].charm +
+                                        '</i>' +
+                                        '</span>' +
+                                        '<span class="award_num">' + liaobimoney[i] +
+
+                                        '</span>' +
+                                        '<div class="line"></div>' +
+                                        '</li>'
+                                }
+
+                            }
+                            $(".familybaby-ranking .totle_ranking .rank_list").html(totalhtmlBefore);
+                        }
+                    })
+                    break;
+            }
+
+             // 修改颜色状态参数 true: 灰色 ；false: 高亮
+             if(date == nowDate){
+                rightColor = true;
+            }else{
+                rightColor = false;
+            }
+            if(date == minDate){
+                leftColor = true;
+            }else{
+                leftColor = false;
+            }
+        }
+
+        function preventDefaultEvents(parm) {
+            if (parm) {
+                $('body').on('touchmove', function (event) {
+                    event.preventDefault();
+                });
+            } else {
+                $("body").unbind('touchmove');
+            }
+        }
+
+        // bar 切换
+        function judgeContainer() {
+            if ($(".honerFamily").hasClass("active")) {
+                $(".honour-family").show();
+            } else {
+                $(".honour-family").hide();
+            }
+            if ($(".diamond").hasClass("active")) {
+                $(".diamond-bigwig").show();
+            } else {
+                $(".diamond-bigwig").hide();
+            }
+            if ($(".familybaby").hasClass("active")) {
+                $(".familybaby-ranking").show();
+            } else {
+                $(".familybaby-ranking").hide();
+            }
+        }
+        /**
+         *日期切换函数 sub减日期 add加日期  只可在11月分使用，没有作月份判断
+         */
+        function dateSub(sub) {
+            if (sub == "sub") {
+                
+                if(date <= minDate){
+                    return;
+                }else{
+                    date--;
+                }
+                timeParam = year + "-" + month + "-" + date;
+            } else if (sub == "add") {
+            
+                if (date > nowDate) {
+                    return;
+                }
+                if(date != nowDate){
+                    date++;
+                }
+                timeParam = year + "-" + month + "-" + date;
+            } else {
+                console.log("请确定参数是否正确！");
+            }
+            
+            return timeParam;
+        }
+        //点击头像调用APP方法openUserInfoPanel跳转到APP中指定用户的详情页面
+        function goAppUid(uid) {
+            config.callAppToUidIndex(uid);
+        }
+        //点击头像调用APP方法openFamilyInfoPanel跳转到APP中指定家族的详情页面
+        function goAppFamilyUid(uid) {
+            config.callAppToFamilyIndexDetail(uid);
+        }
+        // 判断箭头颜色
+        function judgeColor(){
+            if (rightColor) {
+                $(".honour-family .day_ranking .day_select_btn .right_icon").css(
+                    "background-image",
+                    'url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-12-01-3938.png")'
+                );
+                $(".diamond-bigwig .day_ranking .day_select_btn .right_icon").css(
+                    "background-image",
+                    'url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-12-01-3938.png")'
+                );
+                $(".familybaby-ranking .day_ranking .day_select_btn .right_icon").css(
+                    "background-image",
+                    'url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-12-01-3938.png")'
+                );
+            } else {
+                $(".honour-family .day_ranking .day_select_btn .right_icon").css(
+                    "background-image",
+                    'url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-4522.png")'
+                );
+                $(".diamond-bigwig .day_ranking .day_select_btn .right_icon").css(
+                    "background-image",
+                    'url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-4522.png")'
+                );
+                $(".familybaby-ranking .day_ranking .day_select_btn .right_icon").css(
+                    "background-image",
+                    'url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-4522.png")'
+                );
+            }
+            if(leftColor){
+                $(".honour-family .day_ranking .day_select_btn .left_icon").css(
+                    "background-image",
+                    'url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-12-01-3326.png")'
+                );
+                $(".diamond-bigwig .day_ranking .day_select_btn .left_icon").css(
+                    "background-image",
+                    'url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-12-01-3326.png")'
+                );
+                $(".familybaby-ranking .day_ranking .day_select_btn .left_icon").css(
+                    "background-image",
+                    'url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-12-01-3326.png")'
+                );
+            } else {
+                $(".honour-family .day_ranking .day_select_btn .left_icon").css(
+                    "background-image",
+                    'url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-1091.png")'
+                );
+                $(".diamond-bigwig .day_ranking .day_select_btn .left_icon").css(
+                    "background-image",
+                    'url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-1091.png")'
+                );
+                $(".familybaby-ranking .day_ranking .day_select_btn .left_icon").css(
+                    "background-image",
+                    'url("http://dianliaotools.oss-cn-shenzhen.aliyuncs.com/test/test-2017-11-29-1091.png")'
+                );
+            }
+        }
+    </script>
+</body>
+
+</html>

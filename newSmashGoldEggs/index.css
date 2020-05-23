@@ -1,0 +1,1059 @@
+/* 设置统一的样式字体，点击不能出现阴影的效果 */
+html, body{
+    width: 100%;
+    height: 100%;
+    -webkit-touch-callout: none; 
+	-webkit-text-size-adjust: none; 
+	-webkit-highlight: none; 
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    font-size: 16px; font-family: '微软雅黑';
+    background-color: #fc1c36;
+}
+ul, li{
+    list-style: none; padding: 0; margin: 0;
+}
+.flex{
+    display: flex;
+    display: -webkit-flex;
+}
+.main{
+    width: 100%;
+    padding-top: 2.39rem;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.bgimg{
+    width: 100%;
+}
+/*https://tools.dianliaoapp.com/test/test-2018-12-05-8398.png*/
+.record{
+    width: 6.6rem;
+    height: 3.7rem;
+    background: #af0314;
+    border-radius: 0.2rem;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 0.3rem;
+}
+.record-title{
+    width: 3.36rem;
+    height: 0.68rem;
+    position: absolute;
+    top: -0.46rem;
+    left: 1.62rem;
+    background: url('https://tools.dianliaoapp.com/test/test-2018-12-05-8398.png') center no-repeat;
+    background-size:100% 100%;
+}
+#dingwrap{
+    width: 6.2rem;
+    height: 1.5rem;
+    background-color: #ffcc01;
+    /* margin-bottom: 10px; */
+    border-radius: 0.2rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#dingwrap ul{
+    width: 6.2rem;
+    overflow: hidden;
+    clear: both;
+    *zoom: 1;
+}
+#dingwrap ul li{
+    list-style: none;
+    width: 6.2rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    color: #ff001e;
+}
+#dingwrap ul li span{
+    font-size: 0.22rem;
+    font-family: "微软雅黑";
+    text-align: center;
+    line-height: 0.5rem;
+    height: 0.5rem;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#dingwrap ul li span:nth-of-type(1){
+    width: 2.4rem;
+}
+#dingwrap ul li span:nth-of-type(2){
+    width: 1.75rem;
+}
+#dingwrap ul li span:nth-of-type(3){
+    width: 1.75rem;
+}
+#lunbowrap{
+    width: 6.2rem;
+    margin-bottom: 10px;
+    /* margin-top: 0.1rem; */
+    height: 2.3rem;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#lunbowrap ul{
+    width: 6.2rem;
+    overflow: hidden;
+    clear: both;
+    *zoom: 1;
+    margin-top: 0.1rem;
+}
+#lunbowrap ul li{
+    list-style: none;
+    width: 6.2rem;
+    height: 0.42rem;
+    line-height: 0.42rem;
+    color: #ffcc01;
+}
+#lunbowrap ul li span{
+    font-size: 0.22rem;
+    font-family: "微软雅黑";
+    text-align: center;
+    line-height: 0.42rem;
+    height: 0.42rem;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#lunbowrap ul li span:nth-of-type(1){
+    width: 2.4rem;
+}
+#lunbowrap ul li span:nth-of-type(2){
+    width: 1.75rem;
+}
+#lunbowrap ul li span:nth-of-type(3){
+    width: 1.75rem;
+}
+/*砸蛋*/
+.gold-smash-part{
+    width: 100%;
+    margin-top: 0.3rem;
+}
+.gold-smash-title{
+    width: 3.14rem;
+    height: 0.48rem;
+    background: url('https://tools.dianliaoapp.com/test/test-2018-12-05-9953.png') center no-repeat;
+    background-size:contain;
+    margin: 0 auto;
+}
+.gold-smash-pop{
+    width: 100%;
+    height: 1.94rem;
+    position: relative;
+    margin-top: 0.1rem;
+}
+.gold-smash-pop-list1{
+    width: 1.5rem;
+    height: 1.58rem;
+    margin: 0 auto;
+    color: #ffffff;
+}
+.gold-smash-pop-image{
+    width: 0.8rem;
+    height: 0.8rem;
+    
+    position: relative;
+    margin: 0 auto;
+}
+.gold-smash-pop-image img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+}
+.gold-smash-pop-list1 .gold-numb-one{
+    display: block;
+    width: 0.85rem;
+    height: 0.3rem;
+    background: url('https://tools.dianliaoapp.com/test/test-2018-12-05-2418.png') center no-repeat;
+    background-size:contain;
+    position: absolute;
+    top: -0.15rem;
+    left: 0
+}
+.gold-smash-name{
+    width: 100%;
+    text-align: center;
+    font-size: 0.22rem;
+    color: #ffffff;
+    overflow: hidden;
+    margin: 0.1rem auto 0.06rem;
+}
+.gold-smash-nums-part{
+    width: 1.4rem;
+    height: 0.4rem;
+    border: 0.01rem solid #fff000;
+    border-radius: 0.2rem;
+    font-size: 0.2rem;
+    line-height: 0.4rem;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff000;
+}
+.gold-smash-nums-part i{
+    display: inline-block;
+    vertical-align: middle;
+    width: 0.30rem;
+    height: 0.30rem;
+    background: url('https://tools.dianliaoapp.com/test/test-2018-12-07-5535.png') center no-repeat;
+    background-size:contain;
+}
+.gold-smash-pop-list2{
+    width: 1.5rem;
+    height: 1.58rem;
+    margin: 0 auto;
+    position: absolute;
+    top: 0.3rem;
+    left: 1.09rem;
+    color: #ffffff;
+
+}
+.gold-smash-pop-list3{
+    width: 1.5rem;
+    height: 1.58rem;
+    margin: 0 auto;
+    position: absolute;
+    top: 0.3rem;
+    right: 1.09rem;
+    color: #ffffff;
+}
+.hunt-image{
+    width: 0.8rem;
+    height: 0.8rem;
+    overflow: hidden;
+    border: 0.01rem solid #ffffff;
+    border-radius: 50%;
+}
+.gold-smash-pop-list2 .gold-numb-one{
+    display: block;
+    width: 0.85rem;
+    height: 0.3rem;
+    background: url('https://tools.dianliaoapp.com/test/test-2018-12-07-6060.png') center no-repeat;
+    background-size:contain;
+    position: absolute;
+    top: -0.05rem;
+    right: -0.5rem;
+}
+.gold-smash-pop-list3 .gold-numb-one{
+    display: block;
+    width: 0.85rem;
+    height: 0.3rem;
+    background: url('https://tools.dianliaoapp.com/test/test-2018-12-07-1797.png') center no-repeat;
+    background-size:contain;
+    position: absolute;
+    top: -0.05rem;
+    right: -0.5rem;
+}
+.goldegg-content{
+    width: 100%;
+    position: relative;
+}
+.goldegg{
+    width: 100%;
+    height: 4.4rem;
+    margin: 0 auto;
+    position: relative;
+}
+.goldegger{
+    width: 100%;
+    height: 4.4rem;
+    margin: 0 auto;
+    position: relative;
+}
+.goldegg img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0rem;
+    z-index: 2;
+}
+.goldegger img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -0.1rem;
+    z-index: 2;
+}
+.move{
+    animation: move 1s infinite ease-in-out;
+    -webkit-animation: move 1s infinite ease-in-out; 
+    animation-delay:0.25s;
+     transform-origin: bottom;
+     -webkit-transform-origin: bottom;
+}
+.moveHut{
+    animation: move1 1s ease-in-out;
+    -webkit-animation: move1 1s ease-in-out; 
+    animation-delay:0.6s;
+     transform-origin: bottom;
+     -webkit-transform-origin: bottom;
+}
+@keyframes move1
+{
+0% { 
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+} 
+50% {  
+  -webkit-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+100% {  
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+}
+@-webkit-keyframes move1
+{
+0% { 
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+} 
+50% {  
+  -webkit-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+100% {  
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+}
+@keyframes move
+{
+0% { 
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+} 
+25% {  
+  -webkit-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+50% {  
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+75% {  
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+100% {  
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+}
+@-webkit-keyframes move
+{
+0% { 
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+} 
+25% {  
+  -webkit-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+50% {  
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+75% {  
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+100% {  
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+}
+.goldegg-mounts{
+    width: 2.6rem;
+    height: 0.9rem;
+    background: url('https://tools.dianliaoapp.com/test/test-2018-12-07-6907.png') center no-repeat;
+    background-size:contain;
+    position: absolute;
+    bottom: -0.6rem;
+    left: 50%;
+    margin-left: -1.3rem;
+    z-index: 1;
+
+}
+
+.goldergg-mounts{
+    width: 2.6rem;
+    height: 0.8rem;
+    background: url('https://tools.dianliaoapp.com/test/test-2018-12-10-2073.png') center no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    bottom: -0.38rem;
+    left: 50%;
+    margin-left: -1.3rem;
+    z-index: 1;
+}
+#super-times{
+    font-size: 0.3rem;
+    color: #fc1c36;
+    line-height: 0.45rem;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+.mounts{
+    width: 1.68rem;
+    height: 1.8rem;
+    position: absolute;
+    top: 1rem;
+    right: 1.2rem;
+    background: url('https://tools.dianliaoapp.com/test/test-2018-12-07-5535.png') center no-repeat;
+    background-size:contain;
+    /* animation: myfirst 2s infinite;
+    -webkit-animation: myfirst 2s infinite; */
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+}
+.mounts1{
+    width: 1.68rem;
+    height: 1.8rem;
+    position: absolute;
+    top: 1rem;
+    right: 1.25rem;
+    background: url('https://tools.dianliaoapp.com/test/test-2018-12-07-5535.png') center no-repeat;
+    background-size:contain;
+}
+.eggMounts{
+    /* animation: myfirst 2s infinite;
+    -webkit-animation: myfirst 2s infinite; */
+
+    animation: myfirst 1s infinite ease-in-out;
+    -webkit-animation: myfirst 1s infinite ease-in-out; 
+     transform-origin: bottom;
+     -webkit-transform-origin: bottom;
+}
+.mountMove{
+    animation: myfirst 1s infinite ease-in-out;
+    -webkit-animation: myfirst 1s infinite ease-in-out; 
+     transform-origin: bottom;
+     -webkit-transform-origin: bottom;
+}
+.mountHut{
+    animation: myfirst1 1s ease-in-out;
+    -webkit-animation: myfirst1 1s ease-in-out;
+    transform-origin: bottom;
+     -webkit-transform-origin: bottom;
+}
+@keyframes myfirst1{
+    0%{
+        transform:rotate(45deg);
+        -webkit-transform:rotate(45deg);
+        right:0.9rem;
+    } 
+  100%{
+        transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+        right:1.2rem;
+    } 
+}
+@-webkit-keyframes myfirst1{
+    0%{
+        transform:rotate(45deg);
+        -webkit-transform:rotate(45deg);
+        right:0.9rem;
+    } 
+  100%{
+        transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+        right:1.2rem;
+    } 
+}
+@keyframes myfirst{
+    0%{
+        transform:rotate(45deg);
+        -webkit-transform:rotate(45deg);
+    } 
+  20%{
+        transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+    }
+  100%{
+        transform:rotate(45deg);
+        -webkit-transform:rotate(45deg);
+    } 
+}
+@-webkit-keyframes myfirst{
+    0%{
+        transform:rotate(45deg);
+        -webkit-transform:rotate(45deg);
+    } 
+  20%{
+        transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+    }
+  100%{
+        transform:rotate(45deg);
+        -webkit-transform:rotate(45deg);
+    } 
+}
+.numerica1{
+    font-size: 0.48rem;
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#f114f3), to(#5d05ab));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    position: absolute;
+    /* top: 1.7rem; */
+    bottom: 0rem;
+    left: 3.5rem;
+    z-index: 3;
+    opacity: 0;
+}
+.numerica2{
+    font-size: 0.48rem;
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#fcfa83), to(#fee100));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    position: absolute;
+    /* top: 3rem; */
+    bottom: 0rem;
+    right: 2.1rem;
+    z-index: 3;
+    /* transition: all 1s;
+    -webkit-transition: all 1s; */
+    opacity: 0;
+}
+.numerica3{
+    font-size: 0.48rem;
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#06dbfd), to(#4344ff));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    position: absolute;
+    /* top: 2.9rem; */
+    bottom: 0rem;
+    left: 2.6rem;
+    z-index: 3;
+    opacity: 0;
+}
+.lifevalue{
+    width: 3.6rem;
+    height: 0.3rem;
+    border-radius: 0.15rem;
+    background: url('https://tools.dianliaoapp.com/test/test-2018-12-07-1384.png') center no-repeat;
+    background-size:contain;
+    margin: 0.7rem auto 0.2rem;
+    overflow: hidden;
+}
+.lifevalue-message{
+    font-size: 0.24rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 0.1rem;
+}
+
+.bottom{
+    width: 100%;
+    height: 1.92rem;
+    background: rgba(0,0,0,0.5);
+     padding-top: 0.2rem;
+    position: absolute;
+    z-index: 3;
+}
+.play{
+    width: 7.5rem;
+    height: 0.88rem;
+    
+}
+.play div{
+    width: 2.2rem;
+    height: 0.88rem;
+    background-size: 2.2rem 0.88rem;
+    float: left;
+}
+.play div.one{
+    margin-left: 0.3rem;
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-08-23-5753.png);
+}
+.play div.ten{
+    margin-left: 0.15rem;
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-08-23-4758.png);
+}
+.play div.hundred{
+    margin-left: 0.15rem;
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-08-23-6942.png);
+}
+.all-stronger{
+    margin-top: 0.3rem;
+}
+.strongers{
+    width: 50%;
+    font-size: 0.3rem;
+    color: #ffcc01;
+    line-height: 0.5rem;
+}
+.mymounts i{
+    display: inline-block;
+    width: 0.38rem;
+    height: 0.4rem;
+    margin-left: 0.3rem;
+    vertical-align: middle;
+    background: url('https://tools.dianliaoapp.com/test/test-2018-12-07-5535.png') center no-repeat;
+    background-size:contain;
+}
+.strongers span{
+    margin: 0 0.1rem;
+}
+.get-mounts-btn{
+    width: 1.2rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    text-align: center;
+    border: 0.01rem solid #ffcc01;
+    border-radius: 0.1rem;
+}
+.mymoney i{
+    display: inline-block;
+    width: 0.38rem;
+    height: 0.4rem;
+    margin-left: 0.3rem;
+    vertical-align: middle;
+    background: url('https://tools.dianliaoapp.com/test/test-2018-12-07-6894.png') center no-repeat;
+    background-size:contain;
+}
+.rule{
+    width: 1rem;
+    height: 0.6rem;
+    background: #ffcc01;
+    position: absolute;
+    right: 0;
+    top: 0.6rem;
+    border-top-left-radius: 0.35rem;
+    border-bottom-left-radius: 0.35rem;
+    font-size: 0.3rem;
+    color: #632601;
+    text-align: center;
+    padding: 0.1rem 0;
+    z-index: 5;
+}
+.my-ranking{
+    width: 1.8rem;
+    height: 0.8rem;
+    background: #ffcc01;
+    position: absolute;
+    left: 0;
+    top: 0.6rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.ranking-tl{
+    font-size: 0.24rem;
+    color: #632601;
+    line-height: 0.4rem;
+    text-indent: 0.04rem;
+}
+.ranking-my-mounts i{
+    width: 0.28rem;
+    height: 0.36rem;
+    margin-left: 0.3rem;
+    vertical-align: top;
+    display: inline-block;
+    background: url('https://tools.dianliaoapp.com/test/test-2018-12-07-5535.png') center no-repeat;
+    background-size:contain;
+}
+.ranking-my-mounts span{
+    font-size: 0.24rem;
+    color: #ff0034;
+    line-height: 0.4rem;
+    text-indent: 0.04rem;
+    margin-left: 0.06rem;
+    display: inline-block;
+    width: 0.75rem;
+    overflow: hidden;
+}
+#totalvalue1{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffde00), to(#ff7900));
+    border-top-right-radius: 0.15rem;
+    border-bottom-right-radius: 0.15rem;
+    transition: width 1s;
+    -webkit-transition: width 1s;
+}
+#totalvalue2{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffde00), to(#ff7900));
+    border-top-right-radius: 0.15rem;
+    border-bottom-right-radius: 0.15rem;
+}
+.seep{
+    transition: width 1s;
+    -webkit-transition: width 1s;
+}
+.lifevalue-message span{
+    color: #ffcc01;
+}
+.bottom-super{
+    width: 100%;
+    height: 2.4rem;
+   position: relative;
+}
+.all-stronger-super{
+    width: 100%;
+    height: 0.86rem;
+   background: rgba(0,0,0,0.5);
+   padding-top: 0.84rem;
+    position: absolute;
+    bottom: 0;
+}
+.bottom-super-bg{
+    background: #fc1c36;
+    width: 100%;
+    height: 0.8rem;
+    position: absolute;
+    top: -0.05rem;
+}
+.super-gold-play{
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    background: url('https://tools.dianliaoapp.com/test/test-2018-12-11-7887.gif') center no-repeat;
+    background-size:contain;
+    position: absolute;
+    top :-0.8rem;
+    left:50%;
+    margin-left:-0.8rem;
+    overflow: hidden;
+}
+.super-gold-play-times{
+    width: 1.3rem;
+    height: 0.5rem;
+    background: url('https://tools.dianliaoapp.com/test/test-2018-12-10-3969.png') center no-repeat;
+    background-size:contain;
+    position: absolute;
+    top :-0.6rem;
+    right:1.6rem;
+}
+.prize-mask{
+    width:100%;
+    height:100%;
+    position: fixed;
+    top:0;
+    left:0;
+    background: #000000;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 5;
+    display:flex;
+    align-items:center;/*垂直居中*/
+    justify-content: center;/*水平居中*/
+    display: -webkit-flex;
+    /* display: none; */
+
+}
+.prize-mask-content{
+    width: 5.18rem;
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    min-height: 2rem;
+    background: #ffad67;
+    /* transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%); */
+    min-height: 3.92rem;
+    box-shadow: 0 0.1rem 0 #ff8100;
+    border-radius: 0.3rem;
+    padding: 0.22rem;
+    position: relative;
+}
+.prize-mask-img{
+    width: 4.8rem;
+    height: 1.2rem;
+    background: url('https://tools.dianliaoapp.com/test/test-2018-12-12-4508.png') center no-repeat;
+    background-size:contain;
+    position: absolute;
+    top: -0.7rem;
+    left: 0.4rem;
+    z-index: 6;
+}
+.prize-mask-main{
+    min-height: 2.92rem;
+    background: #ffffff;
+    border: 0.08rem solid #ff915f;
+    border-radius: 0.3rem;
+    position: relative;
+}
+.prize-list{
+    margin-top: 0.2rem;
+    overflow: hidden;
+}
+.prize-list li{
+    width: 1.4rem;
+    margin-left: 0.2rem;
+    margin-top: 0.2rem;
+    float: left;
+}
+.myprize-bg{
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background: url('https://tools.dianliaoapp.com/test/test-2018-12-10-2091.png') center no-repeat;
+    background-size:contain;
+    text-align: center;
+    font-size: 0.2rem;
+    color: #fc1c36;
+}
+.myprize-num{
+    text-align: center;
+    font-size: 0.24rem;
+    color: #a45408;
+    margin-top: 0.1rem;
+}
+.myprize-money{
+    font-size: 0.3rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+.myprize-other-part{
+    width: 4rem;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    font-size: 0.3rem;
+    color: #fc1c36;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    margin: 0.4rem auto 0.2rem;
+}
+.dividing-line{
+    width: 1.2rem;
+    height: 0.02rem;
+    background: #fc1c36;
+    margin-top: 0.145rem;
+    margin-right: 0.15rem;
+}
+.dividing-line:last-child{
+    margin-right: 0rem;
+    margin-left: 0.15rem;
+}
+.prize-list:last-child{
+    margin-top: 0;
+}
+.order-myprize{
+    width: 2.2rem;
+    height: 0.88rem;
+    margin: 0.5rem auto 0.4rem;
+    background: url('https://tools.dianliaoapp.com/test/test-2018-12-10-5329.png') center no-repeat;
+    background-size:contain;
+    text-align: center;
+    font-size: 0.36rem;
+    font-weight: 600;
+    line-height: 0.88rem;
+    color: #ca3605;
+}
+.buyActivity{
+    display: none;
+    position: fixed; left: 0; top: 0; z-index: 100;
+    width: 100%; height: 100%;
+}
+.buyActivity .buyActivityBg{
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: relative;
+}
+.buyActivity .buyActivityBg .box{
+    width: 6rem;
+    height: 6rem;
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-08-24-9466.png);
+    background-size: 6rem 6rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -3rem;
+    margin-top: -3rem;
+    -webkit-animation: tanchuscale 0.5s;
+    animation: tanchuscale 0.5s;
+}
+.buyActivity .buyActivityBg .box .close{
+    width: 0.6rem;
+    height: 0.6rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.buyActivity .buyActivityBg .box ul{
+    width: 5.4rem;
+    height: 1.64rem;
+    margin-left: 0.24rem;
+    margin-top: 1.64rem;
+}
+.buyActivity .buyActivityBg .box ul .li{
+    width: 1.64rem;
+    height: 1.64rem;
+    float: left;
+    margin-left: 0.16rem;
+    background-size: 1.64rem 1.64rem;
+}
+.buyActivity .buyActivityBg .box ul .ten{
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-08-24-6874.png);
+}
+.buyActivity .buyActivityBg .box ul .ten.active{
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-08-24-1864.png);
+}
+.buyActivity .buyActivityBg .box ul .fifty{
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-08-24-6367.png);
+}
+.buyActivity .buyActivityBg .box ul .fifty.active{
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-08-24-6169.png);
+}
+.buyActivity .buyActivityBg .box ul .hundred{
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-08-24-3398.png);
+}
+.buyActivity .buyActivityBg .box ul .hundred.active{
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-08-24-9276.png);
+}
+.buyActivity .buyActivityBg .box .num{
+    width: 6rem;
+    height: 0.4rem;
+    text-align: center;
+    line-height: 0.4rem;
+    margin-top: 0.5rem;
+    font-family: '微软雅黑';
+    font-weight: bold;
+    color: #ffcc01;
+    font-size: 0.3rem;
+}
+.buyActivity .buyActivityBg .box .buyBtn{
+    width: 2rem;
+    height: 0.75rem;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-08-24-6390.png);
+    background-size: 2rem 0.75rem;
+}
+@keyframes tanchuscale{
+	from{ transform: scale(0); -webkit-transform: scale(0); }
+	to{ transform: scale(1); -webkit-transform: scale(1);}
+}
+@-webkit-keyframes tanchuscale{
+	from{ transform: scale(0); -webkit-transform: scale(0); }
+	to{ transform: scale(1); -webkit-transform: scale(1);}
+}
+.tanchuscale{
+    -webkit-animation: tanchuscale 0.5s;
+    animation: tanchuscale 0.5s;
+}
+.super-prize-mask{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    background: #000000;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 5;
+    display: none;
+}
+.super-mask-part{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.super-prize-mask-bg{
+    width: 6rem;
+    background: #ffad67;
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffe0a9), to(#ffad67));
+    height: 5.25rem;
+    box-shadow: 0 0.1rem 0 #ff8100;
+    border-radius: 0.3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -3rem; 
+    margin-top: -2.625rem;
+}
+.super-prize-mask-flag{
+    width: 6rem;
+    height: 1.2rem;
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-12-12-6602.png);
+    background-size: 6rem 1.2rem;
+    position: absolute;
+    left: 0;
+    top: -0.8rem;
+}
+.super-prize-content{
+    width: 5.2rem;
+    height: 1.06rem;
+    line-height: 1.06rem;
+    font-size: 0.48rem;
+    margin: 1.4rem auto 0;
+    color: #fc1c36;
+    text-align: center;
+}
+.super-prize-num{
+    width: 4rem;
+    height: 0.9rem;
+    background: #ffffff;
+    border: 0.08rem solid #ff915f;
+    border-radius: 0.1rem;
+    text-align: center;
+    line-height: 0.9rem;
+    margin-left: 0.08rem;
+    display: inline-block;
+}
+.super-prize-msg{
+    text-align: center;
+    font-size: 0.24rem;
+    color: #a45408;
+    margin-top: 0.2rem;
+}
+.super-prize-mask-btn{
+    width: 2.2rem;
+    height: 0.88rem;
+    margin: 0.8rem auto 0;
+    background: url('https://tools.dianliaoapp.com/test/test-2018-12-10-5329.png') center no-repeat;
+    background-size:contain;
+    text-align: center;
+    font-size: 0.36rem;
+    font-weight: 600;
+    line-height: 0.88rem;
+    color: #ca3605; 
+}
+.ruleActivity{
+    display: none;
+    position: fixed; left: 0; top: 0; z-index: 100;
+    width: 100%; height: 100%;
+}
+.ruleActivity .ruleActivityBg{
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: relative;
+}
+.ruleActivity .ruleActivityBg .box{
+    width: 6rem; 
+    height: 7rem;
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-12-13-6046.png);
+    background-size: 6rem 7rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -3rem;
+    margin-top: -3.5rem;
+}
+.ruleActivity .ruleActivityBg .box .close{
+    width: 0.6rem;
+    height: 0.6rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}

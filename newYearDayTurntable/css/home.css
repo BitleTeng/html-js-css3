@@ -1,0 +1,242 @@
+/* 设置统一的样式字体，点击不能出现阴影的效果 */
+html, body, .main{
+    width: 100%; height: 100%;
+    -webkit-touch-callout: none; 
+	-webkit-text-size-adjust: none; 
+	-webkit-highlight: none; 
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    font-size: 16px; font-family: '微软雅黑';
+    background-color: #ff4a75;
+}
+ul, li{
+    list-style: none; padding: 0; margin: 0;
+}
+/* 获得奖品的弹窗 */
+.main .prizeActivity{
+    display: none;
+    position: fixed; left: 0; top: 0; z-index: 100;
+    width: 100%; height: 100%;
+}
+.main .prizeActivity .prizeActivityBg{
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: relative;
+}
+.main .prizeActivity .prizeActivityBg .box{
+    width: 5rem;
+    height: 5rem;
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-12-25-4396.png);
+    background-size: 5rem 5rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -2.5rem;
+    margin-top: -2.5rem;
+}
+.main .prizeActivity .prizeActivityBg .box img{
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    left: 1.5rem;
+    top: 1.5rem;
+}
+.main .prizeActivity .prizeActivityBg .box p{
+    width: 5rem;
+    height: 0.24rem;
+    text-align: center;
+    line-height: 0.24rem;
+    font-family: '微软雅黑';
+    font-size: 0.24rem;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 1.1rem;
+}
+.main .prizeActivity .prizeActivityBg .box .sure{
+    width: 3.2rem;
+    height: 0.7rem;
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-12-25-8650.png);
+    background-size: 3.2rem 0.7rem;
+    position: absolute;
+    left: 0.9rem;
+    bottom: 0.2rem;
+    font-family: '微软雅黑';
+    font-size: 0.36rem;
+    color: #ff4800;
+    text-align: center;
+    line-height: 0.7rem;
+}
+/* 下方主体结构 */
+.main .head{
+    width: 7.5rem; 
+    height: 11.2rem;
+    background-repeat: no-repeat;
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-12-25-6207.png);
+    background-size: 7.5rem 9rem;
+    position: relative;
+}
+/* 轮播的样子设置 */
+.main .head #lunbowrap{
+    width: 5.6rem;
+    height: 1.5rem;
+    background-color: #ff4a75;
+    border-radius: 0.75rem;
+    position: absolute;
+    top: 2.6rem;
+    left: 0.95rem;
+    overflow: hidden;
+}
+#lunbowrap{
+    width: 5.6rem;
+    position: absolute;
+    top: 2.6rem;
+    left: 0.95rem;
+    background-color: #ff4a75;
+}
+#lunbowrap ul{
+    width: 5.6rem;
+    overflow: hidden;
+    clear: both;
+    *zoom: 1;
+}
+#lunbowrap ul li{
+    width: 5.6rem;
+    height: 0.5rem;
+    text-align: center;
+    line-height: 0.5rem;
+    line-height: 0.5rem;
+    font-family: '微软雅黑';
+    font-size: 0.22rem;
+    text-align: center;
+    color: #fff;
+}
+#lunbowrap ul li span{
+    line-height: 0.5rem;
+}
+#lunbowrap ul li span:nth-of-type(2),
+#lunbowrap ul li span:nth-of-type(4){
+    color: #fff000;
+}
+.main .head .wrapper{
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    left: 0.75rem;
+    top: 4.6rem;
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-12-25-9687.png);
+    background-size: 6rem 6rem;
+    overflow: hidden;
+}
+.main .head .wrapper #outerCont{
+    width: 5.28rem;
+    height: 5.28rem;
+    position: absolute;
+    left: 0.36rem;
+    top: 0.36rem;
+}
+.main .head .wrapper #outerCont #outer{
+    width: 5.28rem;
+    height: 5.28rem;
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+}
+.main .head .wrapper #outerCont #outer img{
+    width: 5.28rem;
+    height: 5.28rem;
+}
+.main .head .wrapper #innerCont{
+    width: 2.03rem;
+    height: 2.55rem;
+    position: absolute;
+    left: 1.98rem;
+    top: 1.46rem;
+}
+.main .head .wrapper #innerCont #inner{
+    width: 2.03rem;
+    height: 2.55rem;
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+}
+.main .head .wrapper #innerCont #inner img{
+    width: 2.03rem;
+    height: 2.55rem;
+}
+.main .rule{
+    width: 7.5rem;
+    height: 8.2rem;
+}
+.main .rule .btn{
+    width: 7.5rem;
+    height: 0.7rem;
+    position: relative;
+    font-family: '微软雅黑';
+    font-size: 0.36rem;
+    color: #ff4800;
+}
+.main .rule .btn .integral{
+    width: 3.2rem;
+    height: 0.7rem;
+    text-align: center;
+    line-height: 0.7rem;
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-12-25-8650.png);
+    background-size: 3.2rem 0.7rem;
+    position: absolute;
+    left: 0.3rem;
+    top: 0;
+}
+.main .rule .btn .rankingList{
+    width: 3.2rem;
+    height: 0.7rem;
+    text-align: center;
+    line-height: 0.7rem;
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-12-25-8650.png);
+    background-size: 3.2rem 0.7rem;
+    position: absolute;
+    right: 0.3rem;
+    top: 0;
+}
+.main .rule .ruleList{
+    width: 7.1rem;
+    height: 6.5rem;
+    margin-top: 0.5rem;
+    margin-left: 0.2rem;
+    border-radius: 0.2rem;
+    background-color: #fff;
+}
+.main .rule .ruleList li{
+    width: 6.2rem;
+    margin-left: 0.45rem;
+    line-height: 0.6rem;
+    font-family: '微软雅黑';
+    font-size: 0.3rem;
+    color: #303030;
+}
+.main .rule .ruleList li:nth-of-type(1){
+    font-size: 0.36rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 0.36rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.25rem;
+}
+.main .rule .ruleList li:nth-of-type(6){
+    text-align: right;
+    padding-top: 0.1rem;
+}
+
+/* 需要给弹窗设置为弹出的样式，进行了添加tanchuscale */
+/* 控制弹出窗的动画，开始缩放为0，一直慢慢放大 */
+@keyframes tanchuscale{
+	from{ transform: scale(0); -webkit-transform: scale(0); }
+	to{ transform: scale(1); -webkit-transform: scale(1);}
+}
+@-webkit-keyframes tanchuscale{
+	from{ transform: scale(0); -webkit-transform: scale(0); }
+	to{ transform: scale(1); -webkit-transform: scale(1);}
+}
+.tanchuscale{
+	-webkit-animation:tanchuscale 0.5s;
+    animation: tanchuscale 0.5s;
+}

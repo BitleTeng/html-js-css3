@@ -1,0 +1,480 @@
+/* 设置统一的样式字体，点击不能出现阴影的效果 */
+html, body, .main{
+    width: 100%; height: 100%;
+    -webkit-touch-callout: none; 
+	-webkit-text-size-adjust: none; 
+	-webkit-highlight: none; 
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    font-size: 16px; font-family: '微软雅黑';
+    background-color: #cd3333;
+}
+ul, li{
+    list-style: none; padding: 0; margin: 0;
+}
+/* 弹窗 */
+.ruleActivity{
+    display: none;
+    position: fixed; left: 0; top: 0; z-index: 100;
+    width: 100%; height: 100%;
+}
+.ruleActivity .ruleActivityBg{
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: relative;
+}
+.ruleActivity .ruleActivityBg .box{
+    width: 6rem; 
+    height: 7rem;
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-08-24-3263.png);
+    background-size: 6rem 7rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -3rem;
+    margin-top: -3.5rem;
+}
+.ruleActivity .ruleActivityBg .box .close{
+    width: 0.6rem;
+    height: 0.6rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.buyActivity{
+    display: none;
+    position: fixed; left: 0; top: 0; z-index: 100;
+    width: 100%; height: 100%;
+}
+.buyActivity .buyActivityBg{
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: relative;
+}
+.buyActivity .buyActivityBg .box{
+    width: 6rem;
+    height: 6rem;
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-08-24-9466.png);
+    background-size: 6rem 6rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -3rem;
+    margin-top: -3rem;
+}
+.buyActivity .buyActivityBg .box .close{
+    width: 0.6rem;
+    height: 0.6rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.buyActivity .buyActivityBg .box ul{
+    width: 5.4rem;
+    height: 1.64rem;
+    margin-left: 0.24rem;
+    margin-top: 1.64rem;
+}
+.buyActivity .buyActivityBg .box ul .li{
+    width: 1.64rem;
+    height: 1.64rem;
+    float: left;
+    margin-left: 0.16rem;
+    background-size: 1.64rem 1.64rem;
+}
+.buyActivity .buyActivityBg .box ul .ten{
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-08-24-6874.png);
+}
+.buyActivity .buyActivityBg .box ul .ten.active{
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-08-24-1864.png);
+}
+.buyActivity .buyActivityBg .box ul .fifty{
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-08-24-6367.png);
+}
+.buyActivity .buyActivityBg .box ul .fifty.active{
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-08-24-6169.png);
+}
+.buyActivity .buyActivityBg .box ul .hundred{
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-08-24-3398.png);
+}
+.buyActivity .buyActivityBg .box ul .hundred.active{
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-08-24-9276.png);
+}
+.buyActivity .buyActivityBg .box .num{
+    width: 6rem;
+    height: 0.4rem;
+    text-align: center;
+    line-height: 0.4rem;
+    margin-top: 0.5rem;
+    font-family: '微软雅黑';
+    font-weight: bold;
+    color: #ffcc01;
+    font-size: 0.3rem;
+}
+.buyActivity .buyActivityBg .box .buyBtn{
+    width: 2rem;
+    height: 0.75rem;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-08-24-6390.png);
+    background-size: 2rem 0.75rem;
+}
+.resultActivity{
+    display: none;
+    position: fixed; left: 0; top: 0; z-index: 100;
+    width: 100%; height: 100%;
+}
+.resultActivity .resultActivityBg{
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: relative;
+}
+.resultActivity .resultActivityBg .box{
+    width: 6rem;
+    min-height: 5rem;
+    background-color: #cd3333;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -3rem;
+    margin-top: -2.5rem;
+    border-radius: 0.3rem;
+}
+.resultActivity .resultActivityBg .box .head{
+    width: 6rem;
+    height: 2rem;
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-08-24-7839.png);
+    background-size: 6rem 2rem;
+    font-size: 0.46rem;
+    color: #ffcc01;
+    text-align: center;
+    line-height: 1.4rem;
+    font-weight: bold;
+}
+.resultActivity .resultActivityBg .box ul{
+    width: 5.1rem;
+    margin-left: 0.3rem;
+    overflow: hidden;
+}
+.resultActivity .resultActivityBg .box ul li{
+    width: 1.4rem;
+    height: 2.2rem;
+    float: left;
+    margin-left: 0.3rem;
+}
+.resultActivity .resultActivityBg .box ul li .top{
+    width: 1.4rem;
+    height: 1.4rem;
+    background-color: #ffcc01;
+    border-radius: 0.2rem;
+}
+.resultActivity .resultActivityBg .box ul li .top .gold{
+    width: 1.4rem;
+    height: 0.6rem;
+    text-align: center;
+    line-height: 0.6rem;
+    padding-top: 0.2rem;
+    font-family: '微软雅黑';
+    font-size: 0.4rem;
+    color: #fe0034;
+    font-weight: bold;
+}
+.resultActivity .resultActivityBg .box ul li .top p{
+    width: 1.4rem;
+    height: 0.3rem;
+    text-align: center;
+    line-height: 0.3rem;
+    margin-top: 0.1rem;
+    font-family: '微软雅黑';
+    font-size: 0.3rem;
+    color: #fe0034;
+    font-weight: bold;
+}
+.resultActivity .resultActivityBg .box ul li .num{
+    width: 1.4rem;
+    height: 0.3rem;
+    text-align: center;
+    line-height: 0.3rem;
+    margin-top: 0.1rem;
+    font-family: '微软雅黑';
+    font-size: 0.26rem;
+    color: #ffcc01;
+    font-weight: bold;
+}
+.resultActivity .resultActivityBg .box .sureBtn{
+    width: 2rem;
+    height: 0.7rem;
+    margin-top: 0.1rem;
+    margin-left: 2rem;
+    border: 0.02rem solid #ffcc01;
+    font-family: '微软雅黑';
+    font-size: 0.3rem;
+    color: #ffcc01;
+    text-align: center;
+    line-height: 0.7rem;
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+    border-radius: 0.35rem;
+}
+/* 头部动画内容 */
+.main .head{
+    width: 7.5rem; 
+    height: 9.8rem;
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-08-23-6329.png);
+    background-size: 7.5rem 9.8rem;
+    position: relative;
+}
+.main .head .box{
+    width: 7.5rem;
+    height: 5.5rem;
+    position: absolute;
+    top: 3.24rem;
+    left: 0;
+}
+.main .head .box img{
+    width: 7.5rem;
+    height: 5.5rem;
+}
+.main .head .rules{
+    width: 1.2rem;
+    height: 0.6rem;
+    position: absolute;
+    top: 3.8rem;
+    right: 0.3rem;
+}
+.main .content{
+    width: 7.5rem; 
+    height: 2.6rem;
+}
+.main .content .play{
+    width: 7.5rem;
+    height: 0.88rem;
+}
+.main .content .play div{
+    width: 2.2rem;
+    height: 0.88rem;
+    background-size: 2.2rem 0.88rem;
+    float: left;
+}
+.main .content .play div.one{
+    margin-left: 0.3rem;
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-08-23-5753.png);
+}
+.main .content .play div.ten{
+    margin-left: 0.15rem;
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-08-23-4758.png);
+}
+.main .content .play div.hundred{
+    margin-left: 0.15rem;
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-08-23-6942.png);
+}
+.main .content .handle{
+    width: 7.5rem;
+    height: 1.4rem;
+    padding-top: 0.4rem;
+    position: relative;
+}
+.main .content .handle .get{
+    float: left;
+    width: 3.75rem;
+    height: 1.4rem;
+}
+.main .content .handle .get p{
+    width: 3.75rem;
+    height: 0.24rem;
+    text-align: center;
+    line-height: 0.24rem;
+    font-family: '微软雅黑';
+    font-weight: bold;
+    font-size: 0.24rem;
+    color: #fff;
+}
+.main .content .handle .get .btn{
+    width: 1rem;
+    height: 0.46rem;
+    margin-top: 0.2rem;
+    margin-left: 1.37rem;
+    font-family: '微软雅黑';
+    font-weight: bold;
+    font-size: 0.24rem;
+    color: #ffcc01;
+    border: 0.02rem solid #ffcc01;
+    border-radius: 0.23rem;
+    text-align: center;
+    line-height: 0.46rem;
+}
+.main .content .handle .recharge{
+    float: left;
+    width: 3.75rem;
+    height: 1.4rem;
+}
+.main .content .handle .recharge p{
+    width: 3.75rem;
+    height: 0.24rem;
+    text-align: center;
+    line-height: 0.24rem;
+    font-family: '微软雅黑';
+    font-weight: bold;
+    font-size: 0.24rem;
+    color: #fff;
+}
+.main .content .handle .recharge .btn{
+    width: 1rem;
+    height: 0.46rem;
+    margin-top: 0.2rem;
+    margin-left: 1.37rem;
+    font-family: '微软雅黑';
+    font-weight: bold;
+    font-size: 0.24rem;
+    color: #ffcc01;
+    border: 0.02rem solid #ffcc01;
+    border-radius: 0.23rem;
+    text-align: center;
+    line-height: 0.46rem;
+}
+.main .content .handle .line{
+    width: 0.02rem;
+    height: 1rem;
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-08-24-1920.png);
+    background-size: 0.02rem 1rem;
+    position: absolute;
+    left: 3.75rem;
+    top: 0.4rem;
+}
+.main .record{
+    margin-top: 0.1rem;
+    width: 7.5rem; 
+    height: 10.72rem;
+    position: relative;
+}
+.main .record .one_bg{
+    width: 6.9rem;
+    height: 10rem;
+    background-color: #b91b1b;
+    border-radius: 0.2rem;
+    position: absolute;
+    left: 0.3rem;
+    top: 0.24rem;
+}
+.main .record .two_bg{
+    width: 7.5rem; 
+    height: 10.72rem;
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-08-24-3402.png);
+    background-size: 7.5rem 10.72rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.main .record .box{
+    width: 6rem;
+    height: 9rem;
+    position: absolute;
+    left: 0.75rem;
+    top: 0.5rem;
+}
+.main .record .box .title{
+    width: 2.82rem;
+    height: 0.4rem;
+    background-image: url(https://tools.dianliaoapp.com/test/test-2018-08-24-8756.png);
+    background-size: 2.82rem 0.4rem;
+    margin-left: 1.59rem;
+}
+#dingwrap{
+    width: 5.88rem;
+    height: 2.6rem;
+    background-color: #6b0c03;
+    border: 0.06rem solid #ffe6d7;
+    /* margin-bottom: 10px; */
+    margin-top: 0.2rem;
+    border-radius: 0.2rem;
+}
+#dingwrap ul{
+    width: 6rem;
+    margin-top: 0.25rem;
+    overflow: hidden;
+    clear: both;
+    *zoom: 1;
+}
+#dingwrap ul li{
+    list-style: none;
+    width: 6rem;
+    height: 0.44rem;
+    line-height: 0.44rem;
+}
+#dingwrap ul li span{
+    font-size: 0.24rem;
+    font-family: "微软雅黑";
+    text-align: center;
+    line-height: 0.44rem;
+    height: 0.44rem;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#dingwrap ul li span:nth-of-type(1){
+    width: 1.74rem;
+    color: #fec802;
+}
+#dingwrap ul li span:nth-of-type(2){
+    width: 2.4rem;
+    color: #fff;
+}
+#dingwrap ul li span:nth-of-type(3){
+    width: 1.74rem;
+    color: #fec802;
+}
+#lunbowrap{
+    width: 6rem;
+    margin-bottom: 10px;
+    /* margin-top: 0.1rem; */
+}
+#lunbowrap ul{
+    width: 6rem;
+    overflow: hidden;
+    clear: both;
+    *zoom: 1;
+}
+#lunbowrap ul li{
+    list-style: none;
+    width: 6rem;
+    height: 0.44rem;
+    line-height: 0.44rem;
+}
+#lunbowrap ul li span{
+    font-size: 0.24rem;
+    font-family: "微软雅黑";
+    text-align: center;
+    line-height: 0.44rem;
+    height: 0.44rem;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#lunbowrap ul li span:nth-of-type(1){
+    width: 1.8rem;
+    color: #fec802;
+}
+#lunbowrap ul li span:nth-of-type(2){
+    width: 2.4rem;
+    color: #fff;
+}
+#lunbowrap ul li span:nth-of-type(3){
+    width: 1.8rem;
+    color: #fec802;
+}
+/* 需要给弹窗设置为弹出的样式，进行了添加tanchuscale */
+/* 控制弹出窗的动画，开始缩放为0，一直慢慢放大 */
+@keyframes tanchuscale{
+	from{ transform: scale(0); -webkit-transform: scale(0); }
+	to{ transform: scale(1); -webkit-transform: scale(1);}
+}
+@-webkit-keyframes tanchuscale{
+	from{ transform: scale(0); -webkit-transform: scale(0); }
+	to{ transform: scale(1); -webkit-transform: scale(1);}
+}
+.tanchuscale{
+	-webkit-animation:tanchuscale 0.5s;
+    animation: tanchuscale 0.5s;
+}
